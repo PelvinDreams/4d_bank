@@ -1,0 +1,502 @@
+/* form elements */
+
+/*custom form and anchor buttons are styled in content.css*/
+
+/*
+File: forms.css
+Purpose: base stylesheet for any form elements or form layouts implemented on the Voice CMS platform licensed by L9.com
+Usage: Core areas of the sheet (Sections prior to "Custom Overrides" should not be modified unless absolutely necessary. Customizations to this css should be applied after the "Custom Overrides" section marker.
+
+Contents:
+
+1. div.form-field structures
+
+
+
+10. Template Based Contact Form
+
+
+*/
+fieldset {
+    border: none;
+}
+div.form-field {
+	width: 100%;
+	margin: 1em 0;
+	border: none;
+}
+div.form-field .label {
+	float: left;
+	width: 34%;
+}
+div.form-field .input {
+	float: left !important;
+	width: 60%;
+}
+div.form-field div.submit {
+	border-top: solid 1px #ddd;
+	padding: 0.7em 0;
+	margin: 1em 0 0 0;
+	float: right;/* width: 60%; cuts off contact submit button at mobile size */
+}
+div.form-field .button.submit {
+	width: auto;
+	float: right;
+}
+div.form-field.rule {/*login form div.form-field exception for horizontal line*/
+	border-bottom: solid 1px #BAC7C6 !important;
+	padding: 0;
+	margin: 0 0 4px 0;
+}
+input[type=text], input[type=tel], input[type=password], input[type=email], textarea {
+	width: 100%;
+}
+
+@media screen and (max-width:640px) {
+form {
+	margin: auto;
+}
+div.form-field {
+	width: 96%;
+	margin: 1em 0;
+	border: none;
+}
+div.form-field .label, div.form-field .input {
+	float: none;
+	width: 100%;
+	clear: both;
+}
+}
+form {
+	margin: 0;
+	padding: 0;
+}
+label {
+	display: block;
+}
+/*labels within radio or checkbox groups*/
+div.input label {
+	display: inline-block;
+	margin: 0 10px;
+}
+input {
+	font-weight: normal;
+	padding: 3px;
+	margin: 0;
+}
+textarea {
+	height: 120px;
+	width: 100%;
+}
+input[type=text], input[type=tel], input[type=password], input[type=email], textarea, select {
+	padding: 7px;
+	border: none;
+	max-width: 100%;
+}
+input[type=button] {
+	float: right;
+	margin: 10px;
+}
+input[type=text]:focus, input[type=tel]:focus, input[type=password]:focus, input[type=email]:focus, textarea:focus, select:focus {
+	box-shadow: inset 1px 1px 5px #ccc;
+	-moz-box-shadow: inset 1px 1px 5px #ccc;
+	-webkit-box-shadow: inset 1px 1px 5px #ccc;
+}
+select {
+	font-weight: normal;
+}
+input.formkey {
+	width: inherit;
+}
+input.error, textarea.error, select.error, input.errormsg, textarea.errormsg, select.errormsg {
+	border: solid 1px #d13836 !important;
+}
+.errormsg {
+	color: #d13836;
+	padding: 1px 0 10px 0;
+	font-size: 0.8em;
+	text-align: left;
+}
+.form_label_req {
+	color: #006990;
+}
+input.field, textarea {
+	font-size: 16px;
+	font-size: 1rem;
+}
+input.upload {
+	font-size: 11px;
+	width: 99%;
+}
+input.short, textarea.short {
+	width: 33%;
+}
+input.wide, textarea.wide {
+	width: 90%;
+}
+input.small, textarea.small {
+	font-size: .9em;
+}
+input.large, textarea.large {
+	font-size: 16px;
+	font-size: 1rem;
+}
+input.tiny {
+	height: 12px;
+	font-size: .8em;
+	font-weight: bold;
+}
+select.select {
+}
+select.wide {
+	width: 99%;
+}
+select.short {
+	width: 33%;
+}
+select.small {
+	font-size: .9em;
+}
+select.large {
+	font-size: 1.3em;
+}
+select.multiple {
+	width: 50%;
+	height: 100px;
+	overflow: auto;
+}
+select.multiple_wide {
+	width: 99%;
+	height: 100px;
+	overflow: auto;
+}
+.aid {
+	color: #999;
+	font-size: 12px;
+	line-height: 14px;
+}
+.aid ul {
+	margin: 0 0 0 20px;
+	padding: 0px;
+}
+div.fields ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.fields ul li {
+	height: 80px;
+}
+div.form-field div.error_message, div.error {
+	color: #c34d52 !important;
+	font-size: .8em;
+	margin: 0 0 3px 0;
+	font-weight: normal !important;
+}
+.status label {
+	font-weight: normal;
+	text-transform: none;
+	color: #3a3a3a;
+	display: inline;
+	font-size: 14px;
+}
+/*use font awesome for check boxes and radio buttons*/
+input[type="radio"], input[type="checkbox"] {
+/* display:none;*/
+}
+input[type="radio"] + span:before, input[type="checkbox"] + span:before {
+	font-family: 'FontAwesome';
+	font-size: 20px;
+	width: 27px;
+	display: inline-block;
+}
+input[type="radio"] + span:before {
+	content: "\f10c";
+}
+input[type="radio"]:checked + span:before {
+	content: "\f111";
+}
+input[type="checkbox"] + span:before {
+	content: "\f096";
+}
+input[type="checkbox"]:checked + span:before {
+	content: "\f046";
+}
+/* ================= FORMS TOOL OUTPUT =================*/
+.formerrors {
+	color: #B22222;
+	padding: 0px 0px 0px 10px;
+	text-align: left;
+}
+.form_err_msg_area {
+	color: #B22222;
+	padding: 0.5em 0;
+	font-size: 1em;
+}
+/* Generated Form styles */
+
+ul#form_elements, ul#form_elements li {
+	list-style: none;
+	margin: 0 !important;
+	padding: 0 !important;
+	
+	/*	override drag and drop positioning from form workboard...*/
+	position: inherit !important;
+	width: inherit !important;
+	top: inherit !important;
+	left: inherit !important;
+}
+div.section_title {
+	font-size: 1.2em;
+}
+input[type=radio], input[type=checkbox] {
+	display: inline-block;
+	vertical-align: middle;
+}
+select {
+	min-width: 50%;
+	max-width: 100%;
+}
+div.form-field.consent label {
+	display: inline-block;
+	font-size: 0.7em;
+	line-height: normal;
+}
+div.form-field.consent input[type=checkbox] {
+	display: inline-block;
+	float: right;
+	margin: 0 10px 0 0;
+}
+.ui-sortable-placeholder {
+	display: none !important;
+}
+div.form-field div.label label {
+	word-wrap: break-word;
+	width: auto;
+}
+#form_div {
+	width: 100%;
+}
+#form_div h2, wrapper-survey h2 {
+	border-bottom: solid 1px #DDDFE0;
+}
+ul.radio-list, ul.check-list {
+	margin: 0;
+	padding: 4px 0;
+	list-style: none;
+}
+ul.radio-list li, ul.check-list li {
+	display: block;
+	float: left;
+	padding: 2px 8px;
+}
+input.med {
+	width: 60%;
+}
+/*disabled poll button*/
+input[disabled="disabled"] {
+	background-color: #DDDFE0 !important;
+	background-image: none !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+input[disabled="disabled"]:hover {
+	color: #fff;
+	background-color: #DDDFE0 !important;
+	background-image: none !important;
+	border: none !important;
+	box-shadow: none !important;
+	cursor: default;
+}
+#form_elements_panel #form_elements, .form-panel .div.form-fields {
+}
+#form_elements_panel ul#form_elements, #form_elements_panel ul#form_elements li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+/*
+#form_elements_panel ul#form_elements { }
+*/
+
+.JQcaptcha {
+	width: 30% !important;
+	margin: 0 1em 0 0;
+	float: left;
+}
+ul.l9-list-style-none {
+	margin: 0;
+	padding: 0;
+}
+ul.l9-list-style-none li div.input ol, ul.l9-list-style-none li div.input ul {
+	margin: 0;
+	padding: 0;
+}
+ul.l9-list-style-none li, ul.l9-list-style-none li div.input ol li, ul.l9-list-style-none li div.input ul li {
+	list-style-type: none;
+}
+ul.l9-list-style-none li ol li, ul.l9-list-style-none li ul li {
+	list-style-type: inherit;
+}
+L9Form_message_area {
+	padding: 1em;
+	border: solid 1px #77942b;
+	color: #c4122f;
+}
+
+
+
+
+
+
+
+
+
+/* ================ 10. Template Based Contact Form ================ */
+/* contact form */
+#contact_form { margin: auto; }
+
+.hidediv { display: none; }
+
+div.contact_outer { }
+
+.contact_content_area_1 { padding: 10px; }
+
+.contact_content_area_2 {
+	width: 90%;
+	border: solid 1px #E2E2E2;
+	background-color: #FAFAFA;
+	padding: 5%;
+	margin: 0 0 5% 0;
+	float: right;
+	border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	-o-border-radius: 3px 3px 3px 3px;
+}
+
+.contact_form_area {
+	width: 96%;
+	padding: 1% 2% 4% 2%;
+	margin: 4% 0 0 0;
+}
+
+div.contact_form_area .form1_fixed { }
+
+div.contact_label {
+	display: inline;
+	float: left;
+	width: 140px;
+}
+
+#contactmsg {
+	margin: 0 0 30px 0;
+	font-size: 19px;
+	color: #3a5b4d;
+	border: none;
+	text-align: center;
+	min-height: 0px;
+}
+
+#contact_message_area, .seminar_message_area, .seminar_form_message_area, #ra_message_area {
+	border: solid 1px #ddd;
+	background: #fffcdb;
+	padding: 10px;
+	border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	-o-border-radius: 3px 3px 3px 3px;
+	color: #a41c30;
+	margin: 0.75em 0;
+	font-size: 0.9em;
+}
+
+div[id$="_message_area"] {
+	border: solid 1px #ddd;
+	background: #fffcdb;
+	padding: 10px;
+	border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	-o-border-radius: 3px 3px 3px 3px;
+	color: #a41c30;
+	margin: 0.75em 0;
+	font-size: 0.9em;
+}
+@media screen and (max-width: 480px) {
+
+#contact_form div.form-field .left {
+	clear: right;
+	width: 100%
+}
+
+#contact_form div.form-field .right {
+	float: left;
+	width: 100%
+}
+
+#contact_form div.form-field .right input[type=text], #contact_form div.form-field .right input[type=tel], #contact_form div.form-field .right input[type=password], #contact_form div.form-field .right input[type=email], #contact_form div.form-field .right textarea, #contact_form div.form-field .right select { width: 100% }
+
+#contact_form div.form-field .right input.formkey {
+	width: 20%;
+	float: left;
+}
+
+input.button, input[type=submit], a.button, a.button:link {
+	display: block;
+	width: auto;
+}
+}
+
+
+
+
+
+
+
+
+
+
+/*============================== 99. Custom Overrides ==============================*/
+
+/* ------ apply customizations to the base CSS using overrides whenever possible and practical ------ */
+
+
+
+
+
+div.form-field .label label		 {
+font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; color:#005581;}
+
+input[type=text], input[type=tel], input[type=password], input[type=email], textarea, select {
+	border: solid 2px #c1c4c8;
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	font-weight:100;
+ font-size: 16px;
+	color: #011020
+}
+
+
+.confirm {
+	padding: .5em 3%;
+	font-size: 20px;
+	color: #2ecc40
+}
+
+.aid { padding: 0 3% }
+
+label.agree { font-size: 11px }
+
+
+::-webkit-input-placeholder {
+color:#aaaaac
+}
+:-moz-placeholder {
+color:#aaaaac
+}
+::-moz-placeholder {
+color:#aaaaac
+}
+:-ms-input-placeholder {
+color:#aaaaac
+}

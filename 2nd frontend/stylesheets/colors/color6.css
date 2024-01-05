@@ -1,0 +1,76 @@
+/**
+  * Color
+  * Border Color
+  * Background Color  
+*/
+
+/* Color
+-------------------------------------------------------------- */
+.menu.menu-extra li a:hover, .flat-information li i,a:hover, a:focus, .comment .comment-body .comment-info h6 a:hover, .product-single .social-links li a:hover, .product-single .product_meta li a,
+.widget-banner .sale, .widget-shopby .price_slider_amount .price_label input, .widget-shopby .ui-slider .ui-slider-handle, .infomation-text span, .breadcrumbs.color-661 ul li a:hover, .item .readmore::after, .item .readmore:hover, .widget.widget-phone i, .page-title.style2 .breadcrumbs ul li a:hover, .flat-information.style2 li a:hover, #mainnav.style2 ul.submenu > li > a:hover, .flat-language.color-white .current a:hover, #mainnav.style2 > ul > li.active > a, #mainnav.style2 > ul > li > a:hover,
+.social-links.color-white li a:hover, .entry .readmore:after, .project-dynamic .entry .content-post .title-post a:hover, .project-dynamic .entry .readmore:hover,.project-dynamic .entry .readmore:hover:after, .entry .meta-data .meta-post li.author a, .copyright a, #subscribe-msg .notification_error, #subscribe-msg .notification_ok, .flat-language > ul > li > ul li a:hover,
+.breadcrumbs ul li a:hover, .breadcrumbs ul li i, .footer a:hover, .item .content-item .title-item a:hover, .widget.widget-out-link ul li a:hover:before, .widget.widget-recent-new ul li span:before, .widget-info .info-icon, .entry .content-post .title-post a:hover, .entry .readmore:hover, .title-section .title span, .contactform label.error, .entry .meta-data.style2 ul li.day-time, .item .item-border .date-time, .section-about .fancybox.color-white:hover:after, .pricing-item .header-pricing .price-number, .pricing-item .header-pricing .symbol, .title-section .symbol, .fancybox:hover:after, .section-about .fancybox:hover:after, .iconbox .box-header .box-icon i, .flat-counter .numb-count, .countdown .square .numb, .iconbox.style2:hover .box-header .box-icon i {
+	color: #15bdcc;
+}
+
+.tp-caption.title-slide span {
+    color: #15bdcc!important;
+}
+
+#mainnav > ul > li.active > a, #mainnav > ul > li > a:hover, #mainnav ul.submenu > li > a:hover, .flat-button,.social-links.style2 li a:hover, .imagebox .imagebox-content .imagebox-title a, .imagebox .imagebox-content .imagebox-category, .imagebox .imagebox-content::after, .section-about .fancybox:after,.social-links.style2.team li a:hover, .social-links.style3.team a {
+  color: #FFF;
+}
+
+.social-links.style3.team a:hover {
+  color: #0f3661;
+}
+
+
+/* Border Color
+-------------------------------------------------------------- */
+.flat-mailchimp p.wrap-input-email input:focus, .fancybox:before, .iconbox.style2 .box-header .box-icon {
+	border-color: #15bdcc;
+}
+
+.testimonials.style2:hover .message::before, .testimonials.style2.active .message::before {
+    border-top: 8px solid #15bdcc;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus {
+	border-color: #15bdcc;
+}
+
+/* Background Color
+-------------------------------------------------------------- */
+.fancybox:before, .flat-accordion .toggle-title.active::before, .bg-theme, .testimonials.style2:hover .message, .testimonials.style2.active .message, .iconbox.style2 .box-header .box-icon, .title-section.style3 .title::before,
+#mainnav > ul > li.active > a, #mainnav > ul > li > a:hover, .btn-menu:before, .btn-menu:after, .btn-menu span, .main-history .wrap-step .data-step::before, .loader:before, .loader:after, .social-links.style3.team, .flat-button, .flat-button.style2::before, .go-top, .social-links.style2 li a:hover, .social-links.style3 a:hover, .widget-shopby .ui-slider .ui-slider-handle span.shadow.dow, .widget-shopby .ui-slider .ui-slider-range, #mainnav ul.submenu > li > a:hover {
+	background-color: #15bdcc;
+}
+
+.imagebox .imagebox-content {
+	background-color: rgba( 21, 189, 204, 0.8);
+}
+
+.main-history .wrap-step .data-step::after {
+    background: rgba(21, 189, 204, 0.3);
+}
+
+
+.main-history .wrap-step .data-step::before {
+    webkit-box-shadow: 0px 0px 1px 3px #15bdcc;
+    	   box-shadow: 0px 0px 1px 3px #15bdcc;
+}

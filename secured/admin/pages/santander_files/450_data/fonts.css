@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'ProximaNovaReg';
+    src: url('https://delivery.datatrac.net/content/proximanova-regular-webfont.eot');
+    src: url('https://delivery.datatrac.net/content/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://delivery.datatrac.net/content/proximanova-regular-webfont.woff') format('woff'),
+         url('https://delivery.datatrac.net/content/proximanova-regular-webfont.ttf') format('truetype'),
+         url('https://delivery.datatrac.net/content/proximanova-regular-webfont.svg#ProximaNovaReg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaRegItalic';
+    src: url('https://delivery.datatrac.net/content/proximanova-regitalic-webfont.eot');
+    src: url('https://delivery.datatrac.net/content/proximanova-regitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://delivery.datatrac.net/content/proximanova-regitalic-webfont.woff') format('woff'),
+         url('https://delivery.datatrac.net/content/proximanova-regitalic-webfont.ttf') format('truetype'),
+         url('https://delivery.datatrac.net/content/proximanova-regitalic-webfont.svg#ProximaNovaRegItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('https://delivery.datatrac.net/content/proximanova-bold-webfont.eot');
+    src: url('https://delivery.datatrac.net/content/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://delivery.datatrac.net/content/proximanova-bold-webfont.woff') format('woff'),
+         url('https://delivery.datatrac.net/content/proximanova-bold-webfont.ttf') format('truetype'),
+         url('https://delivery.datatrac.net/content/proximanova-bold-webfont.svg#ProximaNovaBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaBoldItalic';
+    src: url('https://delivery.datatrac.net/content/proximanova-boldit-webfont.eot');
+    src: url('https://delivery.datatrac.net/content/proximanova-boldit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://delivery.datatrac.net/content/proximanova-boldit-webfont.woff') format('woff'),
+         url('https://delivery.datatrac.net/content/proximanova-boldit-webfont.ttf') format('truetype'),
+         url('https://delivery.datatrac.net/content/proximanova-boldit-webfont.svg#ProximaNovaBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaBlack';
+    src: url('https://delivery.datatrac.net/content/proximanova-black-webfont.eot');
+    src: url('https://delivery.datatrac.net/content/proximanova-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://delivery.datatrac.net/content/proximanova-black-webfont.woff') format('woff'),
+         url('https://delivery.datatrac.net/content/proximanova-black-webfont.ttf') format('truetype'),
+         url('https://delivery.datatrac.net/content/proximanova-black-webfont.svg#ProximaNovaBlackRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

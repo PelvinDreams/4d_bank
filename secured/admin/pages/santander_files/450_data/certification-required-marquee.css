@@ -1,0 +1,25 @@
+/* -- OLD. BEFORE CERT BG FLOP --- 
+.certification-bg {
+    display: block;
+    text-decoration: none;
+	background-image: url('../images/certification_required.png');
+}
+.hide-cert-bg .certification-bg {
+	background-image: none;
+}
+*/
+
+
+/* -- NEW. FOR CERT BG FLOP --- */
+.certification-bg {
+    display: block;
+    text-decoration: none;
+}
+.hide-cert-bg .certification-bg {
+	background-image: none;
+}
+.show-uncert-bg .certification-bg {
+    display: block;
+    text-decoration: none;
+	background-image: url('../images/certification_required.png');
+}

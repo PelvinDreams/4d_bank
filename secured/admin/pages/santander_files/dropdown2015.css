@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* CSS Document */
+div.nav-split {padding: 0; max-width: 100%; margin: auto;}
+div.nav-split ul li a {color: #ffffff; font-size: 20px; 	background-color: #015385; padding: 5px 15px; margin: 0 10px 0 0;}
+
+div.nav-split ul.nav-menu {
+    margin: auto;
+    width: 100%;
+    display: table !important;
+    max-width: 990px;
+}
+
+/*the main nav styling is conditionally shared with non mega main nav css in voice.css*/
+
+/*div.nav-main#JQMainMega  {	background-color: #015385; width: 100%; max-width: 100%; position: relative; }
+ul.JQMainNav { list-style: none; padding: 0; max-width: 970px; margin: auto;}
+
+ul.JQMainNav li { display: inline;}
+ul.JQMainNav li a { color: #B7D5E0; display: inline-block; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; padding: 13px 4%; font-size: 19px;}
+ul.JQMainNav li a.on { color: #BDD199;}
+
+ul.JQMainNav li:first-child a {}
+ul.JQMainNav li:last-child a {}
+
+ul.JQMainNav ul li.mega-item {max-width: 49%; display: inline-block;}
+ul.JQMainNav ul li a {  color: #015385;    display: inline-block; padding: 8px 7%; font-size:17px;}*/
+
+
+
+
+ul.sub_menu.JQmegamenu_sub 		{margin: 0;	padding: 0; position: absolute; z-index: 3; left: 0; background-color: #D8E5ED;  width: 100%; max-width: 100%;}
+ul.sub_menu.JQmegamenu_sub > li {max-width: 970px;}
+
+div.mega-limit {
+	max-width: 970px;
+}
+
+div.mm_children, div.mm_promo {float: left; display: inline;}
+
+div.mm_children {width:60%}
+div.mm_promo {width:40%}
+
+div.mm_children ul, div.mm_callout {margin: 0; padding: 10px 10px 10px 0; }
+
+
+div.mm_callout {max-width: 100%; }
+div.mm_promo p {color: #6d6e71; padding-right: 5%; font-size:15px;}
+
+
+ul.sub_menu {display: none;}

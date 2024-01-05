@@ -1,0 +1,860 @@
+
+/*JP 5-1-2013*/
+
+/*CONTENTS:
+
+Layout framework for responsive columns, site wrappers, 
+and dealing with all layout elements at defined breakpoints.
+
+Written by Jason Powell
+
+This is a variable width column framework based on responsive percentages.
+Columns can be created by applying the following rules:
+ 1. make a div and set a class for the width (onewhole, onehalf, onethird, twothirds, oneforuth, threefourths, onefifth, twofifths, threefifths, fourfifths, onesixth, fivesixths, oneseventh, two sevenths, threesevenths, foursevenths, fivesevenths, sixsevenths, oneeighth, twoeighths, threeeighths, foureighths, fiveeighths, sixeighths, seveneighths, oneninth, twoninths, threeninths, fourninths, fiveninths, sixninths, sevenninths, eightninths, onetenth, twotenths, threetenths, fourtenths, fivetenths, sixtenths, seventenths, eighttenths, ninetenths, oneeleventh, twoelevenths, threeelevenths, fourelevenths, fiveelevenths, sixelevenths, sevenelevenths, eightelevenths, nineelevenths, tenelevenths, onetwelth, twotwelths, threetwelths, fourtwelths, fivetwelths, sixtwelths, seventwelths, eighttwelths, ninetwelths, tentwelths, eleventwelths. -- Some of these classes apply the same column width as others, but are included in the framework to allow use of either. For example... fivetenths = onehalf, twoeights = onefourth, etc.)
+ 2. set the column to float left or right by adding a class of "left" or "right - 95% of columns should be set to float left so they fall in one after the other. 
+ 3. column divs should contain an inner container with a class of "inner". This sets some default padding on the columns and can be overriden to adjust padding. 
+ 4. by default, columns will become 100% wide when they reach a certain breakpoint. For wide columns like "threefourths" and "threefifths", the breakpoint is 769. For narrower columns like "onefourth", "onethird", "onehalf", and "twothirds" the breakpoint is 600, and for the narrowest columns like "onefifth" and "onesixth" and so on, the breakpoint is 480. This allows the different columns to stay true to their original width on as small of a display as possible. 
+ 5. If the default behavior is not desired and the true width of the columns should be retained at all screen sizes no matter what, a class of "fixed" can be added to the column container div. 
+ 6. If it is desired to have a clear break between rows of columns, a <div class="clear"></div> can be added after the last column of the first row, and before the first column of the second row. 
+ 
+ Some examples
+ 
+ *full width column with default padding:
+ 
+ <div class="onewhole"><div class="inner">...</div></div>
+ 
+ *two rows with two columns in each row:
+ 
+ <div class="onehalf left"><div class="inner">...</div></div>
+ <div class="onehalf left"><div class="inner">...</div></div>
+ <div class="clear"></div>
+ <div class="onehalf left"><div class="inner">...</div></div>
+ <div class="onehalf left"><div class="inner">...</div></div>
+ 
+ *four columns that will remain as four columns on all screens
+ 
+ <div class="onefourth left fixed"><div class="inner">...</div></div>
+ <div class="onefourth left fixed"><div class="inner">...</div></div>
+ <div class="onefourth left fixed"><div class="inner">...</div></div>
+ <div class="onefourth left fixed"><div class="inner">...</div></div>
+_____________________________________________________________
+
+
+
+1. Column Layouts
+	1.1 Percentage based columns
+	1.2 Header and Page Body Columns
+	1.3 Inner padding for responsive columns
+2. Responsive Column Layouts
+3. Header and Page Body Columns
+4. Site Layout Containers
+5. Clearfix and Clearing
+6. Floating
+7. Show or hide for varying screen sizes
+8. Header Elements
+9. Homepage Elements
+	9.1 Homepage Banners
+	9.2 Homepage Login
+	9.3 Homepage Content Areas
+
+10. General Responsive Elements
+	10.1 
+	10.2 Smaller than 1280 wide but larger than 768 wide
+	10.3 Smaller than 1024 wide
+	10.4 At least 768 wide
+	10.5 Between 640 wide and 768 wide
+	10.6 Smaller than 768 wide
+	10.7 Smaller than 640 wide
+	10.8 Smaller than 480 wide
+	10.9 Smaller than 400 wide
+
+*/
+
+/* ================ 1. Column Layouts ================ */
+
+/*1.1 Percentage based columns*/
+
+.onewhole { width: 100%; }
+
+.onehalf { width: 50%; }
+
+.onethird { width: 33.333333%; }
+
+.twothirds { width: 66.666666%; }
+
+.onefourth { width: 25%; }
+
+.threefourths { width: 75%; }
+
+.onefifth { width: 20%; }
+
+.twofifths { width: 40%; }
+
+.threefifths { width: 60%; }
+
+.fourfifths { width: 80%; }
+
+.onesixth { width: 16.666666666666667%; }
+
+.fivesixths { width: 83.33333333333334%; }
+
+.oneseventh { width: 14.28571428571429%; }
+
+.twosevenths { width: 28.57142857142858%; }
+
+.threesevenths { width: 42.85714285714287%; }
+
+.foursevenths { width: 57.14285714285716%; }
+
+.fivesevenths { width: 71.42857142857145%; }
+
+.sixsevenths { width: 85.71428571428574%; }
+
+.oneeighth { width: 12.5%; }
+
+.twoeights { width: 25%; } /*same as .onefourth*/
+
+.threeeighths { width: 37.5%; }
+
+.foureighths { width: 50%; } /*same as .onehalf*/
+
+.fiveeighths { width: 62.5%; }
+
+.sixeighths { width: 75%; } /*same as .threefourths*/
+
+.seveneighths { width: 87.5%; }
+
+.oneninth { width: 11.11111111111111%; }
+
+.twoninths { width: 22.22222222222222%; }
+
+.threeninths { width: 33.33333333333333%; } /*same as .onethird*/
+
+.fourninths { width: 44.44444444444444%; }
+
+.fiveninths { width: 55.55555555555555%; }
+
+.sixninths { width: 66.66666666666666%; } /*same as .twothirds*/
+
+.sevenninths { width: 77.77777777777777%; }
+
+.eightninths { width: 88.88888888888888%; }
+
+.onetenth { width: 10%; }
+
+.twotenths { width: 20%; } /*same as .onefifth*/
+
+.threetenths { width: 30%; }
+
+.fourtenths { width: 40%; } /*same as .twofifths*/
+
+.fivetenths { width: 50%; } /*same as .onehalf*/
+
+.sixtenths { width: 60%; } /*same as .threefifths*/
+
+.seventenths { width: 70%; }
+
+.eighttenths { width: 80%; } /*same as .fourfifths*/
+
+.ninetenths { width: 90%; }
+
+.oneeleventh { width: 9.09090909090909%; }
+
+.twoelevenths { width: 18.18181818181818%; }
+
+.threeelevenths { width: 27.27272727272727%; }
+
+.fourelevenths { width: 36.36363636363636%; }
+
+.fiveelevenths { width: 45.45454545454545%; }
+
+.sixelevenths { width: 54.54545454545454%; }
+
+.sevenelevenths { width: 63.63636363636363%; }
+
+.eightelevenths { width: 72.72727272727272%; }
+
+.nineelevenths { width: 81.81818181818181%; }
+
+.tenelevenths { width: 90.9090909090909%; }
+
+.onetwelfth { width: 8.33333333333333%; }
+
+.twotwelfths { width: 16.66666666666666%; } /*same as .onesixth*/
+
+.threetwelfths { width: 24.99999999999999%; } /*same as .onefourth*/
+
+.fourtwelfths { width: 33.33333333333332%; } /*same as .onethird*/
+
+.fivetwelfths { width: 41.66666666666665%; }
+
+.sixtwelfths { width: 49.99999999999998%; } /*same as .onehalf*/
+
+.seventwelfths { width: 58.33333333333331%; }
+
+.eighttwelfths { width: 66.66666666666664%; } /*same as .twothirds*/
+
+.ninetwelfths { width: 74.99999999999997%; }
+
+.tentwelfths { width: 83.3333333333333%; } /*same as .fivesixths*/
+
+.eleventtwelfths { width: 91.66666666666663%; }
+
+.onewhole, .onehalf, .onethird, .twothirds, .oneforuth, .twofourths, .threefourths, .onefifth, .twofifths, .threefifths, .fourfifths, .onesixth, .twosixths, .threesixths, .foursixths, .fivesixths, .oneseventh, .twosevenths, .threesevenths, .foursevenths, .fivesevenths, .sixsevenths, .oneeighth, .twoeighths, .threeeighths, .foureighths, .fiveeighths, .sixeighths, .seveneighths, .oneninth, .twoninths, .threeninths, .fourninths, .fiveninths, .sixninths, .sevenninths, .eightninths, .onetenth, .twotenths, .threetenths, .fourtenths, .fivetenths, .sixtenths, .seventenths, .eighttenths, .ninetenths, .oneeleventh, .twoelevenths, .threeelevenths, .fourelevenths, .fiveelevenths, .sixelevenths, .sevenelevenths, .eightelevenths, .nineelevenths, .tenelevenths, .onetwelth, .twotwelths, .threetwelths, .fourtwelths, .fivetwelths, .sixtwelths, .seventwelths, .eighttwelths, .ninetwelths, .tentwelths, .eleventwelths { margin: auto; }
+
+.inner { padding: 10px 0; }
+
+.sidebar-inner { padding: 0 10%; }
+
+div.inner:empty { display: none; }
+
+/*================= 2. Responsive Column Layouts =================*/
+
+@media screen and (max-width: 767px) {
+
+/*make all the columns full width and clear them*/
+.onesixth,  .oneseventh, .oneeighth, .oneninth, .onetenth, .oneeleventh, .onetwelfth, .twothirds, .threefourths, .fourfourths, .threefifths, .fourfifths, .fivefifths, .foursixths, .fivesixths, .sixsixths, .foursevenths, .fivesevenths, .sixsevenths, .sevensevenths, .fiveeighths, .sixeighths, .seveneighths, .eighteighths, .fiveninths, .sixninths, .sevenninths, .eightninths, .nineninths, .sixtenths, .seventenths, .eighttenths, .ninetenths, .tentenths, .sixelevenths, .sevenelevenths, .eightelevenths, .nineelevenths, .tenelevenths, .elevenelevenths, .seventwelfths, .eighttwelfths, .ninetwelfths, .tentwelfths, .eleventwelfths, .twelvetwelfths, .onehalf, .onethird, .onefourth, .twofourths, .onefifth, .twofifths,     .twosixths, .threesixths,    .twosevenths, .threesevenths,     .twoeighths, .threeeighths, .foureighths,      .twoninths, .threeninths, .fourninths, .twotenths, .threetenths, .fourtenths, .fivetenths,      .twoelevenths, .threeelevenths, .fourelevenths, .fiveelevenths, .onetwelfth, .twotwelfths, .threetwelfths, .fourtwelfths, .fivetwelfths, .sixtwelfths {
+	width: 100%;
+	clear: both;
+}
+
+.sidebar-inner { padding: 0; }
+
+}
+
+/*but don't do it if a column has a class of "fixed" ...*/
+
+.fixed { clear: none; }
+
+.onehalf.fixed { width: 50% !important; }
+
+.onethird.fixed { width: 33.333333% !important; }
+
+.twothirds.fixed { width: 66.666666% !important; }
+
+.onefourth.fixed { width: 25% !important; }
+
+.threefourths.fixed { width: 75% !important; }
+
+.onefifth.fixed { width: 20% !important; }
+
+.twofifths.fixed { width: 40% !important; }
+
+.threefifths.fixed { width: 60% !important; }
+
+.fourfifths.fixed { width: 80% !important; }
+
+.onesixth.fixed { width: 16.666666666666667% !important; }
+
+/*================= 3. Header and Page Body Columns =================*/
+
+div.header {  }
+
+div.header .upper { height:65px; }
+
+div.header .lower { height:30px; }
+
+div.head-logo {
+	position: absolute;
+	z-index: 1;
+}
+
+div.head-nav {
+	position: relative;
+	z-index: 9999;
+}
+
+.page-body {
+	max-width: 990px;
+	margin: auto;
+	padding: 0;
+	clear: both;
+}
+
+
+.header-inner, .header .inner, .footer .inner, .page_body, .nav-main {
+	max-width: 970px;
+	margin: auto;
+	
+}
+
+@media screen and (max-width: 990px) {
+.header-inner, .header .inner, .footer .inner, .page_body, .nav-main {
+	padding: 0% 2%;
+}
+
+}
+
+/*customize header column widths*/
+
+.col1-head { width: 25%; float:left;}
+
+.col2-head { width: 75%; float:left;}
+
+
+
+.col1-head .logo { z-index: 100; }
+
+.col2-head .tag {
+	float: left;
+	margin: 30px 0 0 30px;
+	color: #666;
+}
+
+.col2-inner { padding: 0 20px 0 0 }
+
+.wrapper {
+	max-width: 100%;
+	margin: auto
+}
+
+@media screen and (max-width: 890px) {
+
+.col2-head .tag { margin: 30px 0 0 50px }
+}
+
+@media screen and (max-width: 770px) {
+
+.col2-head .tag { margin: 30px 0 0 80px }
+}
+
+@media screen and (max-width: 660px) {
+
+.col2-head .tag {
+	margin: 0;
+	text-align: center;
+	width: 100%
+}
+
+.col2-inner { padding: 0 }
+}
+
+.header {
+	padding: 0;
+	
+}
+
+div.header-mobile div.header-bar {
+    padding: 0;
+    background-color: #e9e9ea;
+    background-image: url(/img/cefcu-logo-wide-hires.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+@media screen and (max-width: 640px) {
+	div.header-mobile div.header-bar {
+   
+    background-size: 60%;
+   
+}
+}
+
+@media screen and (max-width: 520px) {
+	div.header-mobile div.header-bar {
+   
+    background-size: 68%;
+
+}
+}
+
+.header .logo {
+    width: 200px;
+    height: 67px;
+    background-size: 200px 87px;
+    margin: 15px 0;
+    background-image: url(/img/cefcu-logo-stacked-hires.png);
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    text-indent: -9999em;
+}
+
+.header .logo a {
+	display:block;
+	width: 160px;
+	height: 50px;
+	background-color: transparent;
+	
+	-moz-box-shadow: none;/*FF 3.5+*/
+	-webkit-box-shadow: none;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+	box-shadow: none;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */	
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and ( -o-min-device-pixel-ratio: 21), only screen and ( min-device-pixel-ratio: 2), only screen and ( min-resolution: 192dpi), only screen and ( min-resolution: 2dppx) {
+
+.header .logo {
+	width: 200px;
+	max-width: 200px;
+	background-size: 200px 87px
+}
+}
+
+
+/* ================ 4. Site Layout Containers ================ */
+
+.wrapper {/*global container to set width and center*/
+	max-width: 100%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	float: none !important;
+}
+
+.wrapper_inner { margin: auto }
+
+
+
+.header, .footer {
+	width: 100%;
+	margin: auto;
+}
+
+.header .inner {
+	margin: auto;
+	padding: 0 10px;
+}
+
+.footer .inner { margin: auto; }
+
+
+
+/* ================ 5. Clearfix and Clearing ================ */
+
+.clearfix:before, .clearfix:after, .fix:before, .fix:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix:after, .fix:after { clear: both; }
+
+.clearfix, .fix { zoom: 1; }
+
+.clear { clear: both; }
+
+.clearleft { clear: left; }
+
+.clearright { clear: right; }
+
+/* ================ 6. Floating ================ */
+
+.left { float: left; }
+
+.right { float: right; }
+
+/*================= 7. Show or hide for varying screen sizes =================*/
+
+
+
+.col2 .sidebar, .tabbedca-title { display: none !important; }
+
+/* don't display promotions in the main content column (yet)*/
+
+.col1-wide .sidebar, .col2 .sidebar, .col2-wide .sidebar { display: none; }
+
+/* ================ 8. Header Elements ================ */
+
+
+/*dont display the mobile header by default*/
+div.header-mobile { display: none; }
+
+div.header-mobile div.header-bar a { padding: 12px 0px 11px 10px; text-decoration:none;}
+
+
+/*search container*/
+div.header div.search {
+	margin: 0;
+	float: right;
+	padding:4px;
+}
+
+/*topnav container*/
+div.topnav {
+	clear: both;
+	float: right;
+	position: relative;
+	z-index: 10;
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+/*show the mobile menu now*/
+div.header-mobile { display: block; }
+
+div.header { display: none; }
+
+/*remove the top, split, sub and main nav because they are all accomodated in the mobile menu*/
+div.topnav, div.nav-split, div.nav-main, header .inner div.search, div.mega-wrapper, div.subnav { display: none; }
+
+.col1-wide .sidebar, .col2 .sidebar, .col2-wide .sidebar { display: block; }
+
+button.search-button, button.account-button { font-size: 20px; }
+
+.col1-head, .col2-head { width: 50% }
+
+.header.bar-main { margin: 0; }
+
+.account-menu { top: 50px; }
+}
+
+@media screen and (max-width: 660px) {
+
+div.header-mobile div.header-bar div.onethird { width: 15% !important; clear:none;}
+
+div.header-mobile div.header-bar div.twothirds { width: 85% !important; clear:none;}
+}
+
+/*8.2 header search and locator boxes and their mobile versions*/
+
+/*main containers for the search and locator fields at full screen size*/
+.site-search, .site-locator {
+	float: left;
+	margin: 0 0 0 1em;
+}
+/*the search and locator boxes at full screen size*/
+.search-box, .locator-box {
+	width: 160px;
+	position: relative;
+	float: right;
+	display: inline-block;
+	z-index: 0;
+}
+/*the search and locator boxes at all screen sizes (mobile overrides follow)*/
+input.search-field, input.locator-field {
+	padding: 0 8px !important;
+	height: 30px;
+	width: 85%;
+	margin: 0;
+	border: solid 1px #005483 !important;
+	background-color:#CECFD5;
+	box-shadow: none !important;
+	font-family: 'Avenir W01', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	color: #6d6e71;
+}
+input.search-field {
+	
+	
+	height:36px;
+	
+}
+input.locator-field {
+	border-color: #77942b;
+	color: #77942b;
+}
+/*search and locator fields and the buttons for ALL screen sizes*/
+input.search-field, button.search-button, input.locator-field, button.locator-button {
+}
+input.search-field:focus, button.search-button:focus, input.locator-field:focus, button.locator-button:focus {
+	outline-width: 0;
+}
+/*search and locator fields at mobile screen size only*/
+input.mobile-search-box, input.mobile-locator-box, button.mobile-search-button, button.mobile-locator-button {
+	height: 50px;
+	border: none;
+}
+input.mobile-search-field, input.mobile-locator-field {
+	height: 50px;
+	border: none !important;
+	font-size: 20px;
+}
+input.mobile-search-field {
+	border-color: #007C88;
+	color: #007C88;
+}
+input.mobile-locator-field {
+	border-color: #77942b;
+	color: #77942b;
+}
+/*the search and locator boxes at mobile screen size*/
+.mobile-search-box, .mobile-locator-box {
+	width: 0px; /*start with it closed*/
+	-webkit-transition: width .5s ease;
+	-moz-transition: width .5s ease;
+	-o-transition: width .5s ease;
+	transition: width .5s ease;
+}
+/*make the mobile search boxes wider when their respective button is clicked*/
+.mobile-search-box.search-box-open, .mobile-locator-box.locator-box-open {
+	width: 60%;
+}
+/*format the search and locator buttons for ALL screen sizes*/
+button.search-button, button.locator-button {
+	background: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	float: right;
+	display: inline-block;
+	padding: 4px;
+	height: 38px;
+	width: 38px;
+	position: relative;
+	z-index: 1;
+}
+
+button.search-button {
+	font-size: 18px;
+}
+button.search-button, button.mobile-search-button {
+	background-color: #005483;
+}
+button.locator-button {
+		font-size: 20px;
+}
+button.locator-button, button.mobile-locator-button {
+	background-color: #96ae3f;
+	
+}
+/*format the search and locator buttons for MOBILE only screen sizes*/
+
+button.mobile-search-button, button.mobile-locator-button {
+	height: 50px;
+	width: 15%;
+	float: right;
+}
+
+.header-mobile div.search {
+	display: block !important;
+	margin: 0 !important;
+}
+.header-mobile div.search {
+	width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+.header-mobile div.search .search-box-open, .header-mobile div.locator .locator-box-open {
+}
+.mobile-search-button, .mobile-locator-button {
+}
+}
+/* ================ 9. Homepage Elements ================ */
+
+
+
+
+/* ================ 10. General Responsive Elements ================ */
+
+img, iframe { max-width: 100%; }
+
+/* 10.2 Smaller than 1280 wide but larger than 768 wide */
+@media screen and (max-width: 1280px) and (min-width: 768px) {
+}
+
+/* 10.3 Smaller than 1024 wide */
+@media screen and (max-width: 1024px) {
+}
+
+/* 10.4 At least 768 wide */
+@media screen and (min-width: 769px) {
+}
+
+/* 10.5 Between 640 wide and 768 wide */
+@media screen and (min-width: 641px) and (max-width: 768px) {
+}
+
+/* 10.6 Smaller than 767 wide */
+@media screen and (max-width: 767px) {
+
+/*	Interior page layout responsive...*/
+div.nav-main ul { display: block; }
+
+/*homepage primary content areas change to decked layout*/
+.home_content_area {
+	float: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-right: none;
+	clear: both;
+}
+
+/*tabbed content areas converted to non-tabbed areas*/
+div#tabs div.ca_tabs { display: none; }
+
+div#tabs div.ca_panel {
+	display: block !important;
+	visibility: visible !important;
+}
+
+/*re-layout regular content areas*/
+
+.footer .inner .footer-left, .footer .inner .footer-right {
+	width: 100%;
+	clear: both;
+}
+
+.footer-left, .footer-right {
+	float: right;
+	padding: 0 0 10px 0;
+}
+
+div.footer_quicklinks {
+	width: 100%;
+	margin: 10px 0;
+}
+
+.tabbedca-title { display: block !important; }
+
+.mainnav-col #subnav_div { display: block; }
+
+div.nav-sub {
+	margin: 0 0 30px 0 !important;
+	padding: 5px 0 0 0;
+}
+
+.mainnav-col #subnav_div .nav-sub h3 { display: none; }
+
+.mainnav-col #subnav_div.nav-sub ul li.nav-item {
+	display: inline-block;
+	width: auto;
+	vertical-align: middle;
+	margin: 0 1%;
+}
+
+div.nav-sub ul li.nav-item a { width: auto !important; }
+
+div.nav-sub ul li.nav-item a:hover { }
+
+div#calloutlink a { font-size: 95% !important; }
+}
+
+/* 10.7 Smaller than 640 wide */
+@media screen and (max-width: 767px) {
+
+/*=========== hide col3 and widen col2 ===========*/
+.col1 { display: none; }
+
+.col1-wide, .col2, .col2-wide, .col3 {
+	width: 100%;
+	clear: both;
+	border-right: none;
+}
+
+/*=========== display sidebar in col2, not col1 or col3 ===========*/
+
+.col1-wide .sidebar, .col2 .sidebar, .col2-wide .sidebar {
+	display: block !important;
+	margin: 3em 0 0 0;
+}
+
+.col1 .sidebar, .col3 .sidebar { display: none !important; }
+
+.header .inner {
+	border-bottom: none;
+	padding: 10px 1em;
+}
+
+.header-info-main { display: none; }
+
+.header-info-mobile { display: block; }
+
+nav.menu-main { }
+
+nav.menu-mobile { }
+
+input.search_field, input.search_active {
+	float: none;
+	width: 100%;
+}
+
+div.search_form input.submit, a.search_button { }
+
+header {
+	width: 100% !important;
+	max-width: 100%;
+}
+
+div.nav-top {
+	margin: 4px 0;
+	text-align: center !important;
+	clear: both;
+	width: auto !important;
+}
+
+div.header-info-mobile { text-align: center; }
+
+div.header-info-mobile .head-phone {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0 6px;
+}
+
+div.search_form { }
+
+.header .logo {
+	background-position: left;
+	margin: 25px 0 0 !important;
+	width: 100% !important;
+	clear: both;
+	position: relative;
+	z-index: 10;
+}
+
+.header .logo a {
+	margin: auto;
+	width: 100% !important;
+	margin: 0 !important;
+}
+
+.header .logo {
+	margin: 10px auto 20px auto !important;
+	background-position: center;
+}
+
+.header .inner .col1-head, .header .inner .col2-head {
+	display: block;
+	width: 100%;
+	clear: both;
+	text-align: center;
+	min-height: 0;
+}
+
+.header .inner .col2-head .upper {
+	display: block;
+	float: none;
+}
+
+.header .inner .col2-head .upper a {
+	max-width: 100%;
+	width: 39%;
+	text-align: center;
+}
+}
+
+/* 10.8 Smaller than 680 wide */
+@media screen and (max-width: 767px) {
+
+.header .inner .col1-head { }
+
+.header .inner .col2-head { display: table }
+
+.header .inner .col2-head .upper {
+	display: table-cell;
+	float: none;
+	height: auto;
+	vertical-align: middle;
+}
+
+.header .inner .col2-head .lower { display: none; }
+}
+
+/* 10.8 Smaller than 480 wide */
+@media screen and (max-width: 480px) {
+}
+
+/* 10.9 Smaller than 400 wide */
+@media screen and (max-width: 400px) {
+
+div.nav-main ul { width: 100% !important; }
+
+input.search_button { left: 2px; }
+}

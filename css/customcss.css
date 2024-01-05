@@ -1,0 +1,5 @@
+.dropdown-toggle::after{
+    position: relative;
+    top: 10px;
+    float: right;
+}

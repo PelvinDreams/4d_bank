@@ -1,0 +1,748 @@
+2020-06-16 11:28:46: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\q\code\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\q\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\q\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\q\code\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\q\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\q\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\q\code\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\q\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\q\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\q\code\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\q\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\q\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\q\code\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\q\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\q\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\q\code\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\q\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\q\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\q\code\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\q\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\q\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\q\code\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\q\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\q\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\q\code\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\q\code\qrmask.php</b> on line <b>155</b><br />
+2020-06-17 07:43:00: empty string!!!2020-07-06 14:43:05: empty string!!!2020-07-28 15:46:13: empty string!!!2020-07-29 20:51:00: empty string!!!2020-11-16 05:43:05: empty string!!!2020-11-16 05:43:11: empty string!!!2021-05-26 11:14:39: empty string!!!2021-05-26 11:42:44: empty string!!!2021-05-28 19:11:32: empty string!!!2021-08-10 02:21:27: empty string!!!2021-08-10 02:26:20: empty string!!!2021-08-10 02:33:38: empty string!!!2021-08-10 02:47:34: empty string!!!2021-08-10 03:00:08: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\cache\frame_2.dat): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2021-08-10 03:13:21: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\cache\frame_2.dat): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): Failed to open stream: No such file or directory in <b>C:\xampp\htdocs\shop\bank\4d bank\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2021-11-19 10:26:08: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2021-11-19 10:36:52: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2021-12-13 15:15:42: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2021-12-13 15:22:44: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2021-12-15 11:38:24: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2021-12-15 11:40:11: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2021-12-15 12:12:52: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2021-12-16 16:35:13: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2021-12-17 15:30:01: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2021-12-23 01:13:39: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2022-01-18 11:02:25: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2022-02-14 05:11:49: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2022-02-14 05:13:58: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2022-02-15 05:38:13: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2022-02-15 05:39:03: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2022-02-15 05:43:30: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2022-02-15 05:43:44: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2022-02-15 05:44:57: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+2022-02-15 05:46:09: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\4d_bank\secured\users\code\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\4d_bank\secured\users\code\qrmask.php</b> on line <b>155</b><br />

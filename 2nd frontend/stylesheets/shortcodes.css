@@ -1,0 +1,1358 @@
+/** 
+  * Effect
+  * Color
+  * Flat Button
+  * Row
+  * Divider
+  * Title-Section
+  * Flat Quote
+  * Flat Counter
+  * Video
+  * Flat-Accordion
+  * Flat Tab
+  * Countdown
+  * IconBox
+  * ImageBox
+  * Form Request
+  * InfoBox
+  * Maps
+  * Testimonials
+  * Pricing
+  * Teammember
+*/
+
+.flat-button, .fancybox:after, .fancybox:before, .iconbox, .flat-team .avatar img,  .wrap-testimonial #testimonial-carousel .slides li img, .imagebox .imagebox-image img, .testimonials.style2 .message, .testimonials.style2 .message::before, .fancybox:before, .fancybox:after, .imagebox .imagebox-content, .iconbox .box-content .box-title, .iconbox .box-content p, .iconbox .box-header .box-icon i, .iconbox .box-header .box-icon, .iconbox .box-header .box-icon {
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+}
+
+.social-links.style3.team, .flat-client .client, .flat-team.style2 .info-team {
+    -webkit-transition: all 0.2s ease-in-out;
+       -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+         -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+}
+
+
+.flat-button, .fancybox, .wrap-form span.flat-select, .flat-team.style2 .content, .infobox.style2 .info-map, .flat-counter .numb-count, .wrap-testimonial, .imagebox, .testimonials.style2 .message, .flat-maps-form2,.section-maps-form, .flat-accordion .toggle-title, .countdown .square .text, .title-section .title, .iconbox {
+    position: relative;
+}
+
+.flat-button::before, .fancybox:before, .imagebox .imagebox-content::after, .infobox.style2 .info-map::before, .flat-counter.before .numb-count::before, .testimonials.style2 .message::before, .iconbox.bg-image .effecthover::before, .iconbox .effecthover, .flat-accordion .toggle-title::before, .title-section.style3 .title::before, .countdown .square .text::before {
+    position: absolute;
+    content: "";
+}
+
+.fancybox:after, .wrap-form span.flat-select:after {
+    position: absolute;
+    font-family: "FontAwesome";
+}
+
+/* Effect */
+.imagebox .imagebox-content {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.imagebox:hover .imagebox-content, .flat-client .client:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+       filter: alpha(opacity=100);
+    opacity: 1;
+   visibility: visible;
+}
+
+.imagebox .imagebox-content, .social-links.style3.team {
+    -webkit-transform: translateX(-100%);
+       -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+         -o-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+
+.imagebox:hover .imagebox-content, .flat-team.style2:hover .social-links.style3.team {
+    -webkit-transform: translateX(0);
+       -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+         -o-transform: translateX(0);
+            transform: translateX(0);
+}
+
+.flat-team.style2:hover .info-team {
+    -webkit-transform: translateY(100%);
+       -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+         -o-transform: translateY(100%);
+            transform: translateY(100%);
+}
+
+
+.blog-shortcode .entry:hover, .flat-client:hover {
+    cursor: e-resize;
+}
+
+
+/* Color */
+.title-section .title span, .contactform label.error, .start i, .section-about .fancybox.color-white:hover:after, .pricing-item .header-pricing .price-number, .pricing-item .header-pricing .symbol, .title-section .symbol, .fancybox:hover:after, .section-about .fancybox:hover:after, .iconbox .box-header .box-icon i, .flat-counter .numb-count, .countdown .square .numb, .iconbox.style2:hover .box-header .box-icon i {
+    color: #f2c21a;
+}
+
+.fancybox:before, .flat-accordion .toggle-title.active::before, .testimonials.style2:hover .message, .testimonials.style2.active .message, .iconbox.style2 .box-header .box-icon, .title-section.style3 .title::before {
+    background-color: #f2c21a;    
+}
+
+/*color2 */
+.flat-accordion .toggle-title, .social-links.style3.team a:hover, .social-links.style3.team a, .title-section .sub-title.style2, .imagebox .imagebox-content .imagebox-title a:hover, .flat-counter.color-another .icon-count, .flat-counter.color-another .name-count {
+    color: #0f3661;
+}
+
+.flat-tabs ul.menu-tab li.active, .iconbox .effecthover, .infobox.style2 .info-map, .flat-team.style2 .info-team, .flat-quote .quote-link .flat-button.style2 {
+    background-color: #0f3661;
+}
+
+/* color3 */
+.flat-tabs ul.menu-tab li a, .title-section .sub-title, .pricing-item .header-pricing .price-month, .testimonials.style2 .avatar span.position, .flat-quote .quote-text p, .countdown .square .text {
+    color: #42435d;
+}
+
+.flat-accordion .toggle-title::before {
+    background-color: #42435d;
+}
+
+/* color white */
+.flat-counter.color-white .numb-count, .flat-counter .name-count, .flat-counter .icon-count, .flat-quote .quote-link .flat-button, .fancybox:after,
+.flat-accordion .toggle-title::after, .wrap-formcontact.style2 .contactform.style4 .flat-input button, .flat-button.color-white, .flat-quote .quote-text.color-white h3, .flat-quote .quote-text.color-white p, .section-about .fancybox.color-white:after, .flat-team.style2 .info-team .name, .testimonials.style2.active .message blockquote.whisper, .testimonials.style2:hover .message blockquote.whisper, .iconbox.style2 .box-header .box-icon i, .title-section.color-white .title, .title-section.color-white .sub-title, .iconbox.effect:hover .box-content .box-title, .iconbox.effect:hover .box-content p {
+    color: #ffffff;
+}
+
+.pricing-item, .social-links.style3.team a:hover {
+    background-color: #FFF;
+}
+
+.iconbox .effecthover, .iconbox.bg-image .effecthover::before, .iconbox.bg-image .effecthover img {
+    width: 100%; 
+    height: 100%;
+}
+
+/* Shadow */
+.wrap-iconbox {
+    box-shadow: 0px 16px 35px 0px rgba(0, 0, 0, 0.2); 
+}
+
+.iconbox.style3:hover {
+    box-shadow: 0px 25px 45px 0px rgba(0, 0, 0, 0.15); 
+}
+
+/* Flat Button
+-------------------------------------------------------------- */
+.flat-button {
+    position: relative;
+    z-index: 1;
+    padding: 9px 36px 13px 34px;
+    font-size: 14px;
+    font-weight: 600;
+    overflow: hidden;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    display: inline-block;
+    background: #f2c21a;
+    color: #28293a;
+    cursor: pointer;
+    text-transform: uppercase; 
+}
+
+.flat-button::before {
+    top: 50%;
+    right: 102%;
+    z-index: -1;
+    margin: -20px 0 0 1px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #0f3661;
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transform: scale3d(1, 2, 1);
+    transform: scale3d(1, 2, 1);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.9,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.9,1);
+}
+
+.flat-button:hover::before, .pricing-item.active .flat-button.style2::before, .pricing-item:hover .flat-button.style2::before {
+    -webkit-transform: scale3d(-9, 9, 1);
+    transform: scale3d(-9, 9, 1);
+}
+
+.flat-button:hover {
+    color: #fff;
+}
+
+/* Style2 */
+.flat-button.style2 {
+    background-color: #0F3661;
+    color: #fff;
+}
+
+.flat-button.style2::before {
+    background-color: #f2c21a;
+}
+
+/* Style2 */
+.flat-button.style3 {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff; 
+}
+
+/* Row
+-------------------------------------------------------------- */
+.flat-row {
+	clear: both;
+    display: block;
+    position: relative;
+    padding: 80px 0;    
+}
+
+.flat-row.blog-posts { padding: 80px 0px 62px; }
+.flat-row.blog-list, .flat-row.blog-grid { padding: 80px 0px 63px; }
+.flat-row.project-single { padding: 80px 0px 64px; }
+.flat-row.blog-masonry { padding: 80px 0px 73px; }
+.flat-row.section-project-dynamic { padding: 82px 0px 50px; }
+.flat-row.flat-project-v1 { padding: 100px 0px 68px; }
+.flat-row.flat-project-v2 { padding: 80px 0px 75px; }
+.flat-row.services-grid { padding: 69px 0px 40px; }
+.flat-row.project-grid { padding: 79px 0px 72px; }
+.flat-quote { padding: 29px 0px; }
+.flat-row.section-client { padding: 30px 0px; }
+.flat-row.section-counter { padding: 73px 0px; }
+.flat-row.section-404 { padding: 191px 0px 232px; }
+.section-maps-form.style2 { padding: 50px 0px; }
+.flat-row.section-testimonials { padding: 73px 0px 49px; }
+.flat-row.section-testimonials2 { padding: 93px 0px 63px; }
+.flat-row.section-testimonials2.padding2 { padding: 104px 0px 73px; }
+.flat-row.section-testimonials2.padding3 { padding: 93px 0px 68px; }
+.flat-row.section-testimonials2.padding4 { padding: 95px 0px 63px; }
+.flat-row.section-testimonials2.padding5 { padding: 23px 0px 72px; }
+.flat-row.section-counter2 { padding: 83px 0px; }
+.flat-row.section-iconbox { padding: 83px 0px 60px; }
+.flat-row.section-iconbox.padding2 { padding: 71px 0px 54px; }
+.flat-row.page-teammember { padding: 70px 0px 42px; }
+.flat-row.page-teammember2 { padding: 62px 0px 39px; }
+.flat-row.page-teammember2.padding2 { padding: 72px 0px 67px; }
+.flat-row.page-careers { padding: 0px 0px 58px; }
+.flat-row.section-services2 { padding: 82px 0px 31px; }
+.flat-row.section-services3 { padding: 95px 0px 31px; }
+.flat-row.section-image { padding: 71px 0px 132px; }
+.flat-row.section-icon { padding: 0px 0px 31px; }
+.flat-row.padingbotom { padding: 0px 0px 68px; }
+.flat-row.section-product { padding: 3px 0px 10px; }
+.flat-row.section-product2 { padding: 70px 0px 20px; }
+.flat-row.section-product.single { padding: 3px 0px 1px; }
+.flat-row.product-single { padding: 80px 0px 69px; }
+.flat-row.v1 { padding: 74px 0px 34px; }
+.flat-row.v1.padding2 { padding: 63px 0px 21px; }
+.flat-row.v2 { padding: 83px 0px 60px; }
+.flat-row.v3 { padding: 74px 0px 80px; }
+.flat-row.v4 { padding: 63px 0px 71px; }
+.flat-row.v5 { padding: 89px 0px 86px; }
+.flat-row.v6 { padding: 61px 0px 30px; }
+.flat-row.v7 { padding: 72px 0px 81px; }
+.flat-row.v8 { padding: 73px 0px 80px; }
+.flat-row.v9 { padding: 80px 0px 76px; }
+.flat-row.v10 { padding: 51px 0px 80px; }
+.flat-row.v11 { padding: 72px 0px 71px; }
+.flat-row.v12 { padding: 78px 0px 58px; }
+.flat-row.v13 { padding: 71px 0px 61px; }
+.flat-row.v14 { padding: 61px 0px 71px; }
+
+/* Background Color */
+.bg-theme { background-color: #f2c21a; }
+.bg-section { background-color: #edeff1; }
+.bg-section2 { background-color: #f4f5f8; }
+
+/* Space */
+.padding-lr79 { padding: 0px 79px; }
+.padding-lr100 { padding: 0px 100px; }
+.padding-lr140 { padding: 0px 140px; }
+.padding-lr180 { padding: 0px 180px; }
+.padding-lr210 { padding: 0px 210px; }
+.padding-lr35 { padding: 0px 35px; }
+.padding-lr65_5 { padding: 0px 5px 0px 65px; }
+.padding-lr5_65 { padding: 0px 65px 0px 5px; }
+
+.padding-left43 { padding-left: 43px; }
+.padding-left70 { padding-left: 70px; }
+.padding-left50 { padding-left: 50px; }
+.padding-right30 { padding-right: 30px; }
+
+.margin-right_15 { margin-right: -15px; }
+.margin-right_30 { margin-right: -30px; }
+.margin-left_12 { margin-left: -12px; }
+.margin-left_15 { margin-left: -15px; }
+.margin-left_25 { margin-left: -25px; }
+.margin-left_2 { margin-left: -2px; }
+.margin-left21 { margin-left: 21px; }
+.margin-left25 { margin-left: 25px; }
+.margin-left29 { margin-left: 29px; }
+.margin-left32 { margin-left: 32px; }
+.margin-left37 { margin-left: 37px; }
+.margin-left40 { margin-left: 40px; }
+.margin-left53 { margin-left: 53px; }
+.margin-left68 { margin-left: 68px; }
+.margin-top_81 { margin-top: -81px; }
+.margin-top_121 { margin-top: -121px; }
+.margin-top7 { margin-top: 7px; }
+.margin-top9 { margin-top: 9px; }
+.margin-top11 { margin-top: 11px; }
+.margin-top12 { margin-top: 12px; }
+.margin-top26 { margin-top: 26px; }
+.margin-top14 { margin-top: 14px; }
+.margin-top36 { margin-top: 36px; }
+.margin-top49 { margin-top: 49px; }
+.margin-bottom-73 { margin-bottom: 73px; }
+.margin-bottom-79 { margin-bottom: 79px; }
+
+
+/* Divider
+--------------------------------------------------------*/
+.divider {
+    height: 30px;
+    clear: both;
+}
+.divider.sh94 { height: 94px; }
+.divider.sh72 { height: 72px; }
+.divider.sh35 { height: 35px; }
+.divider.sh26 { height: 26px; }
+.divider.sh5 { height: 5px; }
+
+/* Title-Section 
+--------------------------------------------------------*/
+.title-section {
+    margin-bottom: 42px;
+}
+
+.title-section .sub-title {
+    font-size: 16px;    
+    line-height: 28px;
+}
+
+.title-section .sub-title.style2 {
+    font-size: 18px;
+}
+
+.title-section .sub-title.linehight30 {
+    line-height: 30px;
+}
+
+.title-section .sub-title.style3 {
+    font-weight: 500;
+    line-height: 26px;
+}
+
+/* Symbol */
+.title-section .symbol {
+    font-family: 'Playfair Display', serif;
+    font-size: 120px;
+}
+
+/* Sub */
+.title-section.sub {
+    margin-bottom: 39px;
+}
+
+.title-section.sub .title {
+    margin-bottom: 9px;
+}
+
+/* Style2 */
+.title-section.style2 {
+    margin-bottom: 43px;
+}
+
+.title-section.style2 .title {
+    margin-bottom: 9px;
+}
+
+.title-section.style2.left {
+    margin-bottom: 52px;
+}
+
+.title-section.style2.titlesize48 .title {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 22px;
+}
+
+/* Style3 */
+.title-section.style3 {
+    margin-bottom: 50px;
+}
+
+.title-section.style3 .title {
+    padding-bottom: 28px;   
+    margin-bottom: 41px;
+}
+
+.title-section.style3 .title::before {
+    left: 50%;
+    bottom: 0px;
+    margin-left: -40px;
+    width: 80px;    
+    height: 5px; 
+}
+
+/* Style3 left */
+.title-section.style3.left {
+    margin-bottom: 62px;
+}
+
+.title-section.style3.left .title::before {
+    left: 0;
+    margin-left: 0;
+}
+
+.title-section.style3.left .sub-title {
+    padding-left: 51px;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+/* Flat Quote
+--------------------------------------------------------*/
+.flat-quote .quote-text h3 {
+    margin-bottom: 2px;
+}
+
+.flat-quote .quote-text p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.flat-quote .quote-link {
+    margin-top: 8px;    
+}
+
+.flat-quote .quote-link .flat-button {
+    background-color: #1c0f61;
+    font-weight: 700;
+    padding: 9px 38px 13px 38px;
+}
+
+/* Flat Counter
+-------------------------------------------------------------- */
+.flat-counter .icon-count {
+    font-size: 36px;
+    margin-bottom: 19px;
+}
+
+.flat-counter .numb-count {
+    font-size: 54px;
+    line-height: 55px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.flat-counter .name-count {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Style2 */
+.flat-counter.style2, .flat-counter.style2.padding-another .name-count {
+    padding-left: 6px;
+}
+
+.flat-counter.style2.padding-another {
+    padding-left: 0;
+}
+
+.flat-counter.style2 .numb-count {
+    font-size: 60px;
+    line-height: 60px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.flat-counter.style2 .name-count {
+    font-weight: 700;
+}
+
+.flat-counter.before .numb-count::before {
+    right: -22px;
+    bottom: 5px;
+    content: "k";
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.flat-counter.before.percent .numb-count::before {
+    content: "%";
+    right: -35px;
+}
+
+/* Video
+-------------------------------------------------------------- */
+.flat-video {
+    width: 42.5287356322%;
+    margin-right: 3.44827586207%;
+}
+
+.wrap-acadion {
+    width: 54.0229885057%;    
+}
+
+.fancybox:before {
+    width: 49px;
+    height: 49px;
+    border: 1px solid #f2c21a;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -23px;
+    right: 44%;
+    margin-right: -3px;
+    z-index: 2;
+}
+
+.fancybox:after {
+    top: 50%;
+    right: 50%;
+    content: "\f04b";
+    font-size: 20px;
+    margin-top: -11px;
+    margin-right: -11px;
+    z-index: 3;
+}
+
+.fancybox:hover:before {
+    background-color: transparent;
+}
+
+/* Style2 */
+.section-about .fancybox:before {
+    width: 59px;
+    height: 59px;
+    margin-right: 0;    
+    margin-top: -29px;
+}
+
+.section-about .fancybox:after {
+    color: #1e1e27;
+    margin-right: -9px;
+}
+
+/* Flat-Accordion
+-----------------------------------------------------------*/
+.flat-accordion .toggle-title {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 11px 0px 12px 40px;
+}
+
+.flat-accordion .toggle-title::before {
+    left: 0;
+    top: 12px;
+    width: 20px;
+    height: 20px;
+}
+
+.flat-accordion .toggle-title::after {
+    position: absolute;
+    left: 2px;
+    top: 10px;
+    content: "\4c";
+    font-family: 'ElegantIcons';
+}
+
+.flat-accordion .toggle-title.active::after {
+    content: "\4b";
+}
+
+.flat-accordion .toggle-content {
+    display: none;
+    padding: 9px 0px 8px 0px;
+    overflow: hidden;
+}
+
+.flat-accordion .flat-toggle:last-of-type .toggle-title {
+    padding: 15px 0px 12px 40px;
+}
+
+.flat-accordion .flat-toggle:last-of-type .toggle-title::before {
+    top: 18px;
+}
+
+.flat-accordion .flat-toggle:last-of-type .toggle-title::after {
+    top: 15px;
+}
+
+/* Flat Tab
+-------------------------------------------------------------- */
+.flat-tabs ul.menu-tab li {
+    background: #f4f6f8;
+    float: left;
+    width: 25%;
+    cursor: pointer;
+    text-align: center;
+    padding: 13px 0px;
+    border-right: 1px solid #fff;
+}
+
+.flat-tabs ul.menu-tab li.active a {
+    color: #fff;
+}
+
+.flat-tabs ul.menu-tab li a {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 6px;
+}
+
+.flat-tabs .content-tab {
+    padding: 24px 28px 32px 30px;
+    border: 1px solid #ebebeb;
+    border-top: none;
+}
+
+.flat-tabs .content-tab h3, .flat-tabs .content-tab p {
+    margin-bottom: 6px;
+}
+/* Countdown
+-------------------------------------------------------------- */
+.countdown {
+    padding-bottom: 36px;
+    border-bottom: 2px solid #e1e3e6;
+    margin: 0px 37px 74px 34px;
+}
+
+.countdown .square, .countdown .square .numb, .countdown .square .text {
+    float: left;
+}
+
+.countdown .square {
+    width: 25%;
+    padding-left: 59px;
+}
+
+.countdown .square .numb {
+    font-size: 48px;
+    line-height: 48px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+}
+
+.countdown .square .text {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 25px 0px 0px 7px;
+
+}
+
+.countdown .square .text::before {
+    left: 0;
+    bottom: 0;
+    content: "/"
+}
+
+/* IconBox
+-----------------------------------------------------------*/
+.wrap-iconbox {
+    background-color: #fff;
+    z-index: 1;
+}
+
+.wrap-iconbox li {
+    float: left;
+    width: 33.3333333333%;
+}
+
+.iconbox {
+    padding: 48px 45px 41px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.wrap-iconbox li:first-of-type .iconbox {
+    padding-right: 62px;
+    padding-left: 41px;
+}
+
+.wrap-iconbox li:last-of-type .iconbox {
+    padding-right: 41px;
+    padding-left: 61px;
+}
+
+.iconbox .box-header .box-icon {
+    margin-bottom: 22px;
+}
+
+.iconbox .box-header .box-icon i {
+    font-size: 36px;
+}
+
+.iconbox .box-content .box-title {
+    margin-bottom: 8px;
+}
+
+.iconbox .box-content p {
+    line-height: 26px;
+}
+
+/* Bg-image */
+.iconbox .effecthover {
+    top: 0px;
+    left: -100%;
+    z-index: -1;
+}
+
+.iconbox.bg-image {
+    padding: 50px 45px 41px;
+}
+
+.iconbox.bg-image .effecthover::before {
+    left: 0;
+    top: 0;
+    background: rgba(15, 54, 97, 0.8);
+}
+
+/* Icon Left */
+.featured-iconbox {
+    padding-left: 6px;
+}
+
+.flat-icon-left .iconbox {
+    margin-left: -2px;
+}
+
+.flat-icon-right .iconbox {
+    margin-left: 15px;
+}
+
+.iconbox.iconleft {
+    padding: 38px 26px 0px 0px;
+}
+
+.iconbox.iconleft .box-header {
+    float: left;
+    margin-right: 25px;
+}
+
+.iconbox.iconleft .box-content {
+    overflow: hidden;
+}
+
+/* Style2 */
+.flat-row.v1 .title-section.style3 {
+    margin-bottom: 61px;
+}
+
+.iconbox.iconleft.style2 {
+    padding: 0px 10px 0px 0px;
+    margin-bottom: 41px;
+}
+
+.iconbox.iconleft.style2 .box-header {
+    margin-right: 18px;
+}
+
+.iconbox.style2 .box-header .box-icon {
+    width: 59px;
+    height: 59px;
+    border: 1px solid #f2c21a;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    text-align: center;  
+    margin-bottom: 0; 
+}
+
+.iconbox.style2 .box-header .box-icon i {
+    font-size: 30px;
+    line-height: 60px;
+    color: #FFF;
+}
+
+.iconbox.style2 .box-content .box-title,
+.iconbox.style3 .box-content .box-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.iconbox.style2 .box-content .box-title {
+    margin: -1px 0px 9px 0px;
+}
+
+.iconbox.style2:hover .box-header .box-icon {
+    background-color: transparent;
+    transform: rotateY(-180deg);
+}
+
+/* Style3 */
+.iconbox.style3 {
+    border: 1px solid #ebebeb;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding: 38px 45px 34px 39px;
+    background-color: #FFF;
+}
+
+.iconbox.style3 .box-header {
+    position: absolute;
+    right: -19px;
+    bottom: 13px;
+    z-index: -1;
+}
+
+.iconbox.style3 .box-header .box-icon {
+    margin-bottom: 0;
+}
+
+.iconbox.style3 .box-header .box-icon i {
+    font-size: 80px;
+}
+
+.iconbox.style3 .box-content .box-title {
+    margin-bottom: 9px;
+}
+
+/* ImageBox
+-----------------------------------------------------------*/
+.imagebox {
+    overflow: hidden;
+}
+
+.imagebox:hover .imagebox-image img {
+    -webkit-transform: scale(1.1);
+       -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+         -o-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+.imagebox .imagebox-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 19px 30px 14px 30px;
+    background-color: rgba( 242, 194, 26, 0.8);
+}
+
+.imagebox .imagebox-content::after {
+    right: 16px;
+    top: 28px;
+    font-family: 'themify';
+    content: "\e649";    
+    font-size: 24px;
+    color: #28293a;
+}
+
+.imagebox .imagebox-content .imagebox-title {
+    margin-bottom: 3px;
+}
+
+.imagebox .imagebox-content .imagebox-category {
+    font-size: 14px;
+    color: #28293a;
+}
+
+.btn-showall .flat-button {
+    margin-top: 10px;
+    padding: 10px 30px 12px 32px;
+}
+
+/* Form Request
+-----------------------------------------------------------*/
+.wrap-form {
+    margin: 0px -5px;    
+}
+
+.wrap-form span.flat-input {
+    float: left;
+    width: 25%;
+    padding: 0px 5px;
+}
+
+.contactform span.title-form {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+.contactform .flat-input input, .contactform .flat-input select, .contactform .flat-input button {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 0;
+} 
+
+.contactform .flat-input input, .contactform .flat-input select{
+    padding-left: 18px;    
+}
+
+.contactform .flat-input button {
+    padding: 12px 36px 13px 34px;
+}
+
+.contactform .flat-input button i {
+    padding-left: 9px;
+}
+
+.contactform .flat-input input::placeholder, .contactform .flat-input select {
+    color: #28293a;
+}
+
+.contactform .flat-input select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.wrap-form span.flat-select:after {
+    right: 26px;
+    top: 13px;
+    content: "\f0d7";
+}
+
+/* Style2  */
+.flat-maps-form2 {
+    padding: 4.9% 19.3% 3% 4.45%;
+}
+.formrequest2 .title-section.style2 {
+    margin-bottom: 45px;
+}
+
+.formrequest2 .title-section .sub-title {
+    line-height: 26px;
+}
+
+.wrap-form.style2 span.flat-input {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+/* Style3 */
+.wrap-form.style3 {
+    margin: 0px 0px 0px 5px;
+    padding: 35px 42px 40px 38px;
+    background-color: rgba( 0, 0, 0, 0.3);
+}
+
+.formrequest2.style2 .title-section .sub-title {
+    line-height: 28px;
+}
+
+.contactform.style3 span.title-form {
+    padding-left: 0;
+}
+
+.wrap-form.style3 span.flat-input {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.wrap-form.style3 span.flat-input:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Style4 */
+.contactform.style4 .flat-input input {
+    margin-bottom: 29px;
+    height: 40px;
+    padding-left: 29px;
+}
+
+.contactform.style4 .flat-input textarea {
+    height: 238px;
+    padding: 24px 28px;
+    margin-bottom: 42px;
+}
+
+.contactform.style4 .flat-input input::placeholder, .contactform.style4 .flat-input textarea {
+    color: #b3b7c8;
+    font-size: 15px;
+}
+
+.contactform.style4 .flat-input button {
+    padding: 12px 36px 14px 34px;
+    letter-spacing: 1.2px;
+    height: auto;
+}
+
+.contactform.style4 .flat-button:hover::before {
+    -webkit-transform: scale3d(-17, 9, 1);
+    transform: scale3d(-17, 9, 1);
+}
+
+.wrap-formcontact.style2 .contactform.style4 .flat-input textarea {
+    height: 173px;
+    margin-bottom: 44px;
+}
+
+.wrap-formcontact.style2 .contactform.style4 .flat-input button {
+    font-size: 12px;
+    padding: 14px 36px 14px 34px;
+}
+
+/* InfoBox
+-----------------------------------------------------------*/
+.info-box h3 {
+    color: #3c3a42;
+    margin-bottom: 6px;
+}
+
+.info-box ul li {
+    color: #3c3a42;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* Maps
+-----------------------------------------------------------*/
+.infobox {
+    background-color: #fff;
+}
+
+.infobox .info-map {
+    overflow: hidden;
+    padding: 32px 79px 23px 30px;
+}
+
+.infobox .info-map h5 {
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.infobox.style2 {
+    background-color: transparent;
+}
+
+.infobox.style2 .info-map {
+    border-radius: 5px;
+    overflow: inherit;
+    padding: 28px 28px 18px 28px;
+}
+
+.infobox.style2 .info-map::before {
+    left: 50%;
+    top: -18px;
+    margin-left: -10px;
+    border-left: 12px solid white;
+    border-right: 12px solid white;
+    border-bottom: 12px solid #0f3661;
+    transform: translateY(50%);
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.infobox.style2 .info-map h5 {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: 700;   
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+}
+
+/* Testimonials
+-----------------------------------------------------------*/
+.section-testimonials .title-section .title {
+    margin-bottom: 46px;
+}
+
+.testimonials.style2 .message {
+    padding: 23px 26px 27px 31px;
+    background-color: #fff;
+    margin-bottom: 28px;
+}
+
+.testimonials.style2 .message::before {
+    left: 44px;
+    bottom: -8px;
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+    border-top: 8px solid #fff;
+    transform: translateX(50%);
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.testimonials.style2:hover .message::before, .testimonials.style2.active .message::before {
+    border-top: 8px solid #f2c21a;
+}
+
+.testimonials.style2 blockquote.whisper {
+    line-height: 26px;
+    margin-bottom: 0;
+}
+
+.testimonials .avatar .testimonial-author-thumbnail {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    float: left;
+    margin: 0px 19px 0px 25px;
+}
+
+.testimonials.style2 .avatar span.name, .testimonials.style3 .avatar span.name {
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    margin: 10px 0px 0px 0px;
+}
+
+.testimonials.style2 .avatar span.position, .testimonials.style3 .avatar span.position {
+    font-size: 14px;
+}
+
+.flat-testimonials2.owl-theme .owl-dots {
+    text-align: center;
+    padding-top: 35px;
+    padding-left: 0;
+}
+
+.flat-testimonials2.owl-theme .owl-dots .owl-dot span {
+    border: 2px solid #0f3661;
+    margin: 4px 5px 4px 6px;
+}
+
+.flat-testimonials2.owl-theme .owl-dots .owl-dot.active span, .flat-testimonials2.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #0f3661;
+}
+
+/* Style3 */
+.section-testimonials2 .title-section {
+    margin-bottom: 22px;
+}
+.section-testimonials2 .symbol {
+    margin-bottom: 17px;
+}
+
+.testimonials.style3 .message {
+    margin-bottom: 147px;
+}
+
+.testimonials.style3 blockquote.whisper {
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.wrap-testimonial .testimonials.style3 .avatar span.name {
+    margin: 0px 0px 0px 0px;
+    padding-right: 0;
+}
+
+.testimonials.style3 .avatar span.position {
+    color: #28293a;
+}
+
+.testimonials.style3 .start {
+    margin: -4px 0px 0px 4px;
+}
+
+.start i {
+    font-size: 14px;
+    margin: 0px -2.5px;
+}
+
+.wrap-testimonial #testimonial-carousel {
+    position: absolute;
+    left: 0;
+    top: 122px;
+    width: 100%;
+    padding: 0px 444px;
+}
+
+.wrap-testimonial #testimonial-carousel .flex-viewport {
+    padding: 20px 0px 22px;
+}
+
+.wrap-testimonial #testimonial-carousel .slides {
+    transform: none!important;
+}
+
+.wrap-testimonial #testimonial-carousel .slides li {
+    text-align: center;
+    cursor: pointer;
+    width: 95px!important;
+}
+
+.wrap-testimonial #testimonial-carousel .slides li img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.wrap-testimonial #testimonial-carousel .slides li:hover img,
+.wrap-testimonial #testimonial-carousel .slides li.flex-active-slide img {
+    width: 90px;
+    height: 90px;
+    margin-top: -15px;
+}
+
+/* Pricing
+-----------------------------------------------------------*/
+.pricing-item {
+    padding: 27px 40px 33px;
+}
+
+.pricing-item .header-pricing {
+    padding-bottom: 23px;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 37px;
+}
+
+.pricing-item .header-pricing h6 {
+    margin-bottom: 16px;
+}
+
+.pricing-item .header-pricing span {
+    display: inline-block;
+}
+
+.pricing-item .header-pricing .symbol {
+    vertical-align: top;
+    font-size: 18px;
+    margin-top: -9px;
+}
+
+.pricing-item .header-pricing .price-number {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0px -3px;
+}
+
+.pricing-item .header-pricing .price-month {
+    font-size: 14px;
+}
+
+.pricing-item .pricing-content {
+    margin-bottom: 38px;
+}
+
+.pricing-item .pricing-content li {
+    line-height: 36px;
+    color: #5C6774;
+}
+
+.pricing-item .flat-button {
+    padding: 10px 25px 12px 25px;
+}
+
+/* Teammember
+-----------------------------------------------------------*/
+.page-teammember .title-section.style3 {
+    margin-bottom: 44px;
+}
+
+.flat-team {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.flat-team .avatar {
+    overflow: hidden;
+}
+
+.flat-team:hover .avatar img {
+    -webkit-transform: scale(1.1) rotate(2deg);
+       -moz-transform: scale(1.1) rotate(2deg);
+        -ms-transform: scale(1.1) rotate(2deg);
+         -o-transform: scale(1.1) rotate(2deg);
+            transform: scale(1.1) rotate(2deg);
+}
+
+.flat-team .content {
+    border: 1px solid #ebebeb;
+    border-top: none;
+    padding-top: 27px;
+}
+
+.flat-team .content .name {
+    margin-bottom: 3px;
+}
+
+.flat-team .content .position {
+    color: #b5b7d2;
+    margin-bottom: 23px;
+}
+
+.social-links.style2.team {
+    padding-right: 0;
+    margin-right: -4px;
+}
+
+.social-links.style2.team li a {
+    background-color: #f4f5f8;
+    color: #aeb0ca;
+    line-height: 52.5px;
+    width: 52.5px;
+    height: 52.5px;
+}
+
+.social-links.style2.team li a:hover {
+    color: #0d2034;
+}
+
+/* Style2 */
+.flat-team.style2:hover .avatar img {
+    -webkit-transform: scale(1) rotate(0deg);
+       -moz-transform: scale(1) rotate(0deg);
+        -ms-transform: scale(1) rotate(0deg);
+         -o-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+
+}
+
+.flat-team.style2 .content {
+    border: none;
+    padding: 0;
+}
+
+.flat-team.style2 .info-team {
+    padding: 18px 0px 15px;
+}
+
+.flat-team.style2 .info-team .position {
+    margin-bottom: 0;
+}
+
+.social-links.style3.team {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #f2c21a;
+    padding: 25px 0px;
+}
+
+.social-links.style3.team li {
+    padding: 0px 8px;
+}
+
+.social-links.style3.team a {
+    font-size: 14px;
+}
+
+.page-teammember2 .title-section {
+    margin-bottom: 39px;
+}
+
+.page-teammember2 .title-section .title {
+    margin-bottom: 9px;
+}
+
+.flat-client .client {
+    opacity: 0.3;
+}

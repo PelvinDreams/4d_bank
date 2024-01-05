@@ -1,0 +1,380 @@
+
+::selection{
+    background: #033d75;
+}
+::-moz-selection{
+     background: #033d75;
+}
+
+/*background image*/
+.feature-color-1{
+	background: linear-gradient(rgba(3, 61, 117, 0.9),rgba(3, 61, 117, 0.9)),url('../images/bg-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: none;
+	background-position: center;
+}
+.feature-color-2{
+	background: linear-gradient(rgba(239, 69, 77, 0.9),rgba(239, 69, 77, 0.9)),url('../images/bg-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: none;
+	background-position: center;
+}
+.feature-color-3{
+	background: linear-gradient(rgba(3, 61, 117, 0.9),rgba(3, 61, 117, 0.9)),url('../images/bg-4.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: none;
+	background-position: center;
+}
+.feature-color-4{
+	background: linear-gradient(rgba(239, 69, 77, 0.9),rgba(239, 69, 77, 0.9)),url('../images/bg-5.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: none;
+	background-position: center;
+}
+.business-portfolio-1x{
+	background: linear-gradient(rgba(3, 61, 117, 0.9),rgba(3, 61, 117, 0.9)),url('../images/bg-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+    clear: both;
+    overflow: hidden;
+}
+.business-cta-1x{
+	background: linear-gradient(rgba(3, 61, 117, 0.9),rgba(3, 61, 117, 0.9)),url('../images/bg-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.business-call-back-1x{
+	background: linear-gradient(rgba(3, 61, 117, 0.9),rgba(3, 61, 117, 0.9)),url('../images/bg-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.single-features-overlay{
+    background: linear-gradient(rgba(3, 61, 117, 0.9),rgba(3, 61, 117, 0.9));
+}
+.bussiness-counter-1x{
+	background: linear-gradient(rgba(3, 61, 117, 0.9),rgba(3, 61, 117, 0.9)),url('../images/bg-4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.business-cta-2x{
+	background: linear-gradient(rgba(3, 61, 117, 0.9),rgba(3, 61, 117, 0.9)),url('../images/bg-5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.business-cta-3x{
+	background: linear-gradient(rgba(3, 61, 117, 0.9),rgba(3, 61, 117, 0.9)),url('../images/bg-5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.business-app-present-1x{
+	background: linear-gradient(rgba(3, 61, 117, 0.9),rgba(3, 61, 117, 0.9)),url('../images/bg-6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.single-pricing-1x{
+    background: linear-gradient(rgba(3, 61, 117, 0.9),rgba(3, 61, 117, 0.9)),url(../images/bg-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.single-pricing-2x{
+    background: linear-gradient(rgba(3, 61, 117, 0.9),rgba(3, 61, 117, 0.9)),url(../images/bg-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.single-pricing-3x{
+    background: linear-gradient(rgba(3, 61, 117, 0.9),rgba(3, 61, 117, 0.9)),url(../images/bg-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.single-pricing-4x{
+    background: linear-gradient(rgba(3, 61, 117, 0.9),rgba(3, 61, 117, 0.9)),url(../images/bg-5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about-us-video{
+    background: linear-gradient(rgba(3, 61, 117, 0.5),rgba(3, 61, 117, 0.5)),url(../images/blog-7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: initial;   
+}
+.why-choose-us-right-2x{
+    background: linear-gradient(rgba(3, 61, 117, 0.9),rgba(3, 61, 117, 0.9)),url(../images/slider-9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: none;
+}
+
+
+
+/*Background color*/
+.backtotop,
+.top-menu-1x,
+.bussiness-footer-1x,
+.dropcaps strong,
+.business-onsale,
+.right-search-box button.search-button,
+.blog-pagination .page-item.active .page-link,
+.bussiness-contact-form .bussiness-btn-larg,
+.bussiness-contact-form a.bussiness-btn-larg,
+.single-address i,
+.business-timeline a.timeline-btn,
+.company-help-box,
+.company-boucher a,
+.top-menu-4x,
+.top-menu-3x,
+.top-menu-2x-custom,
+.footer-info-right ul li,
+.single-bolg a.read-more,
+.single-features,
+.dark-main-menu,
+.is-sticky .dark-main-menu,    
+.is-sticky .container-width-menu-1x,
+.container-width-menu,
+.bussiness-btn-larg:before,
+a.bussiness-btn-larg:before{
+     background: #033d75;
+}
+
+
+/* Font Color */
+.project-details h2,
+.dropcaps span,
+.single-latest-product .media-body a,
+.business-shop-item-text a:hover,
+.business-comment-body .media .media-body span i,
+.blog-post-next a,
+.blog-post-previous a,
+.blog-post-tag ul li,
+.blog-description span,
+.job-table td a,
+.job-table th,
+.single-faq .card-header .accordion-toggle.collapsed:after,
+.single-faq .card-header .accordion-toggle:after,
+.single-faq .card-header a,
+.single-address h4,
+.portfolio-1x  .portfolio-header-menu h2,
+.single-partner a,
+.business-timeline .timeline li .timeline-badge > a,
+.aboutus-slider-footer h2,
+.about-us-slider-content i,
+.company-help-box .bussiness-btn-larg:hover,
+.company-help-box a.bussiness-btn-larg:hover,
+.right-menubar ul li a,
+.mission-right ul li:before,
+.video i,
+.mission-right h3,
+.about-company-left h2,
+.single-service-center a,
+.pricing-top span,
+.top-menu-2 .media i,
+.single-app-present .media-body h2,
+.single-app-present .media i,
+.testimonial-slider-content h2,
+.blog-content a,
+.team-members-right a,
+.single-services .media-body a,
+.single-services .media i,
+.single-features .media i,
+.overlay-text h2,
+.dark-main-menu .box:hover i,
+.container-2 input#search,
+.business-cart a>span,
+.business-cart a i,
+.business-cart i,
+.business-main-menu .navbar-nav .nav-link,
+.business-title-left h2,
+.business-title-middle h2,
+a:hover,
+a:focus,
+a:active,
+blockquote:before {
+    color: #033d75;
+}
+
+/*background color*/
+
+
+
+.spinner7 > div,
+.spinner6 > div,
+.cube1, .cube2,
+.spinner4,
+.dot1, .dot2,
+.container1 > div, .container2 > div, .container3 > div,
+.double-bounce1, .double-bounce2,
+.bussiness-tab-accordion .nav-tabs .nav-link.active,
+.business-shop-text,
+.portfolio-1x  .simplefilter li,
+.portfolio-1x  .multifilter li,
+.portfolio-1x  .sortandshuffle li{
+    background-color: #033d75;
+}
+
+/*border-color*/
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus,
+textarea.form-control:focus,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover{
+    border-color: #033d75;
+}
+
+
+/*Border color*/
+.title-border-left:after,
+.title-border-middle:after,
+.animatedhover{
+    border: 1px solid #033d75;
+}
+
+/*bacground important*/
+.dropdown-item:focus,
+.dropdown-item:hover{
+    background: #033d75 !important;
+}
+
+/*box shadow*/
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus,
+textarea.form-control:focus{
+    box-shadow: 0 0px 0px #033d75 inset, 0 0 0px #033d75;
+}
+/*********************************************************************/
+
+/*background red*/
+
+.right-search-box button.search-button:hover,
+.facilities-box,
+.bussiness-contact-form .bussiness-btn-larg:before,
+.bussiness-contact-form a.bussiness-btn-larg:before,
+.single-address i:hover,
+.business-timeline a.timeline-btn:hover,
+.company-boucher a:hover,
+.video i:hover,
+.backtotop:hover,
+.footer-info-right ul li:hover,
+.hovereffect4,
+.single-bolg a.read-more:hover,
+.single-about-business,
+.single-features-overlay:hover,
+.single-features:hover,
+.bussiness-btn-larg,
+a.bussiness-btn-larg{
+    background: #ef454d;
+}
+
+/*color red*/
+.business-timeline .timeline li .timeline-badge > a:hover,
+.business-timeline .timeline li:hover .timeline-badge > a,
+.single-latest-product .media-body h4,
+.single-latest-product .media-body a:hover,
+.blog-post-next a:hover,
+.blog-post-previous a:hover,
+.blog-post-tag ul li a:hover,
+.job-table td a:hover,
+.single-faq .card-header a:hover,
+.single-testimonal:before,
+.single-partner a:hover,
+.timeline-body:hover h4,
+.aboutus-slider-footer h3,
+.right-menubar ul li a:hover,
+.right-menubar ul li.active,
+.right-menubar ul li:hover,
+.single-service-center:hover a,
+.top-menu-right-3 a:hover,
+.top-menu-right-3 i,
+.top-menu-left-3 i,
+.business-footer-content-2 .footer-info-left a:hover,
+.business-footer-content-2 .footer-info-right ul li a:hover,
+.business-footer-address-left ul li a:hover,
+.single-app-present .media:hover i,
+.business-service-2x a:hover,
+.testimonial-slider-content h3,
+.footer-info-left a:hover,
+.bussiness-footer-content ul li a:hover,
+.bussiness-footer-address i,
+.blog-content i,
+.blog-content a:hover,
+.team-members-right h3,
+.team-members-right a:hover,
+span.item-desc a:hover,
+.single-services:hover a,
+.btco-hover-menu .collapse ul > li:hover > a,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .active>.nav-link,
+.top-menu-left i{
+    color: #ef454d;
+}
+
+/*background color*/
+.simplefilter li.active,
+.portfolio-1x  .simplefilter li.active{
+    background-color: #ef454d;
+}
+
+.animatedhover:hover {
+	border: 2px solid #ef454d;
+}
+.promotion-box {
+     border-left: 3px solid #ef454d;
+}
+.right-menubar ul li.active,
+.right-menubar ul li:hover{
+    border-left: 4px solid #ef454d;
+}
+
+.single-address i:hover{
+    box-shadow: 0px 0px 0px 3px #ef454d;
+}
+.business-timeline .timeline li:hover .timeline-panel::before,
+.business-timeline .timeline li:hover .timeline-panel{
+	border-color:#ef454d;
+}

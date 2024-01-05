@@ -1,0 +1,1 @@
+function enableHtml5Support(n){navigator.userAgent.indexOf("Trident")>=0&&$(".input-append input",n).on("focus",function(){$(this).closest(".input-append").addClass("focus-within")}).on("blur",function(){$(this).closest(".input-append").removeClass("focus-within")})}$(function(){enableHtml5Support()});

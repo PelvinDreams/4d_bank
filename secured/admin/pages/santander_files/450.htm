@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style="" lang="en"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Compare CEFCU Rates</title>
+  
+  <style type="text/css">
+	.loading-overlay {
+	  position: absolute;
+	  z-index: 999;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: white;
+	}
+	.spinner {
+	  width: 40px;
+	  height: 40px;
+	  position: absolute;
+	  margin: -20px;
+	  top: 50%;
+	  left: 50%;
+	}
+	
+	.double-bounce1, .double-bounce2 {
+	  width: 100%;
+	  height: 100%;
+	  border-radius: 50%;
+	  background-color: #999;
+	  opacity: 0.6;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  
+	  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+	  animation: sk-bounce 2.0s infinite ease-in-out;
+	}
+	
+	.double-bounce2 {
+	  -webkit-animation-delay: -1.0s;
+	  animation-delay: -1.0s;
+	}
+	
+	@-webkit-keyframes sk-bounce {
+	  0%, 100% { -webkit-transform: scale(0.0) }
+	  50% { -webkit-transform: scale(1.0) }
+	}
+	
+	@keyframes sk-bounce {
+	  0%, 100% { 
+		transform: scale(0.0);
+		-webkit-transform: scale(0.0);
+	  } 50% { 
+		transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	  }
+	}
+  </style>
+
+
+<!--[if lt IE 9]>
+    <script src="https://delivery.datatrac.net/templates/marquee-js/jquery-1.11.1.min.js"></script>
+<![endif]-->
+<!--[if (gte IE 9) | (!IE)]><!-->
+    <script type="text/javascript" async="" defer="defer" src="450_data/piwik.js"></script><script async="" src="analytics.js"></script><script src="450_data/jquery-2.js"></script>
+<!--<![endif]-->
+
+  <script type="text/javascript" src="450_data/jquery_002.js"></script>
+  <script type="text/javascript" src="450_data/jquery.js"></script>
+  <script type="text/javascript" src="450_data/jquery_004.js"></script>
+  <script type="text/javascript" src="450_data/jquery_003.js"></script>
+ 
+  <script src="450_data/foundation.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style>
+  <script src="450_data/modernizr.js"></script>
+  <script src="450_data/sweetalert.js"></script>
+
+  <link rel="stylesheet" href="450_data/foundation.css">
+  <link rel="stylesheet" href="450_data/foundation_forms.css">
+  <!--<link rel="stylesheet" href="css/from_DT_delivery/fonts.css" type="text/css" media="all">-->
+  
+  <link rel="stylesheet" href="450_data/fonts.css" type="text/css" media="all">
+  <link rel="stylesheet" href="450_data/normalize.css" type="text/css" media="all">
+  <link rel="stylesheet" href="450_data/jquery.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="450_data/sweetalert.css" type="text/css" media="all">
+  <link rel="stylesheet" href="450_data/styles-marquee.css" type="text/css" media="all">
+  <link rel="stylesheet" href="450_data/certification-required-marquee.css" type="text/css" media="all">
+
+  <!--Note, this has changed from this external link, to embedding directly-->
+  <!--<link rel="stylesheet" href="https://www.datatrac.net/InlineCSS.aspx?ClientServiceKey=gra_1365auto16982percentage4" type="text/css" media="all">-->
+  <style type="text/css">
+      .horizontal-rate-bars .type_loan .bars_rate_val, 
+.horizontal-rate-bars .type_loan .bars_rate_val .value-highlight,
+.bars_rate_val .value-highlight {
+    color: #33363b !important;
+}
+.msg-winner .value-highlight {
+  color: #d9e5ec !important;
+}
+.msg-winner,
+.msg-updated-date,
+#stamp_copyright_link {
+color: white !important;
+}
+
+a, a:visited, a:hover, a:visited:hover {
+  color: #d9e5ec !important;
+}
+
+.watermark-GRA {
+  opacity: .15;
+  position: absolute;
+top: 18px;
+    left: 70px;
+    margin-left: -65px;
+    width: 130px;
+  height: auto;
+}
+
+.reveal-modal.open {
+  top: 6px !important;
+}
+.reveal-modal a, .reveal-modal a:hover {
+  color: #2A6A82 !important;
+}
+
+/* --------------- white BG setup ---------------- */
+body {
+}
+#geoloc, .conv-form input[type="text"], form input[type="tel"], form input[type="email"], form textarea, form textarea {
+	background-color: #eee;
+}
+label.prefix {
+	background-color: #b4b4b4;
+}
+label.prefix.error {
+	color: #f2f2f2;
+	background-color: #c60f13;
+}
+
+/* --------------- /white BG setup ---------------- */
+
+a, a:visited, a:hover, a:visited:hover {
+color: #0E1BFC;
+}
+.cert_bg.dt_widget {
+  background-image: none !important;
+}
+.dt_widget {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.msg-updated-date {
+  padding-top: 5px;
+  font-size: .6rem;
+}
+.row_products {
+  height: 148px;
+}
+.bar_chart_cont {
+  background: white !important;
+border-radius: 0;
+}
+.bar_chart_cont .prod_name {
+  font-size: .75rem;
+  padding-top: 0;
+}
+
+
+
+.products .prod_list li {
+  background-color: #286881;
+  font-size: 11px;
+}
+.prod_list li:nth-of-type(even) {
+  background-color: #3383A3;
+}
+.products .prod_list li.active,
+.products .prod_list li:hover,
+.products .prod_list li.active:hover,
+.products .prod_list li:nth-of-type(even):hover {
+  background-color: #7AC0D1 !important;
+  color: #286881;
+}
+.prod_li.active:after {
+  border-left: 8px solid #286881;
+  right: 0px;
+}
+
+
+.bar_right {
+background-color: #7AC1D0 !important;
+}
+.CTA, .CTA:visited, .CTA:active, .CTA:focus, .CTA:hover {
+  height: 20px !important;
+  line-height: 20px !important;
+  font-size: 14px !important;
+  margin-top: 3px;
+  background-color: #bdd199 !important;
+  color: #005581;
+-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+  text-shadow: none;
+}
+.CTA:hover {
+    background: #78a22f !important;
+    color: #fff !important;
+}
+.geolocform .disclaimer {
+color: #647a7f;
+font-size: .55rem;
+padding-top: 0;
+}
+#geoloc {
+  margin-bottom: .25rem;
+}
+.geo_form_input {
+display: none;
+}
+.geo_form_submit {
+  padding-bottom: 6px;
+width: 100% !important;
+text-align: center;
+}
+.geo_form_submit .CTA {
+    border-radius: 0;
+    background-image: none;
+    width: 117px;
+    margin: 4px auto 1px;
+    box-shadow: none;
+}
+.horiz .row_msg_winner {
+  height: 90px;
+  margin-top: 10px;
+  padding-bottom: .25rem;
+}
+.horiz .msg-winner {
+  font-size: 18px;
+  text-shadow: none;
+}
+.horiz .row_geoloc_form {
+  height: 80px;
+  padding-right: 0;
+}
+.GRA-seal {
+  width: 80px;
+  padding-right: 0;
+  margin-top: -5px;
+}
+.GRA-slogan {
+  font-size: .50rem;
+  line-height: 1.0;
+  text-shadow: none;
+}
+.footer_right_side {
+  width: 100%;
+padding-right: 0;
+}
+#stamp_copyright_link {
+  text-align: center;
+font-size: 10px;
+}
+.pg-conv-text,
+disclaimer-bottom {
+display:none;
+}
+body.form_page .dt_widget {
+  padding-top: 0;
+}
+.stacked .form-title {
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+}
+.prefix, .postfix {
+    font-size: .65rem;
+  height: 1.3rem;
+  line-height: 1.9;
+}
+form input[type="text"], 
+form input[type="tel"], 
+form input[type="email"], 
+form textarea, 
+form select {
+  padding: .25rem .5rem !important;
+  height: 1.3rem !important;
+  font-size: .65rem;
+  margin-bottom: .15rem !important;
+}
+.conv-form .form-submit {
+  width: 120px;
+  margin: 6px auto 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-transform: uppercase;
+}
+.msg-thanks {
+  margin-top: 10px;
+}
+.pg-success-text .CTA {
+  height: 24px !important;
+  line-height: 17px !important;
+  display: block;
+  font-size: 14px !important;
+  width: 170px;
+  margin: 0 auto 10px auto;
+}
+
+.row_msg_winner,
+.row_products,
+.row_geoloc_form {
+  width: 35%;
+  float: left;
+  padding-left: 0;
+  padding-right: 10px;
+}
+.row_products {
+  float: right;
+  width: 65%;
+  margin-top: 10px;
+}
+
+.watermark-bg .footer_right_side.remove_padding_left {
+  padding-left: 0 !important;
+  width: 100%;
+}
+
+
+@media \0screen {
+
+.products .prod_list li {
+background: #286881 !important;
+}
+.prod_list li:nth-of-type(even),
+.prod_list li:hover, .prod_list li:nth-of-type(even):hover {
+  background: #3383A3 !important;
+}
+.horiz .msg-winner {
+  font-size: 16px !important;
+}
+.horiz .products .prod_list li {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+.bar_chart_cont .prod_name {
+  font-size: 11px !important;
+  padding-top: 0 !important;
+}
+.bars_rate_val {
+  font-size: 13px !important;
+}
+.bar .bar_label {
+  font-size: 10px !important;
+  padding-top: 2px !important;
+}
+.bar .bar_rate_val {
+  font-size: 9px !important;
+}
+.GRA-seal {
+  width: 80px !important;
+  padding-right: 0 !important;
+}
+.footer_right_side {
+  width: 200px !important;
+}
+.GRA-slogan {
+  font-size: 8px !important;
+}
+.geolocform .disclaimer {
+  font-size: 8px !important;
+}
+
+.stacked .form-title {
+  margin-top: -20px !important;
+  margin-bottom: 2px !important;
+}
+.prefix, .postfix {
+    font-size: 11px !important;
+  height: 24px !important;
+line-height: 24px !important;
+}
+form input[type='text'], 
+form input[type='tel'], 
+form input[type='email'], 
+form textarea, 
+form select {
+  padding: 0 !important;
+  height: 24px !important;
+  line-height: 24px !important;
+  font-size: 13px !important;
+  margin-bottom: 2px !important;
+}
+
+
+}
+
+/* --------------- HORIZONTAL BARS ----------------- */
+
+.dt_widget.horizontal-rate-bars .bar {
+  bottom: 0 !important;
+  top: 0 !important;
+  right: auto;
+  left: 5px;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+
+  height: 35% !important;
+  width: .1%;
+}
+.dt_widget.horizontal-rate-bars .bar_left {
+  bottom: 38% !important;
+  top: auto !important;
+}
+.dt_widget.horizontal-rate-bars .bar_right {
+  top: 62% !important;
+  bottom: auto !important;
+}
+
+.dt_widget.horizontal-rate-bars .bar_chart_cont.active .bar_left {
+  width: 70%;
+}
+.dt_widget.horizontal-rate-bars .bar_chart_cont.active .bar_right {
+  width: 93%;
+}
+.dt_widget.horizontal-rate-bars .bar_chart_cont.active .bar_left.tall {
+  width: 93%;
+}
+.dt_widget.horizontal-rate-bars .bar_chart_cont.active .bar_right.short {
+  width: 70%;
+}
+
+.dt_widget.horizontal-rate-bars .bar .bar_label {
+  padding-top: .5rem;
+}
+.dt_widget.horizontal-rate-bars .bar_rate_val,
+.dt_widget.horizontal-rate-bars .fi_name,
+.dt_widget.horizontal-rate-bars .bar_teaser_rate_val,
+.dt_widget.horizontal-rate-bars .mkt_name {
+  text-align: left !important;
+  padding-left: .25rem !important;
+}
+
+.dt_widget.horizontal-rate-bars .bar_teaser_rate_val {
+  text-align: left !important;
+  padding-left: 0px !important;
+}
+.dt_widget.horizontal-rate-bars .bars_rate_val {
+    text-align: left !important;
+}
+
+.dt_widget.horizontal-rate-bars .bars_rate_val {
+  bottom: auto;
+  
+  top: 5px;
+  color: #33363b;
+}
+
+.dt_widget.horizontal-rate-bars .bars_rate_val .value-highlight {
+  font-size: 130%;
+}
+.dt_widget.horizontal-rate-bars .bar_chart_cont .prod_name {
+  display: none;
+}
+.dt_widget.horizontal-rate-bars .bars_rate_val {
+  text-align: center;
+  padding-right: 5px;
+    padding-left: 5px;
+	font-size: 13px;
+}
+
+.dt_widget.horizontal-rate-bars .bar .bar_label {
+  padding-top: 2px;
+  padding-right: 2px;
+}
+
+
+
+
+  </style>
+
+  <style type="text/css">
+	.dt_widget {
+	  -webkit-border-radius: 0px;
+	          border-radius: 0px;
+	}
+	.dt_widget.cert_bg {
+		background: transparent;
+	}
+	.bg_primary_start {
+		background-color: #2A6A82;
+	}
+	.bg_secondary_start,
+	.bar_left {
+		background-color: #78A22F;
+	}      
+	.prod_list li.active,
+	.bar_right,
+	.prod_list li.active:hover {
+		background-color: #2A6A82 !important;
+	}
+	.horizontal-rate-bars .type_loan .bars_rate_val, 
+	.horizontal-rate-bars .type_loan .bars_rate_val .value-highlight {
+		color: #78A22F;  
+	}
+	.prod_list li:nth-of-type(even).active {
+		background-color: #2A6A82;
+	}
+	.stacked .bar_chart_cont {
+		border-color: #2A6A82;
+	}
+	.msg-winner .value-highlight,
+	.reveal-modal h3 {
+		color: #2A6A82;
+	}
+	.CTA, 
+	.CTA:visited, 
+	.CTA:active,
+	.CTA:focus,
+	.CTA:hover {
+		background-color: #78A22F;
+	}
+	.layout-one-page-dots-nav .products .prod_list li,
+	.layout-headlines-dots .products .prod_list li {
+		background: #2A6A82 !important;
+	}
+	.horiz .layout-one-page-dots-nav .products .prod_list li.active,
+	.stacked .layout-one-page-dots-nav .products .prod_list li.active,
+	.horiz .layout-headlines-dots .products .prod_list li.active,
+	.stacked .layout-headlines-dots .products .prod_list li.active {
+		background: #78A22F !important;
+	}
+  </style>
+  
+
+  <!--[if lt IE 9]>
+  	<link rel="stylesheet" href="https://delivery.datatrac.net/templates/marquee-css/ie8.css" type="text/css" media="all">
+  <![endif]-->
+
+  
+  <!--[if IE]>
+    <script src="https://delivery.datatrac.net/templates/marquee-js/html5shiv.js"></script>
+  <![endif]-->
+  
+  <!--[if lt IE 9]>
+    <script src="https://delivery.datatrac.net/templates/marquee-js/selectivizr.js"></script>
+    <script src="https://delivery.datatrac.net/templates/marquee-js/respond.min.js"></script>
+    <script src="https://delivery.datatrac.net/templates/marquee-js/rem.js"></script>
+  <![endif]-->
+
+
+  <script>
+      $(document).foundation();
+  </script>
+
+        <script type="text/javascript" src="450_data/js" style=""></script>
+        <script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga904936510');
+    ga904936510('create', 'UA-69817112-1', 'datatrac.net', 'datatracga');
+    ga904936510('datatracga.send', 'pageview');
+</script>
+
+        <!-- Piwik -->
+<script type="text/javascript">
+var _paq = _paq || [];
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+var u="https://analytics.datatrac.net/";
+_paq.push(['setTrackerUrl', u+'piwik.php']);
+_paq.push(['setSiteId', 249]);
+var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+})();
+</script>
+<noscript><p><img src='https://analytics.datatrac.net/piwik.php?idsite=249' style='border:0;' alt='' /></p></noscript>
+<!-- End Piwik Code -->
+
+        <script type="text/javascript">
+            var RateNet = {};
+            RateNet.selectedProductType = null;
+            RateNet.selectedProductID = null;
+            RateNet.selectedAmount = null;
+            RateNet.searchTerm = null;
+            //Check if this location is in the database, if not, geocode it
+            RateNet.checkLocationGeo = function (t, callback) {
+
+                var locationString = $("[id$='" + t + "']").val();
+                _ga_event_data = locationString; ga904936510('datatracga.send', 'event', 'Widget', 'Click-Page1CTA', 'gra_1365auto16982percentage4');
+                _paq_event_data = locationString; _paq.push(['trackEvent', 'marquee-main.html', 'Click-GeoSearch', _paq_event_data]);
+
+                if (locationString) {
+                    $("#CTAButton").hide();
+                    $("#CTASpinner").show();
+
+                    $.ajax({
+                        url: 'https://delivery.datatrac.net/Services.svc/CheckLocationGeo/' + encodeURI(locationString),
+                        type: "GET",
+                        success: function (data) {
+                            //data is either a 1 or a 0
+                            if (data == 0 || data == "0") {
+
+                                geocoder = new google.maps.Geocoder();
+
+                                geocoder.geocode({ 'region': 'US', 'address': locationString }, function (results, status) {
+
+                                    if (status == google.maps.GeocoderStatus.OK) {
+                                        $.ajax({
+                                            url: 'https://delivery.datatrac.net/Services.svc/SaveLocationGeo/' + encodeURI(locationString) + "/" + encodeURI(results[0].geometry.location.lat()) + "/" + encodeURI(results[0].geometry.location.lng()),
+                                            type: "GET",
+                                            success: function () {
+
+                                                $.ajax({
+                                                    url: 'https://delivery.datatrac.net/Services.svc/GetMarketIDFromLocation/' + encodeURI(locationString),
+                                                    type: "GET",
+                                                    success: function (data) {
+                                                        $("#CTASpinner").hide();
+                                                        $("#CTAButton").show();
+                                                        callback(data);
+                                                    },
+                                                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                                        $("#CTASpinner").hide();
+                                                        $("#CTAButton").show();
+                                                        alert("Error: " + textStatus + " " + errorThrown);
+                                                    }
+                                                });
+                                            }
+                                        });
+
+                                    } else {
+                                        $("#CTASpinner").hide();
+                                        $("#CTAButton").show();
+                                        alert("Address entered was invalid: " + status);
+                                    }
+                                }); //end geo
+                            } else {
+                                //we have the lat/lng, search can proceed
+                                $.ajax({
+                                    url: 'https://delivery.datatrac.net/Services.svc/GetMarketIDFromLocation/' + encodeURI(locationString),
+                                    type: "GET",
+                                    success: function (data) {
+                                        $("#CTASpinner").hide();
+                                        $("#CTAButton").show();
+                                        callback(data);
+                                    },
+                                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                        $("#CTASpinner").hide();
+                                        $("#CTAButton").show();
+                                        alert("Error: " + textStatus + " " + errorThrown);
+                                    }
+                                });
+                            }
+                        },
+                        error: function (XMLHttpRequest, textStatus, errorThrown) {
+                            $("#CTASpinner").hide();
+                            $("#CTAButton").show();
+                            alert("Error: " + textStatus + " " + errorThrown);
+                        }
+                    });
+                }
+            }
+
+            $(function () {
+                $('input').keydown(function (e) {
+                    var key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
+                    if (key == 13) {
+                        e.preventDefault();
+
+                        submitSearch();
+                    }
+                });
+
+            });
+
+            function submitSearch() {
+                var input = $("[id$='geoloc']");
+                v = input.val();
+                if (v == '' || v == input.attr('placeholder')) {
+                    v = null;
+                }
+                RateNet.searchTerm = v;
+
+                if (v == null) {
+                    _ga_event_data = "Blank"; ga904936510('datatracga.send', 'event', 'Widget', 'Click-Page1CTA', 'gra_1365auto16982percentage4');
+                    _paq_event_data = "Blank"; _paq.push(['trackEvent', 'marquee-main.html', 'Click-GeoSearch', _paq_event_data]);
+                    submitForm("16982");
+                }
+                else if (validate(v)) {
+                    RateNet.checkLocationGeo('geoloc', submitForm, "http://www.datatrac.net");
+                }
+            }
+
+            function submitForm(data) {
+                if (data.indexOf("Error") == -1) {
+                    var product_class = "auto";
+                    var child_client_service_key = "gra_1365auto16982percentage4";
+
+                    var bpsid = "";
+                    var bpsid_d = "";
+
+                    var lbehavior = 'page2';
+                    var ltarget = '_blank';
+                    var link = "https://www.datatrac.net/Calculator.aspx?InstitutionID=425&MarketID=16982&Cls=auto&Bank_Product_Standard_OID=-1&Key=gra_1365auto16982percentage4&ChildClientServiceKey=gra_1365auto16982percentage4&tmpl=0";
+                    var ltext = 'Apply Now';
+
+                    var li_element = $("li.prod_li.active");
+                    if (li_element)
+                    {
+                        var p = li_element.attr('data-product-id');
+                        var c = li_element.attr('data-product-class');
+                        var ccsk = li_element.attr('data-child-client-service-key');
+                        if (p != null && p != "")
+                        {
+                            bpsid = "&Bank_Product_Standard_OID=" + p;
+                            bpsid_d = "&dt___Bank_Product_Standard_OID=" + p;
+                        }
+                        if (c != null && c != "")
+                        {
+                            product_class = c;
+                        }
+                        if (ccsk != null && ccsk != "")
+                            child_client_service_key = ccsk;
+
+                        var lb = li_element.attr('data-link-behavior');
+                        if (lb && lb != null && lb != "")
+                            lbehavior = lb;
+                        var lt = li_element.attr('data-link-target');
+                        if (lt && lt != null && lt != "")
+                            ltarget = lt;
+                        var l = li_element.attr('data-link');
+                        if (l && l != null && l != "")
+                            link = decodeURIComponent(l);
+                        var lte = li_element.attr('data-link-text');
+                        if (lte && lte != null && lte != "")
+                            ltext = decodeURIComponent(lte);
+                    }
+
+                    _ga_event_data = p; ga904936510('datatracga.send', 'event', 'Widget', 'Click-SelectedProduct', 'gra_1365auto16982percentage4');
+                    _paq_event_data = p; _paq.push(['trackEvent', 'marquee-main.html', 'Click-SelectedProduct', _paq_event_data]);
+
+                    if (lbehavior.toLowerCase() == 'calculator') {
+                        window.parent.location = "https://www.datatrac.net/Calculator.aspx?InstitutionID=425&MarketID=" + data + "&Cls=" + product_class + "&Key=gra_1365auto16982percentage4&ChildClientServiceKey=" + child_client_service_key + "&tmpl=0" + bpsid;
+                       // window.parent.location = "https://www.datatrac.net/Calculator.aspx?InstitutionID=425&MarketID=" + data + "&Cls=" + product_class + "&Key=gra_1365auto16982percentage4&ChildClientServiceKey=" + child_client_service_key + "&tmpl=0" + bpsid;
+                    }
+                    else if (lbehavior.toLowerCase() == 'url')
+                    {
+                        if (link.indexOf("?") > -1)
+                            window.parent.location = link + "&dt___InstitutionID=425&dt___MarketID=" + data + "&dt___Cls=" + product_class + "&dt___Key=gra_1365auto16982percentage4&dt___ChildClientServiceKey=" + child_client_service_key + "" + bpsid_d;
+                        else
+                            window.parent.location = link + "?dt___InstitutionID=425&dt___MarketID=" + data + "&dt___Cls=" + product_class + "&dt___Key=gra_1365auto16982percentage4&dt___ChildClientServiceKey=" + child_client_service_key + "" + bpsid_d;
+                    }
+                    else 
+                    {
+                        var p2path = "https://delivery.datatrac.net/Services.svc/IFrameMarquee2HTML/gra_1365auto16982percentage4/NULL/{MarketID}/{Class}/{MeasuredWidthString}/{Bank_Product_Standard_OID}/{Amount}/{SearchTerm}"; 
+                        if ('https:' == document.location.protocol)
+                            p2path = p2path.replace("http:", "https:");
+                        else if ('http:' == document.location.protocol)
+                            p2path = p2path.replace("https:", "http:");
+
+                        p2path = p2path.replace("{MarketID}", data);
+                        p2path = p2path.replace("{Class}", RateNet.selectedProductType);
+                        p2path = p2path.replace("{MeasuredWidthString}", "567");
+                        p2path = p2path.replace("{Bank_Product_Standard_OID}", RateNet.selectedProductID);
+                        p2path = p2path.replace("{Amount}", RateNet.selectedAmount);
+                        p2path = p2path.replace("{SearchTerm}", escape(RateNet.searchTerm));
+                        window.location = p2path + '';
+                    }
+                }
+                else {
+                    alert(data);
+                }
+            }
+
+            function validate(v) {
+                var retval = true;
+                var msg = '';
+
+                //$("[id$='geoloc']").val()
+                if (v == null || v == '' || v.length < 5) {
+
+                    retval = false;
+                    msg = 'A location is required, and must be at least 5 characters long';
+
+                }
+
+                if (!retval && msg.length > 0) {
+                    alert(msg);
+                }
+
+                return retval;
+            }
+
+            $(function () {
+                $('[placeholder]').focus(function () {
+                    var input = $(this);
+                    if (input.val() == input.attr('placeholder')) {
+                        input.val('');
+                        input.removeClass('placeholder');
+                    }
+                }).blur(function () {
+                    var input = $(this);
+                    if (input.val() == '' || input.val() == input.attr('placeholder')) {
+                        input.addClass('placeholder');
+                        input.val(input.attr('placeholder'));
+                    }
+                }).blur();
+            });
+        </script>
+    <script type="text/javascript">jQuery(document).ready(function ($) { ga904936510('datatracga.send', 'event', 'Widget', 'Load-Page1', 'gra_1365auto16982percentage4'); _paq.push(['trackEvent', 'marquee-main.html', 'Load-Page1', 'gra_1365auto16982percentage4']); });</script>
+
+
+<script type="text/javascript" charset="UTF-8" src="450_data/common.js"></script><script type="text/javascript" charset="UTF-8" src="450_data/util.js"></script></head>
+
+<body style="margin:0;padding:0;" class="horiz CSK_gra_1365auto16982percentage4">
+
+<div class="loading-overlay" style="display: none; height: 0px;">
+	<div class="spinner">
+  		<div class="double-bounce1"></div>
+  		<div class="double-bounce2"></div>
+	</div>
+</div>
+
+<div class="dt_widget cert_bg tmpl_marquee_main auto-advance watermark-bg show-mortgage-rates horizontal-rate-bars disclaimer-in-modal custom_disclosure_url playing" style="height: 185px; background: rgb(87, 143, 172) none repeat scroll 0% 0%;" data-content-uri="https://delivery.datatrac.net/content/" data-certified="true" data-auto-advance="true" data-show-play-pause="true" data-disclaimer-link-text="Rates &amp; Disclosures" data-disclaimer-link-url="https://www.cefcu.com/about/rates.php" data-disclaimer-link-target="_blank" data-layout-type="" data-fi-name-abbr="CEFCU" data-geo-button-text="Apply Now" data-geo-input-location="" data-remove-geo-input="" data-watermark-bg="True" data-show-mortgage-rates="True" data-background-color-hex="578FAC" data-background-color-rgba="" data-horizontal-rate-bars="True" data-hide-chart-headline="" data-modal-disclaimer="True" data-color-primary-start="78A22F" data-extlink-warning-enable="True" data-extlink-warning-text="By clicking Continue, you will be taken to a website that is not affiliated with CEFCU and may offer a different privacy policy and level of security. CEFCU is not responsible for and does not endorse, guarantee or monitor content, availability, viewpoints, products or services that are offered or expressed on other websites. You can click the Cancel button now to return to the previous page or you can use the Back button on your browser after you leave." data-extlink-warning-text-short="You are leaving CEFCU." data-extlink-warning-domains="www.cefcu.com,cefcu.com" data-extlink-warning-show-short="" data-cta-bg-color="" data-cta-text-color="" data-valuetext-color="" data-mbg-pkg="False" data-charter-num="68448" data-agg-savings="94293929">
+
+<div class="certification-bg" style="height: 185px;">
+	
+  <a href="#" id="play_pause" class="" title="click to pause rate updates">pause rate updates</a>
+  
+  <div class="row row_updated_date">  
+	  <div class="msg-updated-date small-12 columns text-center">Analysis as of November 5, 2019</div>
+  </div>
+  
+  <div class="row row_msg_winner space_bottom">  
+    <h1 id="headline" class="msg-winner small-12 columns">CEFCU share draft checking rates up to <span class="value-highlight">49% higher</span><sup><a href="#footnote">1</a></sup></h1><!-- .msg-winner <span class="value-highlight">CEFCU</span> -->
+  </div><!-- .row_msg_winner -->
+
+  <div class="row row_products collapse " aria-live="polite" id="productInfo">  
+    <div class="products small-6 columns" style="opacity: 1;">
+        <ul class="prod_list mCustomScrollbar _mCS_1 mCS-autoHide" aria-controls="productInfo" style="position: relative; overflow: visible;"><div id="mCSB_1" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" tabindex="0"><div id="mCSB_1_container" class="mCSB_container" style="position: relative; top: -51px; left: 0px;" dir="ltr">
+          <li class="first prod_li" data-rate-fi="3.04% APR&lt;sup&gt;1&lt;/sup&gt;" data-rate-mkt="4.70% APR&lt;sup&gt;1&lt;/sup&gt;" data-fi-name="CEFCU" data-mkt-name="Peoria%20Metro" data-prod-type="loan" data-bars-rate-text="up%20to%20%3Cspan%20class%3D%22value-highlight%22%3E35%25%20lower%3Csup%3E1%3C%2Fsup%3E%3C%2Fspan%3E" data-product-id="2" data-product-class="auto" data-teaser-rate="" data-teaser-term="" data-product-note="" data-amount="25000" data-headline="%3Cspan%20class%3D%22value-highlight%22%3ESave%20up%20to%20%241%2C125%3C%2Fspan%3E%20with%20CEFCU%20auto%20loans%3Csup%3E1%3C%2Fsup%3E" data-disclaimer="%241%2C125%20is%20the%20difference%20between%20the%20amount%20paid%20in%20interest%20between%20CEFCU's%20rate%20at%203.04%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPR%3C%2Fspan%3E%26nbsp%3Bcompared%20to%204.70%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPR%3C%2Fspan%3E%26nbsp%3Bfor%20%20the%20Peoria%20Metro%20market%20average%20over%20the%20life%20of%20a%20%2425%2C000%20auto%20loan%20over%2060%20months.%20CEFCU%20rates%20outperform%20the%20Peoria%20Metro%20average%20earning%20a%20Datatrac%20Great%20Rate%20Award.%20%26copy%3B%20%3Ca%20href%3D'https%3A%2F%2Fwww.datatrac.net'%20target%3D'_blank'%3EDatatrac%3C%2Fa%3E%202019%3Cspan%20class%3D'comparison_prod'%3EComparison%20Product%3A%20Used%20Car%20-%2060%20Mo%20-%20Rate%20for%20excellent%20credit%20%20compared%20(i.e.%20the%20'as%20low%20as'%20rate)%20which%20may%20vary%20based%20on%20credit%20rating.%20%20APR%3DAnnual%20Percentage%20Rate%20%3C%2Fspan%3E" data-disclosure-product="" data-disclosure-class="Your product class disclosure here." data-disclosure-client="Your company disclosure here." data-disclaimer-link-text="" data-disclaimer-link-url="" data-disclaimer-link-target="" data-disclaimer-long="%20Rate%2Fterm%2Fup%20to%20100%25%20financing%20to%20well-qualified%20borrowers.%20View%20all%20rates%2Fterms%20at%20%3Ca%20href%3D%22https%3A%2F%2Fwww.cefcu.com%2Frates%22%3Ecefcu.com%2Frates%3C%2Fa%3E.%20" data-geo-button-text="" data-child-client-service-key="gra_1365auto16982percentage_child3" data-link-behavior="url" data-link="https%3A%2F%2Floans.cefcu.com%2FVirtualCapture%2FProducts%3FProductCategory%3DVehicle" aria-pressed="false" tabindex="0" role="button">Auto Loan</li><li class="prod_li even" data-rate-fi="5.50% APR&lt;sup&gt;1&lt;/sup&gt;" data-rate-mkt="5.99% APR&lt;sup&gt;1&lt;/sup&gt;" data-fi-name="CEFCU" data-mkt-name="Peoria%20Metro" data-prod-type="loan" data-bars-rate-text="save%20up%20to%20%3Cspan%20class%3D%22value-highlight%22%3E%24342%3Csup%3E1%3C%2Fsup%3E%3C%2Fspan%3E" data-product-id="57" data-product-class="boat" data-teaser-rate="" data-teaser-term="" data-product-note="" data-amount="25000" data-headline="%3Cspan%20class%3D%22value-highlight%22%3ESave%20up%20to%20%24342%3C%2Fspan%3E%20with%20CEFCU%20boat%20loans%3Csup%3E1%3C%2Fsup%3E" data-disclaimer="%24342%20is%20the%20difference%20between%20the%20amount%20paid%20in%20interest%20between%20CEFCU's%20rate%20at%205.50%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPR%3C%2Fspan%3E%26nbsp%3Bcompared%20to%205.99%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPR%3C%2Fspan%3E%26nbsp%3Bfor%20%20the%20Peoria%20Metro%20market%20average%20over%20the%20life%20of%20a%20%2425%2C000%20boat%20loan%20over%2060%20months.%20CEFCU%20rates%20outperform%20the%20Peoria%20Metro%20average%20earning%20a%20Datatrac%20Great%20Rate%20Award.%20%26copy%3B%20%3Ca%20href%3D'https%3A%2F%2Fwww.datatrac.net'%20target%3D'_blank'%3EDatatrac%3C%2Fa%3E%202019%3Cspan%20class%3D'comparison_prod'%3EComparison%20Product%3A%20New%20Boat%20-%2060%20Mo%20-%20Rate%20for%20excellent%20credit%20%20compared%20(i.e.%20the%20'as%20low%20as'%20rate)%20which%20may%20vary%20based%20on%20credit%20rating.%20%20APR%3DAnnual%20Percentage%20Rate%20%3C%2Fspan%3E" data-disclosure-product="" data-disclosure-class="Your product class disclosure here." data-disclosure-client="Your company disclosure here." data-disclaimer-link-text="" data-disclaimer-link-url="" data-disclaimer-link-target="" data-disclaimer-long="%20Add%200.50%25%20for%20cash%20pay%20rates.%20%20View%20full%20rates%20and%20terms%20at%20%3Ca%20href%3D%22https%3A%2F%2Fwww.cefcu.com%2Frates%22%3Ecefcu.com%2Frates%3C%2Fa%3E.%20" data-geo-button-text="" data-child-client-service-key="gra_1365boat16982percentage_child1" data-link-behavior="url" data-link="https%3A%2F%2Floans.cefcu.com%2FVirtualCapture%2FProducts%3FProductCategory%3DVehicle" aria-pressed="false" tabindex="0" role="button">Boat Loan</li><li class="prod_li" data-rate-fi="0.60% APY&lt;sup&gt;1&lt;/sup&gt;" data-rate-mkt="0.29% APY&lt;sup&gt;1&lt;/sup&gt;" data-fi-name="CEFCU" data-mkt-name="Peoria%20Metro" data-prod-type="deposit" data-bars-rate-text="earn%20up%20to%20%3Cspan%20class%3D%22value-highlight%22%3E108%25%20more%3Csup%3E1%3C%2Fsup%3E%3C%2Fspan%3E" data-product-id="6" data-product-class="CD" data-teaser-rate="" data-teaser-term="" data-product-note="" data-amount="10000" data-headline="CEFCU%20share%20certificate%20rates%20up%20to%20%3Cspan%20class%3D%22value-highlight%22%3E108%25%20higher%3C%2Fspan%3E%3Csup%3E1%3C%2Fsup%3E" data-disclaimer="108%25%20is%20the%20difference%20between%20the%20percent%20earned%20in%20interest%20between%20CEFCU's%20rate%20at%200.60%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPY%3C%2Fspan%3E%26nbsp%3Bcompared%20to%200.29%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPY%3C%2Fspan%3E%26nbsp%3Bfor%20%20the%20Peoria%20Metro%20market%20average%20over%20the%20life%20of%20a%203%20month%20certificate%20of%20deposit%20(CD)%20at%20%2410%2C000.%20CEFCU%20rates%20outperform%20the%20Peoria%20Metro%20average%20earning%20a%20Datatrac%20Great%20Rate%20Award.%20%26copy%3B%20%3Ca%20href%3D'https%3A%2F%2Fwww.datatrac.net'%20target%3D'_blank'%3EDatatrac%3C%2Fa%3E%202019%3Cspan%20class%3D'comparison_prod'%3EComparison%20Product%3A%203%20Mo%20CD%20-%20%2410k%20-%20APY%3DAnnual%20Percentage%20Yield%3C%2Fspan%3E" data-disclosure-product="" data-disclosure-class="Your product class disclosure here." data-disclosure-client="Your company disclosure here." data-disclaimer-link-text="" data-disclaimer-link-url="" data-disclaimer-link-target="" data-disclaimer-long="%20%241%2C000%20minimum%20to%20open.%20Early%20withdrawal%20penalty%20may%20apply.%20View%20full%20rates%20at%20%3Ca%20href%3D%22https%3A%2F%2Fwww.cefcu.com%2Frates%22%3Ecefcu.com%2Frates%3C%2Fa%3E.%20" data-geo-button-text="Learn%20More" data-child-client-service-key="gra_1365CD16982percentage_child1" data-link-behavior="url" data-link="https%3A%2F%2Fwww.cefcu.com%2Fchecking%2Fcertificates.php" data-link-text="Learn%20More" aria-pressed="false" tabindex="0" role="button">Share Certificate</li><li class="prod_li even active" data-rate-fi="0.10% APY&lt;sup&gt;1&lt;/sup&gt;" data-rate-mkt="0.07% APY&lt;sup&gt;1&lt;/sup&gt;" data-fi-name="CEFCU" data-mkt-name="Peoria%20Metro" data-prod-type="deposit" data-bars-rate-text="earn%20up%20to%20%3Cspan%20class%3D%22value-highlight%22%3E49%25%20more%3Csup%3E1%3C%2Fsup%3E%3C%2Fspan%3E" data-product-id="5" data-product-class="checking" data-teaser-rate="" data-teaser-term="" data-product-note="" data-amount="5000" data-headline="CEFCU%20share%20draft%20checking%20rates%20up%20to%20%3Cspan%20class%3D%22value-highlight%22%3E49%25%20higher%3C%2Fspan%3E%3Csup%3E1%3C%2Fsup%3E" data-disclaimer="49%25%20is%20the%20difference%20between%20the%20percent%20earned%20in%20interest%20between%20CEFCU's%20rate%20at%200.10%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPY%3C%2Fspan%3E%26nbsp%3Bcompared%20to%200.07%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPY%3C%2Fspan%3E%26nbsp%3Bfor%20%20the%20Peoria%20Metro%20market%20average%20over%20the%20life%20of%20a%20interest%20checking.%20CEFCU%20rates%20outperform%20the%20Peoria%20Metro%20average%20earning%20a%20Datatrac%20Great%20Rate%20Award.%20%26copy%3B%20%3Ca%20href%3D'https%3A%2F%2Fwww.datatrac.net'%20target%3D'_blank'%3EDatatrac%3C%2Fa%3E%202019%3Cspan%20class%3D'comparison_prod'%3EComparison%20Product%3A%20Interest%20Checking%20-%20%245k%20-%20APY%3DAnnual%20Percentage%20Yield%3C%2Fspan%3E" data-disclosure-product="" data-disclosure-class="Your product class disclosure here." data-disclosure-client="Your company disclosure here." data-disclaimer-link-text="" data-disclaimer-link-url="" data-disclaimer-link-target="" data-disclaimer-long="%20%242%2C500%20minimum%20to%20open.%20%242%2C500%20minimum%20balance%20to%20avoid%20a%20fee.%20View%20full%20rates%20at%20%3Ca%20href%3D%22https%3A%2F%2Fwww.cefcu.com%2Frates%22%3Ecefcu.com%2Frates%3C%2Fa%3E.%20" data-geo-button-text="Learn%20More" data-child-client-service-key="gra_1365checking16982percentage_child1" data-link-behavior="url" data-link="https%3A%2F%2Fwww.cefcu.com%2Fchecking%2Fchecking-account.php" data-link-text="Learn%20More" aria-pressed="true" tabindex="0" role="button">Share Draft Checking</li><li class="prod_li" data-rate-fi="10.50% APR&lt;sup&gt;1&lt;/sup&gt;" data-rate-mkt="13.56% APR&lt;sup&gt;1&lt;/sup&gt;" data-fi-name="CEFCU" data-mkt-name="Peoria%20Metro" data-prod-type="loan" data-bars-rate-text="up%20to%20%3Cspan%20class%3D%22value-highlight%22%3E23%25%20lower%3Csup%3E1%3C%2Fsup%3E%3C%2Fspan%3E" data-product-id="43" data-product-class="credit card" data-teaser-rate="" data-teaser-term="" data-product-note="" data-amount="5000" data-headline="%3Cspan%20class%3D%22value-highlight%22%3ESave%20up%20to%20%24459%3C%2Fspan%3E%20with%20CEFCU%20credit%20cards%3Csup%3E1%3C%2Fsup%3E" data-disclaimer="%24459%20is%20the%20difference%20between%20the%20amount%20paid%20in%20interest%20between%20CEFCU's%20rate%20at%2010.50%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPR%3C%2Fspan%3E%26nbsp%3Bcompared%20to%2013.56%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPR%3C%2Fspan%3E%26nbsp%3Bfor%20%20the%20Peoria%20Metro%20market%20average%20based%20upon%20a%20%245%2C000%20average%20daily%20balance%20over%2036%20months.%20CEFCU%20rates%20outperform%20the%20Peoria%20Metro%20average%20earning%20a%20Datatrac%20Great%20Rate%20Award.%20%26copy%3B%20%3Ca%20href%3D'https%3A%2F%2Fwww.datatrac.net'%20target%3D'_blank'%3EDatatrac%3C%2Fa%3E%202019%3Cspan%20class%3D'comparison_prod'%3EComparison%20Product%3A%20Credit%20Card%20Platinum%20-%20Rate%20for%20excellent%20credit%20%20compared%20(i.e.%20the%20'as%20low%20as'%20rate)%20which%20may%20vary%20based%20on%20credit%20rating.%20%20APR%3DAnnual%20Percentage%20Rate%20%3C%2Fspan%3E" data-disclosure-product="" data-disclosure-class="Your product class disclosure here." data-disclosure-client="Your company disclosure here." data-disclaimer-link-text="" data-disclaimer-link-url="" data-disclaimer-link-target="" data-disclaimer-long="%20Best%20rate%20available%20to%20qualified%20borrowers.%20Full%20details%20at%20%3Ca%20href%3D%22https%3A%2F%2Fwww.cefcu.com%2Frates%22%3Ecefcu.com%2Frates%3C%2Fa%3E.%20" data-geo-button-text="" data-child-client-service-key="gra_1365creditcard16982percentage_child2" data-link-behavior="url" data-link="https%3A%2F%2Floans.cefcu.com%2FVirtualCapture%2FProducts%3FProductCategory%3DCreditCards" aria-pressed="false" tabindex="0" role="button">Credit Card</li><li class="prod_li even" data-rate-fi="5.15% APR&lt;sup&gt;1&lt;/sup&gt;" data-rate-mkt="5.68% APR&lt;sup&gt;1&lt;/sup&gt;" data-fi-name="CEFCU" data-mkt-name="Peoria%20Metro" data-prod-type="loan" data-bars-rate-text="save%20up%20to%20%3Cspan%20class%3D%22value-highlight%22%3E%24215%3Csup%3E1%3C%2Fsup%3E%3C%2Fspan%3E" data-product-id="3" data-product-class="home equity" data-teaser-rate="" data-teaser-term="" data-product-note="" data-amount="25000" data-headline="%3Cspan%20class%3D%22value-highlight%22%3ESave%20up%20to%20%24215%3C%2Fspan%3E%20with%20CEFCU%20home%20equity%20loans%3Csup%3E1%3C%2Fsup%3E" data-disclaimer="%24215%20is%20the%20difference%20between%20the%20amount%20paid%20in%20interest%20between%20CEFCU's%20rate%20at%205.15%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPR%3C%2Fspan%3E%26nbsp%3Bcompared%20to%205.68%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPR%3C%2Fspan%3E%26nbsp%3Bfor%20%20the%20Peoria%20Metro%20market%20average%20over%20the%20life%20of%20a%20%2425%2C000%20home%20equity%20of%20credit%20over%203%20years.%20CEFCU%20rates%20outperform%20the%20Peoria%20Metro%20average%20earning%20a%20Datatrac%20Great%20Rate%20Award.%20%26copy%3B%20%3Ca%20href%3D'https%3A%2F%2Fwww.datatrac.net'%20target%3D'_blank'%3EDatatrac%3C%2Fa%3E%202019%3Cspan%20class%3D'comparison_prod'%3EComparison%20Product%3A%20Home%20Equity%20-%20LOC%20-%20Rate%20for%20excellent%20credit%20%20compared%20(i.e.%20the%20'as%20low%20as'%20rate)%20which%20may%20vary%20based%20on%20credit%20rating.%20%20APR%3DAnnual%20Percentage%20Rate%20%3C%2Fspan%3E" data-disclosure-product="" data-disclosure-class="Your product class disclosure here." data-disclosure-client="Your company disclosure here." data-disclaimer-link-text="" data-disclaimer-link-url="" data-disclaimer-link-target="" data-disclaimer-long="%20The%20annual%20percentage%20rate%20may%20vary%20quarterly.%20View%20full%20rates%20and%20terms%20at%20%3Ca%20href%3D%22https%3A%2F%2Fwww.cefcu.com%2Frates%22%3Ecefcu.com%2Frates%3C%2Fa%3E.%20" data-geo-button-text="" data-child-client-service-key="gra_1365homeequity16982percentage_child2" data-link-behavior="url" data-link="https%3A%2F%2Floans.cefcu.com%2FVirtualCapture%2FProducts%3FProductCategory%3DHomeEquity" aria-pressed="false" tabindex="0" role="button">Home Equity Loan</li><li class="prod_li" data-rate-fi="0.55% APY&lt;sup&gt;1&lt;/sup&gt;" data-rate-mkt="0.13% APY&lt;sup&gt;1&lt;/sup&gt;" data-fi-name="CEFCU" data-mkt-name="Peoria%20Metro" data-prod-type="deposit" data-bars-rate-text="earn%20up%20to%20%3Cspan%20class%3D%22value-highlight%22%3E324%25%20more%3Csup%3E1%3C%2Fsup%3E%3C%2Fspan%3E" data-product-id="37" data-product-class="money market" data-teaser-rate="" data-teaser-term="" data-product-note="" data-amount="2500" data-headline="CEFCU%20money%20market%20rates%20up%20to%20%3Cspan%20class%3D%22value-highlight%22%3E324%25%20higher%3C%2Fspan%3E%3Csup%3E1%3C%2Fsup%3E" data-disclaimer="324%25%20is%20the%20difference%20between%20the%20percent%20earned%20in%20interest%20between%20CEFCU's%20rate%20at%200.55%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPY%3C%2Fspan%3E%26nbsp%3Bcompared%20to%200.13%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPY%3C%2Fspan%3E%26nbsp%3Bfor%20%20the%20Peoria%20Metro%20market%20average%20over%20the%20life%20of%20a%20money%20market%20at%20%242%2C500.%20CEFCU%20rates%20outperform%20the%20Peoria%20Metro%20average%20earning%20a%20Datatrac%20Great%20Rate%20Award.%20%26copy%3B%20%3Ca%20href%3D'https%3A%2F%2Fwww.datatrac.net'%20target%3D'_blank'%3EDatatrac%3C%2Fa%3E%202019%3Cspan%20class%3D'comparison_prod'%3EComparison%20Product%3A%20Money%20Market%20-%20%242.5k%20-%20APY%3DAnnual%20Percentage%20Yield%3C%2Fspan%3E" data-disclosure-product="" data-disclosure-class="Your product class disclosure here." data-disclosure-client="Your company disclosure here." data-disclaimer-link-text="" data-disclaimer-link-url="" data-disclaimer-link-target="" data-disclaimer-long="%20%242%2C500%20minimum%20to%20open.%20%242%2C500%20minimum%20balance%20to%20avoid%20a%20fee.%20View%20full%20rates%20at%20%3Ca%20href%3D%22https%3A%2F%2Fwww.cefcu.com%2Frates%22%3Ecefcu.com%2Frates%3C%2Fa%3E.%20" data-geo-button-text="Learn%20More" data-child-client-service-key="gra_1365moneymarket16982percentage_child1" data-link-behavior="url" data-link="https%3A%2F%2Fwww.cefcu.com%2Fchecking%2Fmoney-market.php" data-link-text="Learn%20More" aria-pressed="false" tabindex="0" role="button">Money Market</li><li class="prod_li even" data-rate-fi="3.000% APR&lt;sup&gt;1&lt;/sup&gt;" data-rate-mkt="3.544% APR&lt;sup&gt;1&lt;/sup&gt;" data-fi-name="CEFCU" data-mkt-name="Peoria%20Metro" data-prod-type="loan" data-bars-rate-text="up%20to%20%3Cspan%20class%3D%22value-highlight%22%3E15%25%20lower%3Csup%3E1%3C%2Fsup%3E%3C%2Fspan%3E" data-product-id="18" data-product-class="mortgage" data-teaser-rate="" data-teaser-term="" data-product-note="" data-amount="250000" data-headline="%3Cspan%20class%3D%22value-highlight%22%3ESave%20up%20to%20%2411%2C914%3C%2Fspan%3E%20with%20CEFCU%20mortgages%3Csup%3E1%3C%2Fsup%3E" data-disclaimer="%2411%2C914%20is%20the%20difference%20between%20the%20amount%20paid%20in%20interest%20between%20CEFCU's%20rate%20at%203.000%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPR%3C%2Fspan%3E%26nbsp%3Bcompared%20to%203.544%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPR%3C%2Fspan%3E%26nbsp%3Bfor%20%20the%20Peoria%20Metro%20market%20average%20over%20the%20life%20of%20a%20%24250%2C000%20mortgage%20over%20180%20months.%20CEFCU%20rates%20outperform%20the%20Peoria%20Metro%20average%20earning%20a%20Datatrac%20Great%20Rate%20Award.%20%26copy%3B%20%3Ca%20href%3D'https%3A%2F%2Fwww.datatrac.net'%20target%3D'_blank'%3EDatatrac%3C%2Fa%3E%202019%3Cspan%20class%3D'comparison_prod'%3EComparison%20Product%3A%2015%20Yr%20Fixed%20-%20Rate%20for%20excellent%20credit%20%20compared%20(i.e.%20the%20'as%20low%20as'%20rate)%20which%20may%20vary%20based%20on%20credit%20rating.%20%20APR%3DAnnual%20Percentage%20Rate%20%3C%2Fspan%3E" data-disclosure-product="" data-disclosure-class="Your product class disclosure here." data-disclosure-client="Your company disclosure here." data-disclaimer-link-text="" data-disclaimer-link-url="" data-disclaimer-link-target="" data-disclaimer-long="%20View%20full%20rates%20and%20terms%20at%20%3Ca%20href%3D%22https%3A%2F%2Fwww.cefcu.com%2Frates%22%3Ecefcu.com%2Frates%3C%2Fa%3E.%20" data-geo-button-text="" data-child-client-service-key="gra_1365mortgage16982percentage_child3" data-link-behavior="url" data-link="https%3A%2F%2Fcitizensequityfcu.mortgagewebcenter.com%2FAccount%2FLogin%3FReturnUrl%3D%252fApplyNow%252fApplication.asp%253fPID%253d1%26PID%3D1" aria-pressed="false" tabindex="0" role="button">Mortgage</li><li class="prod_li" data-rate-fi="5.50% APR&lt;sup&gt;1&lt;/sup&gt;" data-rate-mkt="6.00% APR&lt;sup&gt;1&lt;/sup&gt;" data-fi-name="CEFCU" data-mkt-name="Peoria%20Metro" data-prod-type="loan" data-bars-rate-text="save%20up%20to%20%3Cspan%20class%3D%22value-highlight%22%3E%24349%3Csup%3E1%3C%2Fsup%3E%3C%2Fspan%3E" data-product-id="56" data-product-class="rv" data-teaser-rate="" data-teaser-term="" data-product-note="" data-amount="25000" data-headline="%3Cspan%20class%3D%22value-highlight%22%3ESave%20up%20to%20%24349%3C%2Fspan%3E%20with%20CEFCU%20RV%20loans%3Csup%3E1%3C%2Fsup%3E" data-disclaimer="%24349%20is%20the%20difference%20between%20the%20amount%20paid%20in%20interest%20between%20CEFCU's%20rate%20at%205.50%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPR%3C%2Fspan%3E%26nbsp%3Bcompared%20to%206.00%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPR%3C%2Fspan%3E%26nbsp%3Bfor%20%20the%20Peoria%20Metro%20market%20average%20over%20the%20life%20of%20a%20%2425%2C000%20RV%20loan%20over%2060%20months.%20CEFCU%20rates%20outperform%20the%20Peoria%20Metro%20average%20earning%20a%20Datatrac%20Great%20Rate%20Award.%20%26copy%3B%20%3Ca%20href%3D'https%3A%2F%2Fwww.datatrac.net'%20target%3D'_blank'%3EDatatrac%3C%2Fa%3E%202019%3Cspan%20class%3D'comparison_prod'%3EComparison%20Product%3A%20New%20RV%20-%2060%20Mo%20-%20Rate%20for%20excellent%20credit%20%20compared%20(i.e.%20the%20'as%20low%20as'%20rate)%20which%20may%20vary%20based%20on%20credit%20rating.%20%20APR%3DAnnual%20Percentage%20Rate%20%3C%2Fspan%3E" data-disclosure-product="" data-disclosure-class="Your product class disclosure here." data-disclosure-client="Your company disclosure here." data-disclaimer-link-text="" data-disclaimer-link-url="" data-disclaimer-link-target="" data-disclaimer-long="%20Add%200.50%25%20for%20cash%20pay%20rates.%20%20View%20full%20rates%20and%20terms%20at%20%3Ca%20href%3D%22https%3A%2F%2Fwww.cefcu.com%2Frates%22%3Ecefcu.com%2Frates%3C%2Fa%3E.%20" data-geo-button-text="" data-child-client-service-key="gra_1365rv16982percentage_child1" data-link-behavior="url" data-link="https%3A%2F%2Floans.cefcu.com%2FVirtualCapture%2FProducts%3FProductCategory%3DVehicle" aria-pressed="false" tabindex="0" role="button">RV Loan</li><li class="prod_li even" data-rate-fi="0.30% APY&lt;sup&gt;1&lt;/sup&gt;" data-rate-mkt="0.09% APY&lt;sup&gt;1&lt;/sup&gt;" data-fi-name="CEFCU" data-mkt-name="Peoria%20Metro" data-prod-type="deposit" data-bars-rate-text="earn%20up%20to%20%3Cspan%20class%3D%22value-highlight%22%3E250%25%20more%3Csup%3E1%3C%2Fsup%3E%3C%2Fspan%3E" data-product-id="14" data-product-class="savings" data-teaser-rate="" data-teaser-term="" data-product-note="" data-amount="1000" data-headline="CEFCU%20savings%20rates%20up%20to%20%3Cspan%20class%3D%22value-highlight%22%3E250%25%20higher%3C%2Fspan%3E%3Csup%3E1%3C%2Fsup%3E" data-disclaimer="250%25%20is%20the%20difference%20between%20the%20percent%20earned%20in%20interest%20between%20CEFCU's%20rate%20at%200.30%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPY%3C%2Fspan%3E%26nbsp%3Bcompared%20to%200.09%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPY%3C%2Fspan%3E%26nbsp%3Bfor%20%20the%20Peoria%20Metro%20market%20average%20over%20the%20life%20of%20a%20regular%20savings.%20CEFCU%20rates%20outperform%20the%20Peoria%20Metro%20average%20earning%20a%20Datatrac%20Great%20Rate%20Award.%20%26copy%3B%20%3Ca%20href%3D'https%3A%2F%2Fwww.datatrac.net'%20target%3D'_blank'%3EDatatrac%3C%2Fa%3E%202019%3Cspan%20class%3D'comparison_prod'%3EComparison%20Product%3A%20Regular%20Savings%20-%20%241k%20-%20APY%3DAnnual%20Percentage%20Yield%3C%2Fspan%3E" data-disclosure-product="" data-disclosure-class="Your product class disclosure here." data-disclosure-client="Your company disclosure here." data-disclaimer-link-text="" data-disclaimer-link-url="" data-disclaimer-link-target="" data-disclaimer-long="%20%245%20minimum%20to%20open.%20View%20full%20rates%20at%20%3Ca%20href%3D%22https%3A%2F%2Fwww.cefcu.com%2Frates%22%3Ecefcu.com%2Frates%3C%2Fa%3E.%20" data-geo-button-text="Learn%20More" data-child-client-service-key="gra_1365savings16982percentage_child1" data-link-behavior="url" data-link="https%3A%2F%2Fwww.cefcu.com%2Fchecking%2Fsavings.php" data-link-text="Learn%20More" aria-pressed="false" tabindex="0" role="button">Savings</li><li class="last prod_li" data-rate-fi="8.49% APR&lt;sup&gt;1&lt;/sup&gt;" data-rate-mkt="8.56% APR&lt;sup&gt;1&lt;/sup&gt;" data-fi-name="CEFCU" data-mkt-name="Peoria%20Metro" data-prod-type="loan" data-bars-rate-text="" data-product-id="22" data-product-class="unsecured" data-teaser-rate="" data-teaser-term="" data-product-note="" data-amount="25000" data-headline="CEFCU%20unsecured%20loans%20beat%20the%20%3Cspan%20class%3D%22value-highlight%22%3EPeoria%20Metro%3C%2Fspan%3E%20average%3Csup%3E1%3C%2Fsup%3E" data-disclaimer="Based%20upon%20the%20difference%20between%20the%20amount%20paid%20in%20interest%20between%20CEFCU's%20rate%20at%208.49%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPR%3C%2Fspan%3E%26nbsp%3Bcompared%20to%208.56%25%20%3Cspan%20class%3D%22rn_apr%22%3EAPR%3C%2Fspan%3E%26nbsp%3Bfor%20%20the%20Peoria%20Metro%20market%20average%20over%20the%20life%20of%20a%20%2425%2C000%20unsecured%20loan%20over%2036%20months.%20CEFCU%20rates%20outperform%20the%20Peoria%20Metro%20average%20earning%20a%20Datatrac%20Great%20Rate%20Award.%20%26copy%3B%20%3Ca%20href%3D'https%3A%2F%2Fwww.datatrac.net'%20target%3D'_blank'%3EDatatrac%3C%2Fa%3E%202019%3Cspan%20class%3D'comparison_prod'%3EComparison%20Product%3A%20Unsecured%20-%2036%20Mo%20-%20Rate%20for%20excellent%20credit%20%20compared%20(i.e.%20the%20'as%20low%20as'%20rate)%20which%20may%20vary%20based%20on%20credit%20rating.%20%20APR%3DAnnual%20Percentage%20Rate%20%3C%2Fspan%3E" data-disclosure-product="" data-disclosure-class="Your product class disclosure here." data-disclosure-client="Your company disclosure here." data-disclaimer-link-text="" data-disclaimer-link-url="" data-disclaimer-link-target="" data-disclaimer-long="" data-geo-button-text="" data-child-client-service-key="gra_1365unsecured16982percentage_child1" data-link-behavior="url" data-link="https%3A%2F%2Fwww.cefcu.com%2Fapply%2Ffor%2Fpersonal%2F" aria-pressed="false" tabindex="0" role="button">Unsecured Loan</li>
+        </div></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 72px; max-height: 128px; top: 25px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></ul>
+    </div><!-- .products -->
+    
+    <div role="alert" class="bar_chart_cont small-6 columns type_deposit"><img title="Datatrac Great Rate Award" alt="Datatrac Great Rate Award" src="450_data/Seal-11052019-170.png" class="watermark-GRA">
+    	<h4 class="prod_name text-center" aria-label="Share Draft Checking rates">Share Draft Checking</h4>
+    	<div class="bar bar_left tall">
+        	<div class="fi_name bar_label text-center" style="display: block; opacity: 0.875056;">CEFCU</div>
+            <div class="bar_teaser_rate_val text-center" style="display: block; opacity: 0.875056;"></div>
+            <div class="bar_rate_val text-center" style="display: block; opacity: 0.875056;">0.60% APY<sup><a href="#footnote">1</a></sup></div>
+        </div>
+        <div class="bar bar_right short">
+            <div class="mkt_name bar_label text-center" style="display: block; opacity: 0.875056;">Peoria Metro</div>
+            <div class="bar_rate_val text-center" style="display: block; opacity: 0.875056;">0.29% APY<sup><a href="#footnote">1</a></sup></div>
+        </div>
+        <div class="bars_rate_val text-center" style="display: block; opacity: 0.875056;">earn up to <span class="value-highlight">108% more<sup>1</sup></span></div>
+    </div><!-- .bar_chart_cont -->  
+    
+  </div><!-- .row_products -->
+
+
+  <div class="geolocform row row_geoloc_form space_top ">  
+    <div class="small-12 columns geo_form_outer">
+    
+      
+      <div class="disclaimer_gra_row row">
+        <div class="GRA-seal small-2 columns">
+          
+          <div class="GRA-slogan gotcha" style="display: none;">Certified to<br>save you money.</div> 
+        </div>
+        
+        <div class="footer_right_side small-10 columns remove_padding_left">
+        
+            <div class="row collapse geo_form_row">
+              <div class=" small-10 columns geo_form_input">
+                  <input type="text" id="geoloc" title="enter zip code" placeholder="Enter zip..." class="placeholder" value="Enter zip...">
+              </div>
+              <div class="small-2 columns geo_form_submit">
+                  <span class="CTA" tabindex="0" onclick="submitSearch();" style="visibility: visible;" role="button"><span id="CTAButton">Learn More</span><img alt="loading" id="CTASpinner" class="CTASpinner" src="450_data/spinner.gif"></span>
+              </div><div id="stamp_copyright_link">©<a href="https://datatrac.net/" target="_blank" class="link_dt_website">Datatrac</a> 2019. <a href="#" id="stamp_modal_trigger" class="link_details" data-reveal-id="modal_details"><sup>1</sup>details</a> <a class="external-disclosure-link" target="_blank" href="https://www.cefcu.com/about/rates.php">Rates &amp; Disclosures</a></div><!-- .geo_form_submit -->
+            </div><!-- .geo_form_row -->
+        
+        	<div id="footnote" class="disclaimer">49% is the difference between the percent earned in interest between CEFCU's rate at 0.10% <span class="rn_apr">APY</span>&nbsp;compared to 0.07% <span class="rn_apr">APY</span>&nbsp;for
+  the Peoria Metro market average over the life of a interest checking. 
+CEFCU rates outperform the Peoria Metro average earning a Datatrac Great
+ Rate Award. © <a href="https://www.datatrac.net/" target="_blank">Datatrac</a> 2019<span class="comparison_prod">Comparison Product: Interest Checking - $5k - APY=Annual Percentage Yield</span>. <a href="https://www.cefcu.com/about/rates.php" class="modal_trigger" data-reveal-id="modal_details" target="_blank">Rates &amp; Disclosures</a> <a href="#headline" class="screen-reader-only">return to headline</a></div><!-- .disclaimer -->
+            
+        </div><!-- .footer_right_side -->
+      
+                 
+        <div id="modal_details" class="reveal-modal" data-reveal="">
+           <div class="modal_inner">
+              <h3>Details:</h3><div class="disclaimer_headlines_dots">49% is the difference between the percent earned in interest between CEFCU's rate at 0.10% <span class="rn_apr">APY</span>&nbsp;compared to 0.07% <span class="rn_apr">APY</span>&nbsp;for
+  the Peoria Metro market average over the life of a interest checking. 
+CEFCU rates outperform the Peoria Metro average earning a Datatrac Great
+ Rate Award. © <a href="https://www.datatrac.net/" target="_blank">Datatrac</a> 2019<span class="comparison_prod">Comparison Product: Interest Checking - $5k - APY=Annual Percentage Yield</span></div><hr><div class="disclaimer_long">$2,500 minimum to open. $2,500 minimum balance to avoid a fee. View full rates at <a href="https://www.cefcu.com/rates">cefcu.com/rates</a>.</div><hr><a class="external-disclosure-link" target="_blank" href="https://www.cefcu.com/about/rates.php">Rates &amp; Disclosures</a><hr>
+              
+              <!-- .disclosure-product -->
+              
+              <!-- .disclosure-class -->
+              
+              <!-- .disclosure-client -->
+              <p><a href="#" class="trigger-close-reveal-modal">× close</a></p>
+            </div><!-- .modal_inner -->
+            <a class="close-reveal-modal">×</a>
+        </div><!-- .modal_details -->
+                 
+      
+      
+      </div><!-- .disclaimer_gra_row -->
+      
+    </div><!-- .geo_form_outer -->
+  </div><!-- .row_geoloc_form -->
+
+</div><!-- .certification-bg -->
+</div><!-- .dt_widget -->
+
+<script type="text/javascript" src="450_data/scripts-marquee-main.js"></script>
+
+<!-- 172.69.63.109 -->
+
+
+</body></html>

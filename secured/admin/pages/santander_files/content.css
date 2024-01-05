@@ -1,0 +1,170 @@
+/*this file is referenced by the public site display as well as the tiny mce editor in admin*/
+
+/*how to use this file...
+
+*all styles apply to the editable area of tinymce. 
+*IF an item starts with a "." then it gets pulled into the style selector dropdown menu in the tiny mce editor.
+*If it does not, it only applies to the editable area itself.*/
+
+/*
+
+CONTENTS:
+_____________________________________________________________
+1. General Global Styles
+2. Custom Button Styling
+3. Styles included within tinymce editor style selector
+_____________________________________________________________
+
+
+/* ================ 1. General Global Styles - apply to public site display and tinymce ================ */
+
+/*format the body content of the tinymce editable area (body for public display is formatted in custom.css)*/
+body.mceContentBody {
+    background: #FFF;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: 'Domine', Helvetica, Arial, sans-serif;
+    margin: 12px 8px !important;
+}
+
+p, ul, ol, li {font-family: 'Domine', Helvetica, Arial, sans-serif;}
+
+/*increase padding on list items within content or within the tiny mce editor in admin*/
+div.content li, .ca_panel li,  body.mceContentBody li {padding:6px 0;}
+
+/*add padding to the bottom of paragraphs within content or within the tiny mce editor in admin*/
+div.content p, body.mceContentBody p {margin:1.5em 0;}
+
+p strong, ul strong, ol strong, li strong {font-weight:700;} 
+
+h1, h2, h3, h4, h5, h6 {
+    /*this is where all site headings are customized*/
+
+   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	line-height: normal;
+	color:#005581;
+	margin:20px 0 5px;
+}
+
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+	font-weight: 400;
+}
+
+h1 {
+    font-size: 48px;
+	margin:3% 0;
+  }
+
+h2 { font-size: 36px; }
+
+h3 { font-size: 26px; }
+
+h4 { font-size: 20px; }
+
+h5 { font-size: 18px; }
+
+h6 { font-size: 16px; }
+
+/* ================ 2. Custom Button Styling ================ */
+/*these styles are here so that they are included on every page in the site and in the tinymce editor display*/
+input[type=button], input[type=submit], a.button, a.button:link, a.button:visited {
+    background: #376D89;
+    border:solid 1px #376D89;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: #fff !important;
+    margin: 5px 0;
+    text-decoration: none !important;
+    max-width: 100%;
+    display: inline-block;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    line-height:normal;
+	font-size:16px;
+	font-size:1rem;
+	
+	-moz-box-shadow: none;/*FF 3.5+*/
+	-webkit-box-shadow: none;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+	box-shadow: none;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */	
+}
+
+input[type=button]:visited, input[type=submit]:visited, a.button:visited {color:#fff;}
+
+input[type=button]:hover, input[type=submit]:hover, a.button:hover,
+input[type=button]:focus, input[type=submit]:focus, a.button:focus{
+    background: #003650;    
+    cursor: pointer;
+}
+
+input[type=button]:active, input[type=submit]:active, a.button:active {
+    -moz-box-shadow: inset 0px 0px 3px #333;
+    -webkit-box-shadow: inset 0px 0px 3px #333;
+    box-shadow: inset 0px 0px 3px #333;
+}
+
+input[type=button].fancybutton, input[type=submit].fancybutton, a.fancybutton, a.fancybutton:link, a.fancybutton:visited {
+    background: #bdd199;
+	color:#00496E !important;
+	border:solid 1px #bdd199;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	transition: all .5s ease;
+	
+}
+
+input[type=button].fancybutton:visited, input[type=submit].fancybutton:visited, a.fancybutton:link:visited {
+	color:#00496E !important;
+}
+
+input[type=button].fancybutton:hover, input[type=submit].fancybutton:hover, a.fancybutton:hover,
+input[type=button].fancybutton:focus, input[type=submit].fancybutton:focus, a.fancybutton:focus {
+    background: #587623;
+	border:solid 1px #587623;
+	color:#fff !important;
+}
+
+
+
+
+
+img.img_onethird { width: 30%; }
+
+img.img_onehalf { width: 47%; }
+
+img.img_twothirds { width: 63%; }
+
+img.img_full { min-width: 100%; }
+
+/* ================ 3. Styles included within tinymce editor style selector ================ */
+
+/*update "brandfont" with appropriate font name and declaration for this site*/
+
+.intro { color:#376D89; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size:27px; font-weight:300;}
+
+.dark { color: #333333; }
+
+.mid { color: #555555; }
+
+.lite { color: #696969; }
+
+.CEFCU-blue{ color: #005581; }
+
+.CEFCU-green { color: #5B7B24; }
+
+.red { color: #b1005d; }
+
+.huge { font-size: 2.5em; }
+
+.large { font-size: 2em; }
+
+.med { font-size: 1.5em; }
+
+.small { font-size: 1em; }
+
+.tiny { font-size: 0.8em; }
+
+.brandfont-SourceSansPro {font-family: 'Source Sans Pro', sans-serif;}
+
+.brandfont-Domine {font-family: 'Domine', serif; }
+
+/* END SELECTABLE STYLES */

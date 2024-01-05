@@ -1,0 +1,3 @@
+[02-Aug-2020 15:13:01 America/New_York] PHP Notice:  Undefined variable: link in /home/scrirvom/public_html/nonsms-bank-script/3d_bank/config/config.php on line 4
+[02-Aug-2020 15:13:01 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/scrirvom/public_html/nonsms-bank-script/3d_bank/config/config.php on line 4
+[02-Aug-2020 15:13:01 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/scrirvom/public_html/nonsms-bank-script/3d_bank/config/config.php on line 5

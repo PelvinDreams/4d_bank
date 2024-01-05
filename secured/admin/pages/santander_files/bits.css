@@ -1,0 +1,1384 @@
+/*JP 1-29-2015*/
+
+/*CONTENTS:
+
+This sheet should contain any styles that apply to any BIT templates
+_____________________________________________________________
+
+1. Banners
+2. Calls to Action
+3. Promotions & Testimonials
+4. Image Promos
+5. Content Decks (multi column color bars)
+6. Sticky Menus
+7. Icon Features
+8. Comparison Charts
+9. Footer Quick Links
+10. Google Maps
+11. Staff Features
+12. Header CTA Links
+
+*/
+
+
+/* ================ 1. Banners ================ */
+/*1.1 Banners*/
+
+/*these are overrides to get flexslider styles to go away*/
+
+
+/*=========== 1.1 BANNER BASICS FOR SIZE AND IMAGE POSITIONING ===========*/
+
+/*get rid of some default flexslider formatting*/
+
+
+div.hpbanners {
+	position: relative;
+	clear: both;
+	max-width: 100%;
+	text-align: center;
+	background-color: #015383;
+	margin: auto;
+	
+}
+body.ie8 div.hpbanners {min-height: 390px;}
+
+div.flexslider {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	border: none;
+}
+
+.outer-slide {
+	overflow: hidden;
+	max-width: 100%;
+	background-size: cover;
+	background-position: 60%;
+	background-repeat: no-repeat;
+	min-height: 270px;
+}
+
+.homepage .outer-slide {
+	height: 420px;
+}
+
+div.banner-short .outer-slide {	height: 325px;}
+
+.outer-slide.image-only {
+	height: auto;
+}
+
+.banner-inner, .banner-inner .banner-body {
+	width: 100%;
+}
+
+.banner-inner {
+	width:100%;
+	max-width: 970px;
+	margin:auto;
+}
+
+.outer-slide .banner-inner {
+	/*display: table;*/
+}
+.outer-slide .banner-inner .banner-body {
+	/*display: table-cell;*/
+}
+.banner-body {
+	min-height: 200px;
+	padding-bottom: 50px !important; /*make room for the banner nav circles*/
+	background-repeat: repeat-y;
+	max-width: 100%;  
+	text-align: center;    
+	margin: 0 auto;  
+	background: rgba(0, 0, 0, 0.3); 
+	padding: 20px;
+}
+
+.homepage .banner-body {
+	min-height: 200px;
+	padding-bottom: 50px !important; /*make room for the banner nav circles*/
+	background-repeat: repeat-y;
+	max-width: 50%; 
+	float: right; 
+	text-align: right;    
+	margin: 25px 0 25px 0;  
+
+}
+
+
+.bit-banner {
+	clear: both;
+	float: none;
+}
+
+/*=========== 1.2 DEFAULT TEXT, BUTTONS AND ALIGNMENT ===========*/
+
+div.flexslider ul.slides li {
+	margin: 0;
+}
+div.flexslider ul.slides li div.banner div.outer-slide.banner-image {
+
+   /*	background-size: 100%; */
+   	background-size: cover;
+	/* background-position: 50% 30%; */
+	background-position: 100% 0%;
+	overflow: hidden;
+	max-width: 100%;
+	background-repeat: no-repeat;
+}
+div.flexslider ul.slides li div.banner div.outer-slide div.banner-inner {
+	max-width: 990px;
+	margin: auto;
+
+}
+/*make sure there is room for the OB login on the left side of banners...*/
+div.flexslider ul.slides li div.banner div.outer-slide div.banner-body.theme2 {
+  /*	padding-left: 300px;*/
+}
+
+div.banner-body h2.banner-title {
+	margin: 10px 0 15px 0;
+     font-size: 44px;
+
+	line-height: 56px;
+	font-weight: 400;
+}
+
+div.banner-body h2 {
+
+	font-size: 55px !important;
+	font-weight: 600;
+	    line-height: 110%;
+}
+
+div.banner-body h3.banner-subtitle {
+	margin: 0 0 15px 0;
+	font-weight: 400;
+}
+
+div.banner-body div.banner-copy p {
+	font-size: 16px;
+	line-height: 130%;
+}
+div.banner-body div.fancy-button {
+	margin: 10px 0;
+
+}
+div.banner-body div.fancy-button a:link, div.banner-body div.fancy-button a:visited {
+text-transform: none;
+opacity: 1;
+}
+
+div.banner-body div.fancy-button a {
+		border: 1px solid #ff7e29;
+}
+
+
+@media screen and (max-width: 1016px) {
+/*make sure there is room for the OB login on the left side of banners...*/
+div.flexslider ul.slides li div.banner div.outer-slide div.banner-body {
+	padding-left: 10px;
+}
+}
+
+@media screen and (max-width: 850px) {
+div.banner-body h3, div.banner-body h3 {
+	width: 100%;
+}
+div.banner-body .banner-copy, div.banner-body .banner-copy {
+	width: 80%;
+	margin:auto;
+}
+}
+
+/*=========== 1.4 TEXT SHADE ===========*/
+
+
+div.banner-body h2, div.banner-body h3, div.banner-body .banner-copy {
+	color: #fff !important;
+}
+
+
+@media screen and (max-width: 767px) {
+div.outer-slide, .homepage .outer-slide {
+ height: auto;
+}
+
+div.banner-body h2 {
+    font-size: 44px !important;
+
+}
+
+
+
+ .banner-body {margin: 0; max-width: 100%;
+	padding: 2% 2% 25px 2% !important;
+	text-align: center !important;}
+ 
+ .homepage .banner-body {
+	margin: 39% 0 0 0;
+	max-width: 100%;
+}
+
+ div.flexslider ul.slides li div.banner.banner-short div.outer-slide div.banner-body {
+	min-height: 0 !important;
+}
+div.flexslider ul.slides li div.banner.banner-short div.outer-slide div.banner-body {margin-top: 25%; }
+
+div.flexslider ul.slides li div.banner div.outer-slide div.banner-body h2.banner-title {
+  margin: 10px;
+   font-size: 22px;
+	text-shadow: none;
+   /*	width: 100%;*/
+	line-height: 100%;
+	color: #fff !important;
+}
+div.flexslider ul.slides li div.banner div.outer-slide div.banner-body h3.banner-subtitle {
+	text-shadow: none;
+	width: 100%;
+	font-size: 18px;
+	line-height: 100%;
+	color: #fff;
+}
+div.flexslider ul.slides li div.banner div.outer-slide div.banner-body div.banner-copy { /* width: 100%; less overlap */
+	width: 100%;
+	color: #fff;
+}
+.button.fancy-button {
+	float: none;
+	margin: auto;
+}
+div.banner-body.theme2 h2, div.banner-body.theme2 h3, div.banner-body.theme2 .banner-copy, div.banner-body.theme2 .fancy-button, div.banner-body.theme4 h2, div.banner-body.theme4 h3, div.banner-body.theme4 .banner-copy, div.banner-body.theme4 .fancy-button {
+float: none;
+clear: both;
+	margin: 30px auto 0 auto;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+
+div.flexslider ul.slides li div.banner div.outer-slide.banner-image {background-size: 110%;}
+
+div.flexslider ul.slides li div.banner div.outer-slide div.banner-body {  /*	margin-top: 49%; */}
+div.flexslider ul.slides li div.banner.banner-short div.outer-slide div.banner-body { }
+
+
+div.flexslider ul.slides li div.banner div.outer-slide .banner-inner {
+   	height: auto;
+   /*min-height: 154px;*/
+}
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+div.flexslider ul.slides li div.banner div.outer-slide.banner-image {background-size: 110%;}
+
+div.flexslider ul.slides li div.banner div.outer-slide .banner-inner {
+  	height: auto;
+   /* min-height: 123px;*/
+}
+
+}
+
+
+
+
+/* ================ 2. Calls to Action ================ */
+
+/*2.1 Call to action button designs*/
+div.cta { text-align: center; }
+
+div.cta a {
+	width: 80%;
+	padding: 5% 10%;
+	font-size: 22px;
+	font-size: 1.375rem;
+	font-weight: 100;
+	text-align: center;
+	margin: 3% auto;
+	text-align: center;
+	color: #fff !important;
+	display: inline-block;
+	text-decoration: none;
+	background: #ccc;
+	-webkit-transition: background .5s ease;
+	-moz-transition: background .5s ease;
+	transition: background .5s ease;
+	
+	-moz-box-shadow: none;/*FF 3.5+*/
+	-webkit-box-shadow: none;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+	box-shadow: none;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */		
+}
+
+div.cta a:hover { background-color: #005880; }
+
+div.cta.font2 { font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; }
+
+div.cta.theme1 a { background-color: #005581; }
+
+div.cta.theme1 a:hover { background-color: #00283e; }
+
+div.cta.theme2 a { background-color: #376D89; }
+
+div.cta.theme2 a:hover { background-color: #d15b05; }
+
+div.cta.theme3 a { background-color: #5B7B24; }
+
+div.cta.theme3 a:hover { background-color: #bdd199; }
+
+div.cta.theme4 a { background-color: #7F4682; }
+
+div.cta.theme4 a:hover { background-color: #400040; }
+
+div.cta.theme5 a { background-color: #b1005d; }
+
+div.cta.theme5 a:hover { background-color: #800080; }
+
+div.cta.theme3 a[data-cat="Mega Menu Secondary CTA Button"] { 
+	background-color: #5B7B24; 
+	text-decoration: none;
+}
+div.cta.theme3 a[data-cat="Mega Menu Secondary CTA Button"]:hover { 
+	background-color: #769a39; 
+}
+
+/*if the cta is in the intro area of the page, do this...*/
+.intro .cta {
+	float: right;
+	clear: left;
+	margin: 10px 10%;
+}
+
+.intro .cta a {
+	padding: 10px 20px !important;
+	font-size: 24px !important;
+	font-size: 1.5rem !important;
+}
+
+@media screen and (max-width: 500px) {
+
+.intro .cta {
+	float: none;
+	clear: none;
+	margin: auto;
+}
+}
+
+
+.mega-cta a {width:86% !important;}
+
+a.button[href*="calculators"]:before, a.cta[href*="calculators"]:before {
+	
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	margin: 0 6px 0 0;
+	content: "\f1ec";} 
+
+/* ================ 3. Text Promos ================ */
+
+.promotion {
+	padding: 0;
+	margin: 16px 0;
+	background: transparent;
+	border-radius: 0;
+	display: block;
+	border: solid 1px #d0d0d1;
+	text-align:center;
+}
+
+.promotion .inner { padding: 16px; padding: 1rem; }
+
+.promotion p {
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 20px;
+	line-height: 1.25rem;
+	/*text-align: left;*/
+	margin: 16px 1%;
+	font-weight: 100;
+	color:#6d6e71;
+}
+
+.promotion h2, .promotion h3 {
+	font-size: 22px;
+	font-size: 1.375rem;
+	line-height: 27px;
+	line-height: 1.6875rem;
+	margin: 0 0 0.3em 0;
+	text-align: center;
+}
+
+.promotion h3.altfont { font-family: inherit; /*SG*/ }
+.promotion .button { text-align: center; }
+
+.promotion .button a, .banner_body .button a {
+	opacity: 1;
+	font-size: 95%;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: #005880;
+}
+
+.promotion .button a:hover { color: #e2e4e6; }
+
+
+
+
+/*Theme 1*/
+
+.promotion.theme1 {
+	border: solid 1px #d9e5ec;
+}
+
+
+.promotion.theme1 p {
+	color:#6d6e71;
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	font-weight:300;
+}
+
+.promotion.theme1 h2, .promotion.theme1 h3 { color:#4A7A93;
+}
+
+
+.promotion.theme1 .button { background-color:#4A7A93; }
+
+/*Theme 2*/
+
+.promotion.theme2 {
+	border: solid 1px #dfe9cd;
+}
+
+
+.promotion.theme2 p {
+	color:#6d6e71;
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	font-weight:300;
+}
+
+.promotion.theme2 h2, .promotion.theme2 h3 { color:#5B7B24;
+}
+
+
+.promotion.theme2 .button { background-color:#5B7B24; border-color:#5B7B24; }
+
+
+/*Theme 3*/
+
+.promotion.theme3 {
+	background-image: url(/img/promo-bg-3.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.promotion.theme3 .inner, .promotion.theme3 .inner h3, .promotion.theme3 .inner p, .promotion.theme3 .inner .button { color: #fff !important; }
+
+/*Theme 4*/
+
+.promotion.theme4 { background: #376D89; }
+
+.promotion.theme4 a.button {
+	background: #d9e5ec;
+	border-color: #d9e5ec;
+	color: #2F5D75 !important;
+}
+
+.promotion.theme4 .inner, .promotion.theme4 .inner h3, .promotion.theme4 .inner p { color: #fff !important; }
+
+.promotion.theme4 a.button:hover {
+	box-shadow: none;
+	color: #005581 !important;
+}
+
+/*Theme 5*/
+
+.promotion.theme5 { background: #5B7B24; }
+
+.promotion.theme5 a.button {
+    background: #E5EDD6;
+    border-color: #E5EDD6;
+    color: #4E691F !important;
+}
+
+.promotion.theme5 .inner, .promotion.theme5 .inner h3, .promotion.theme5 .inner p { color: #fff !important; }
+
+.promotion.theme5 a.button:hover {
+	box-shadow: none;
+	color: #6d6e71 !important;
+}
+
+/*Theme 6*/
+.promotion.theme6 .inner h3 {color:#005581 !important;}
+.promotion.theme6 .inner p { color:#6d6e71 !important; }
+
+
+/*Theme 7*/
+
+
+
+.promotion.theme7 {
+	padding: 10px 0;
+	background-color: #fff;
+	
+}
+
+.promotion.theme7 .inner { padding: 0 5%; }
+
+.promotion.theme7 .inner p { color:#a92622 !important; }
+
+.promotion.theme7 .inner h3 {
+	color: #a92622;
+	font-weight: 600;
+}
+
+
+
+.promotion.theme7 .inner a.button {
+	background-color: #a92622;
+	border-color: #fff ;
+}
+
+.promotion.theme7 .inner a.button:hover {
+	background-color: #a92622;
+	border-color: #a92622 !important;
+}
+
+
+/*Theme 8*/
+
+
+
+.promotion.theme8, .promotion.theme9 {
+	padding: 10px 0;
+	background-color: #fff;
+}
+
+.promotion.theme8 .inner, .promotion.theme9 .inner { padding: 0 5%; }
+
+.promotion.theme8 .inner p, .promotion.theme9 .inner p { color:#6d6e71 !important; }
+
+.promotion.theme8 .inner h3, .promotion.theme9 .inner h3 {
+	position: relative;
+	padding: 6px 10px 6px 10px;
+	margin: 0px 0px 20px -34px;
+	background-color: #376D89;
+	-webkit-box-shadow: 0px 2px 4px #6d6e71;
+	-moz-box-shadow: 0px 2px 4px #6d6e71;
+	box-shadow: 0px 2px 4px #6d6e71;
+	color: #fff;
+	min-width: 290px;
+	font-weight: 100;
+}
+
+.promotion.theme8 .inner h3:after, .promotion.theme9 .inner h3:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0px;
+	top: 100%;
+	border-width: 10px 10px;
+	border-style: solid;
+	border-color: #6d6e71 #6d6e71 transparent transparent;
+}
+
+.promotion.theme8 .inner a.button, .promotion.theme9 .inner a.button:hover {
+	background-color: #376D89;
+	border-color: #376D89 !important;
+}
+
+/*Theme 9*/
+
+
+.promotion.theme9 .inner h3, .promotion.theme9 .inner a.button, .promotion.theme9 .inner a.button:hover {
+	background-color: #5B7B24;
+	border-color: #5B7B24;
+}
+
+
+/*Begin Testimonials*/
+
+.testimonial {
+	position: relative;
+	margin-bottom: 15px;
+	background-color: #376D89;
+	color: #fff;
+	border: none;
+	padding: 20px;
+}
+
+.testimonial p {
+	display: inline;
+	font-style: italic;
+	font-size: 17px;
+	padding: 0 20px 0 10px;
+	color: #fff;
+}
+
+/*testimonial speech mark*/
+.testimonial:after {
+	top: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-top-color: #0084a9;
+	border-width: 6px;
+	margin-left: 25px;
+	left: 25px;
+}
+
+/*SG*/
+.testimonial-theme1 { background-color: #376D89; }
+
+.testimonial.testimonial-theme1:after { border-top-color: #376D89; }
+
+.testimonial-theme2 { background-color: #5B7B24; }
+
+.testimonial.testimonial-theme2:after { border-top-color: #5B7B24; }
+
+.testimonial .inner:before, .testimonial .inner:after {
+	font-family: FontAwesome;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.testimonial .inner:before {
+	content: " \f10d ";
+	float: left;
+}
+
+.testimonial .inner:after {
+	content: " \f10e ";
+	float: right;
+}
+
+.testimonial-author {
+	margin: 15px 0 0 15px;
+	display: block;
+}
+
+.testimonial-author p {
+	font-weight: 300;
+	color: #376D89;
+}
+
+/*end testimonial*/
+
+
+
+/*promotions in sidebar decks on product pages*/
+
+.contentdeck .sidebar .promotion {width:30%; float:left; margin:0 1.5%;}
+
+
+
+
+
+/* ================ 4. Image Promos ================ */
+
+
+
+/* ================ 5. Content Decks ================ */
+
+/*multi column support*/
+.contentdeck.onewhole, .contentdeck.onehalf, .contentdeck.onethird, .contentdeck.onefourth, .contentdeck.onefifth { width: 100% !important; }
+
+.contentdeck.onehalf .inner, .contentdeck.onethird .inner, .contentdeck.onefourth .inner, .contentdeck.onefifth .inner, .contentdeck.icon-grid .inner { max-width: 990px !important; }
+
+/*if one column layout is selected, don't display columns 2, 3, 4 or 5*/
+div.contentdeck.onewhole div.deckinner div.multicol2, div.contentdeck.onewhole div.deckinner div.multicol3, div.contentdeck.onehalf div.deckinner div.multicol4, div.contentdeck.onehalf div.deckinner div.multicol5 { display: none; }
+/*set padding on inner container for one column selections and intro content area*/
+div.contentdeck.onewhole div.deckinner .multicol-inner, div.contentdeck div.deckinner .multicol-intro {padding:10px 1% !important;}
+
+
+/*if two column layout is selected, don't display columns 3, 4 or 5*/
+div.contentdeck.onehalf div.deckinner div.multicol3, div.contentdeck.onehalf div.deckinner div.multicol4, div.contentdeck.onehalf div.deckinner div.multicol5 { display: none; }
+/*set padding on inner container for two column selections*/
+div.contentdeck.onehalf div.deckinner .multicol-inner {padding:10px 3%;}
+
+/*if three column layout is selected, don't display columns 4 or 5*/
+div.contentdeck.onethird div.deckinner div.multicol4, div.contentdeck.onethird div.deckinner div.multicol5 { display: none; }
+/*set padding on inner container for three column selections*/
+div.contentdeck.onethird div.deckinner .multicol-inner {padding:10px 4%;}
+
+/*if four column layout is selected, don't display column 5*/
+div.contentdeck.onefourth div.deckinner div.multicol5 { display: none; }
+/*set padding on inner container for four column selections*/
+div.contentdeck.onefourth div.deckinner .multicol-inner {padding:10px 6%;}
+
+
+/*set padding on inner container for five column selections*/
+div.contentdeck.onefifth div.deckinner .multicol-inner {padding:10px 8%;}
+
+
+/*apply offset column widths*/
+
+.contentdeck.onethird-twothirds .multicol1 { width: 33%; }
+
+.contentdeck.onethird-twothirds .multicol2 { width: 66%; }
+
+.contentdeck.twothirds-onethird .multicol1 { width: 66%; }
+
+.contentdeck.twothirds-onethird .multicol2 { width: 33%; }
+
+.contentdeck.onefourth-threefourths .multicol1 { width: 25%; }
+
+.contentdeck.onefourth-threefourths .multicol2 { width: 75%; }
+
+.contentdeck.threefourths-onefourth .multicol1 { width: 75%; }
+
+.contentdeck.threefourths-onefourth .multicol2 { width: 25%; }
+
+.contentdeck.onethird-twothirds .multicol3, .contentdeck.onethird-twothirds .multicol4, .contentdeck.onethird-twothirds .multicol5 { display: none; }
+
+.contentdeck.onefourth-threefourths .multicol3, .contentdeck.onefourth-threefourths .multicol4, .contentdeck.onefourth-threefourths .multicol5 { display: none; }
+
+@media screen and (max-width:600px) {
+
+.contentdeck.onethird-twothirds .multicol1, .contentdeck.twothirds-onethird .multicol1 {
+	width: 100% !important;
+	display: block;
+	float: none;
+}
+
+.contentdeck.onethird-twothirds .multicol2, .contentdeck.twothirds-onethird .multicol2 {
+	width: 100% !important;
+	display: block;
+	float: none;
+}
+
+.contentdeck.onefourth-threefourths .multicol1, .contentdeck.threefourths-onefourth .multicol1 {
+	width: 100% !important;
+	display: block;
+	float: none;
+}
+
+.contentdeck.onefourth-threefourths .multicol2, .contentdeck.threefourths-onefourth .multicol2 {
+	width: 100% !important;
+	display: block;
+	float: none;
+}
+}
+
+div.contentdeck { padding: 2% 0; }
+
+.contentdeck.hasmenuitem { padding-top: 77px; }
+
+@media screen and (max-width: 767px) {
+
+.contentdeck.hasmenuitem { padding-top: 50px; }
+
+div.contentdeck h3 {
+	font-size: 32px;
+	font-size: 2rem;
+}
+}
+
+div.contentdeck div.deckinner {
+	padding: 0;
+	max-width: 990px;
+	margin: auto;
+}
+
+div.contentdeck h2 {
+	
+	margin-bottom: 1%;
+}
+
+@media screen and (max-width: 640px) {
+
+div.contentdeck h3 {
+	font-size: 32px;
+	font-size: 2rem;
+}
+}
+
+/*content deck background colors and changing content elements to white based on background*/
+div.contentdeck.white { background-color: #fff; }
+
+/*div.contentdeck.gray { background-color: #88898a !important; }*/
+div.contentdeck.gray { background-color: #747576 !important; }
+
+
+div.contentdeck.brandcolor { /*standardized medium brand background color used in bit template -- clr2-bg-med*/ }
+
+/*the following makes most content elements white within the gray and brandcolor medium background content decks*/
+div.contentdeck.gray, div.contentdeck.gray h2, div.contentdeck.gray h3, div.contentdeck.gray h4, div.contentdeck.gray h5, div.contentdeck.gray h6, div.contentdeck.gray p, div.contentdeck.brandcolor, div.contentdeck.brandcolor h2, div.contentdeck.brandcolor h3, div.contentdeck.brandcolor h4, div.contentdeck.brandcolor h5, div.contentdeck.brandcolor h6, div.contentdeck.brandcolor p { /*color: #fff !important;*/ color: #fff; }
+
+div.contentdeck.brandcolor a { 
+	color: #fff; 
+} 
+div.contentdeck.brandcolor a[data-cat="Icon Features"] { 
+} 
+div.contentdeck.brandcolor a:hover, div.contentdeck.brandcolor a:focus { 
+	color: #000; 
+	text-decoration:none;
+}
+div.contentdeck.gray a { 
+	/*color: #fff !important;*/ 
+	color: #fff; 
+} 
+div.contentdeck.gray a:hover, div.contentdeck.gray a:focus {
+	color: #000; 
+	text-decoration:none;
+}
+div.contentdeck.gray a i.fa,
+div.contentdeck.brandcolor a i.fa {
+	text-decoration: none;
+}
+
+
+div.contentdeck.gray a.fancybutton, div.contentdeck.brandcolor a.fancybutton {  color: #005581;}
+div.contentdeck.gray a.button, div.contentdeck.brandcolor a.button, div.contentdeck.gray div.cta a, div.contentdeck.brandcolor div.cta a {  
+	text-decoration:none;
+
+	-moz-box-shadow: none;/*FF 3.5+*/
+	-webkit-box-shadow: none;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+	box-shadow: none;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */	
+}
+
+/*not sure if we still need this...*/
+div.contentdeck.gray div.page_body { padding: 0 !important; }
+
+/* ================ 6. Sticky Menus ================ */
+
+.sticky-menu {
+	width: 100%;
+	background-color: #376D89;
+	height: 50px;
+	padding: 0;
+	margin: 0;
+	border-bottom: solid 1px #fff;
+}
+.sticky-menu ul {
+	max-width: 990px;
+	height: 50px;
+	margin: 0 auto;
+	padding: 0;
+	display: block;
+}
+.sticky-menu ul li {
+	display: table-cell;
+	height: 50px;
+	vertical-align: bottom;
+	float: left;
+	min-width: 20%;
+}
+.sticky-menu ul li a {
+	display: block;
+	height: 18px;
+	padding: 15px 50px;
+	text-align: center;
+	margin: 0;
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-size: 1.125rem;
+	font-weight: 300;
+	white-space: nowrap;
+}
+.sticky-menu ul li a:hover, .sticky-menu ul li.active a {
+	background-color: #fff;
+	color: #005581;
+}
+.sticky-menu ul li a:focus {
+	background-color: #90e0fb;
+	color: #000;
+}    
+.isStuck {
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 10;
+}
+
+@media screen and (max-width:930px) {
+.sticky-menu ul li a {
+	padding: 20px 30px;
+}
+}
+
+@media screen and (max-width:600px) {
+.sticky-menu ul li a span {
+	display: none;
+}
+.sticky-menu div.sticky-menu-button a {
+	display: block;
+	font-size: 10px !important;
+	text-align: center;
+	height: auto;
+	margin-top: 0;
+}
+.sticky-menu div.sticky-menu-button {
+	margin-top: 15px;
+}
+}
+/* wrapping, expanding, and shrinking sticky-menu additions */
+
+.sticky-menu {
+	text-align: center;
+}
+.sticky-menu ul {
+	height: auto;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	width:100%;
+}
+.sticky-menu ul li {
+	min-width: 13.5%;
+	height: auto;
+	position: relative;
+	display: inline;
+	text-align: center;
+	float: none;
+}
+.sticky-menu ul li a {
+	font-size: 18px;
+	height: auto;
+	min-height: 20px;
+	display: inline-block;
+	
+	-moz-box-shadow: none;/*FF 3.5+*/
+	-webkit-box-shadow: none;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+	box-shadow: none;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */	
+}
+
+@media screen and (max-width: 767px) {
+.sticky-menu ul li a span {
+	display: inline-block;
+}
+.sticky-menu ul li a {
+	font-size: 15px;
+	padding: 5px 10px;
+}
+}
+
+@media screen and (max-height:700px) and (max-width:680px), (max-height:1024px) and (max-width:768px) {
+.sticky-menu {
+	display: none;
+}
+.contentdeck.hasmenuitem {
+	padding-top: 20px !important;
+}
+}
+
+/* ================ 7. Icon Features ================ */
+
+
+@media screen and (min-width:767px) {
+
+.deck-feature { float: left; }
+
+.deck-feature.small-feature {
+	height: 170px;
+	overflow: hidden;
+	max-width: 100%;
+	min-width: 100%;
+}
+
+.deck-feature.circle-feature {
+	height: 230px;
+	overflow: hidden;
+	max-width: 33%;
+	min-width: 33%;
+}
+}
+
+.deck-feature { text-align: center; }
+
+.deck-feature .inner { }
+
+.deck-feature h4 {
+	width: auto;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+.deck-feature a:hover h4,
+.deck-feature a:focus h4{
+	color: #000;
+	text-decoration: none;
+}
+
+.deck-feature .deck-copy { }
+
+/*Icon Catalog - supports images and font awesome icon use*/
+
+.deck-feature h4.deck-icon { }
+
+.deck-feature h4.deck-icon.fa:before {
+	margin: 0 10px;
+	font-family: FontAwesome;
+	font-weight: normal;
+}
+
+.deck-feature h4.deck-icon.small-icon {
+	padding: 4px 0 0 36px;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 30px;
+	text-align: center;
+}
+
+.deck-feature h4.deck-icon.fa { padding: 4px 0; }
+
+/*add image icons using the following conventions:*/
+.deck-feature h4.small-icon.iconname { background-image: url(/img/deck-icons-sm-iconname.png); }
+
+.deck-feature h4.deck-icon.circle-icon {
+	padding: 70px 0 0 0;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 60px;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 19px;
+	line-height: 1.1875rem;
+	text-align: center;
+}
+
+/*add image icons using the following conventions:*/
+.deck-feature h4.small-icon.circle-iconname { background-image: url(/img/deck-icons-sm-circle-iconname.png); }
+.deck-icon .iconic {font-size:2.7rem;}
+
+
+/*4.3 Large Landing Page Image Based Icons */
+
+.deck-feature.large-feature h4 { text-align: center; text-decoration: underline;}
+
+.deck-feature.large-feature, .deck-feature a {
+	min-height: 220px;
+	display: block;
+}
+
+.deck-feature a { padding: 10px 0 0 0; 
+		-moz-box-shadow: none;/*FF 3.5+*/
+	-webkit-box-shadow: none;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+	box-shadow: none;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */	
+}
+
+@media screen and (max-width:600px) {
+
+.deck-feature a { border-bottom: 1px solid #d9e5ec; }
+
+
+}
+
+/*Icon Catalog for Landing Icons...*/
+
+.deck-feature .landing-icon {
+	width: 75px;
+	height: 75px;
+	background-repeat: no-repeat;
+	background-size: 75px;
+	margin: 1em auto;
+}
+
+/*add image icons using the following conventions:*/
+.deck-feature .landing-icon.iconname { background-image: url(/img/landing-icon-iconname.png); }
+
+/* right border for news deck */
+
+div.contentdeck div.deckinner.homepagenewsdeck .onehalf:last-child > .multicol-inner {
+	border-left: 1px solid #69B7CD; padding-left: 40px !important;
+}
+
+/* removal of underline on See all News button */
+div.contentdeck div.deckinner.homepagenewsdeck .onehalf:last-child > .multicol-inner a.button.fancybutton {
+	-moz-box-shadow: none;/*FF 3.5+*/
+	-webkit-box-shadow: none;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+	box-shadow: none;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+}
+
+/* ================ 8. Comparison Charts ================ */
+
+/*comparison charts are mostly structured using the "Responsive Lists" css that is within section 15 of voice.css*/
+
+div.account-compare p {
+	margin: auto;
+	font-size: 14px;
+	font-size: 0.875rem;
+	line-height: 18px;
+	line-height: 1.125rem;
+	text-align: center;
+}
+
+.account-compare h2 { text-align: center; }
+
+div.account-compare div.list-row .list-item, div.account-compare div.list-row .list-item .inner { min-height: 0; }
+
+/* ================ 9. Footer Quick Links ================ */
+
+div.footer_quicklinks {
+	display: inline-block;
+	float: left;
+	padding: 1%;
+}
+
+div.footer_quicklinks h4 {
+	margin: 0px;
+	padding: 0px;
+	line-height: normal;
+}
+
+div.footer_quicklinks a { }
+
+div.footer_quicklinks ul {
+	margin: 0;
+	padding: 0px;
+	list-style: none;
+}
+
+div.footer_quicklinks ul li {
+	margin: 2px 0px 6px 0px;
+	list-style: none;
+	padding: 0;
+	line-height: normal;
+}
+
+div.footer_quicklinks a:link { text-decoration: none; }
+
+div.footer_quicklinks a:visited { text-decoration: none; }
+
+div.footer_quicklinks a:hover { text-decoration: underline; }
+
+div.footer_quicklinks a:active { text-decoration: underline; }
+
+/* ================ 10. Google Maps ================ */
+
+
+div.map_container_individual {
+	display: block;
+	float: right
+}
+
+div.individual_map_canvas {
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	border: 1px solid silver
+}
+
+div.loc_dropdown {
+	margin: 0 0 5px;
+	width: auto;
+	display: block;
+	overflow: hidden
+}
+
+div.loc_dropdown select {
+	float: left;
+	padding: 4px;
+	font-size: 15px
+}
+
+div.loc_dropdown input {
+	margin: auto 0 auto 5px;
+	float: left;
+	padding: 4px 8px;
+	font-size: 15px
+}
+
+div.map_margin { margin-top: 15px }
+
+@media screen and (max-width: 660px) {
+
+div.map_container_individual {
+	float: none;
+	margin: 0 auto 20px;
+	width: 300px
+}
+
+.individual_map_canvas, .loc_dropdown { margin: auto }
+}
+
+/* ================ 11. Bit Randomizer (employee listing) ================ */
+
+
+.officer-image {
+	max-width: 220px;
+	border-radius: 4px;
+	border: solid 1px #666;
+}
+
+div.biolist { margin-bottom: 45px; }
+
+div.biolist p {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+div.biolist h4 {
+	color: #005880;
+	margin-bottom: 5px;
+}
+
+div.biolist div.biopic img {
+	margin: 0 10px 0 0;
+	padding: 5px;
+	box-shadow: 5px 0 10px -5px rgba(0,0,0,.3), -5px 0 10px -5px rgba(0,0,0,.3);
+	-moz-box-shadow: 5px 0 10px -5px rgba(0,0,0,.3), -5px 0 10px -5px rgba(0,0,0,.3);
+	-webkit-box-shadow: 5px 0 10px -5px rgba(0,0,0,.3), -5px 0 10px -5px rgba(0,0,0,.3);
+	border: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+
+div.biopic {
+	display: inline;
+	width: 230px;
+}
+
+div.bio-area {
+	width: 68%;
+	float: left;
+	display: inline;
+	color: #727F8A;
+	line-height: 27px;
+}
+
+div.bio-name {
+	font-size: 18px;
+	color: #007c88;
+}
+
+div.bio-title {
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+
+div.biolist { margin-bottom: 25px; }
+
+div.biopic {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+div.bio-area {
+	display: block;
+	width: 100%;
+}
+}
+
+/* Readmore plugin styles */
+div.readmoreplugin {
+	display: block;
+	margin-top: 20px;
+	border-bottom: 1px dotted #dedede;
+	padding-bottom: 5px;
+}
+
+div.readmoreplugin p { color: #727F8A; }
+
+a.readmore-js.toggle {
+	clear: both;
+	margin-top: 10px;
+}
+
+
+
+/* fix for banner pop-in */
+
+.flexslider .slides > li:only-child {    display: list-item;}
+
+
+
+
+
+
+/* ================ 12. Header CTA Links ================ */
+
+
+
+
+ul.header-cta { list-style:none; margin:0; padding:0; float:right;}
+ul.header-cta li { list-style:none; margin:0; padding:0; display:inline-block; background-color:#5b7b24; height:38px;  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size:15px; font-weight:500;float:left; color:#fff;}
+ul.header-cta li:last-child {border:none;}
+ul.header-cta li a {border-right:solid 1px rgba(255,255,255,0.30);}
+ul.header-cta li:last-child  a {border-right:none;}
+ul.header-cta li a, 
+ul.header-cta li span { 
+	height:18px;  
+	display:block; 
+	font-family:inherit; 
+	color:#fff; 
+	padding:10px 22px;
+	text-decoration: none;
+}
+ul.header-cta li a:hover,
+ul.header-cta li a:focus { 
+	text-decoration:none; 
+	background-color:#47601c; 
+}
+ul.nav-menu.top-nav-menu {margin: 0 0 1em;}
+
+@media screen and (max-width: 820px) {  ul.header-cta li a, ul.header-cta li span { height:38px;  display:block; font-family:inherit; color:#fff; padding:10px;} }
+
+@media screen and (max-width: 767px) { ul.header-cta {float:none; width:100%;} ul.header-cta li { width:25%; padding:0; border:none;}   ul.header-cta li a, ul.header-cta li span {text-align:center;} }
+
+@media screen and (max-width: 625px) { ul.header-cta li { font-size: 13px; height:35px; }  ul.header-cta li a, ul.header-cta li span {padding: 8px 5px; height: 25px; } }
+
+@media screen and (max-width: 505px) { ul.header-cta li { height:55px; }  ul.header-cta li a, ul.header-cta li span { padding: 10px 5px; height: 35px; } }
+
+@media screen and (max-width: 370px) { 
+/*ul.header-cta li { font-size:13px;}*/
+ul.header-cta li { font-size:75%;} }
+
+
+/* homepage News and Security updates - post overrides */
+div.contentdeck.onehalf div.deckinner.homepagenewsdeck .multicol-inner {padding: 0 0 0 30px;}
+div.homepagenewsdeck.hasmenuitem {padding: 2% 0;}
+div.homepagenewsdeck .feature-img, div.homepagenewsdeck div.gradient {	display: none;}
+div.homepagenewsdeck h2 {text-align: left; font-size: 27px !important; font-weight: normal !important; line-height: normal; padding: 0 10px;}
+
+div.homepagenewsdeck ul.post-featured li {    width: 100%;    float: none;    padding:  0;}
+div.homepagenewsdeck ul.post-featured li a {height: auto; margin: 0; padding: 10px; color: #F0F4E8; font-size: 17px !important; font-weight: normal; text-decoration: none;
+
+	-moz-box-shadow: none;/*FF 3.5+*/
+	-webkit-box-shadow: none;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+	box-shadow: none;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */	
+	
+}
+div.homepagenewsdeck ul.post-featured li > a:hover,
+div.homepagenewsdeck ul.post-featured li > a:focus { background-color: #015383; }
+div.homepagenewsdeck ul.post-featured h2 {text-align: left; font-size: 17px !important; font-weight: normal !important; padding: 0; font-family: 'Domine', Helvetica, Arial, sans-serif; color: #FFFFFF !important; text-decoration: underline;}
+div.homepagenewsdeck ul.post-featured h2:hover,
+div.homepagenewsdeck ul.post-featured h2:focus { text-decoration: none; }
+div.homepagenewsdeck ul.post-featured .abstract {	max-height: 100%;}
+div.homepagenewsdeck a.fancybutton {	margin-left: 10px;}
+
+div.homepagenewsdeck div.abstract {	display: none;}
+@media screen and (max-width: 640px){
+
+div.homepagenewsdeck ul.post-featured li {min-height: 0; max-height: 100%;
+}
+}
+
+
+/* ================ 13. Mega Menu Promos ================ */
+
+.mm_callout_text h4 {margin:0;}
+
+/* flexible iframe style */
+.flexiframe {position: relative; padding-bottom: 65.25%; padding-top: 30px; height: 0; overflow: auto; -webkit-overflow-scrolling:touch; border: none;}
+.flexiframe iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%; max-width: 100% !important; border: none !important; padding: 0; margin: 0;}

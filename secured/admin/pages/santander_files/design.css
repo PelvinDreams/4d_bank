@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/*
+File: design.css
+
+Purpose: Used to implement brand specific design elements and interface customizations. 
+Usage: Modify as needed. Add any additional styles anywhere needed. 
+
+Contents:
+
+1. Brand Styles (style guide)
+2. Standardized Color Values
+3. Browser Element Customizations
+4. Custom Screen Interface Elements
+
+
+*/
+
+/* ================ 1. Branded Elements (style guide) ================ */
+
+html {font-size: 16px;}
+body {
+	    font-family: 'Domine', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: normal;
+	background-color: #fff;
+	color:#6d6e71;
+}
+
+/*a:link, a:visited {
+	text-decoration: none;
+	color: #005285;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+	color: #0084a9;
+}*/
+
+a:link, a:visited {
+	text-decoration: underline;
+	color: #6d6e71;
+	display: inline;
+	background-color: transparent;
+
+	-webkit-transition: all .5s ease;/* Safari 3.2+, Chrome */
+	-moz-transition: all .5s ease;/* Firefox 4-15 */
+	-o-transition: all .5s ease;/* Opera 10.5-12.00 */
+	transition: all .5s ease;/* Firefox 16+, Opera 12.50+ */	
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: none;
+	color: #000;
+	background-color: #90e0fb;	
+}
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+	border-color:#e9e9ea;
+}
+
+/* ================ 2. Standardized Color Values ================ */
+
+.accent { color: #097b85 !important; }
+
+.clr1-dark { color: #005581 !important; }
+
+/*.clr1-med { color: #578fac !important;}*/
+.clr1-med { color: #4A7A93 !important;}
+
+.clr1-lite { color: #d9e5ec !important;}
+
+.clr2-dark { color: #6d6e71 !important;}
+
+.clr2-med { color: #d0d0d1 !important;}
+
+.clr2-lite { color: #e9e9ea !important;}
+
+.clr1-bg-dark { background-color: #005581 !important;}
+
+/*.clr1-bg-med { background-color: #578fac !important;}*/
+.clr1-bg-med { background-color: #4A7A93 !important;}
+
+.clr1-bg-lite { background-color: #d9e5ec !important;}
+
+.clr2-bg-dark { background-color: #6d6e71 !important;}
+
+.clr2-bg-med { background-color: #d0d0d1 !important;}
+
+.clr2-bg-lite { background-color: #e9e9ea !important;}
+
+.clr1-bdr-dark { border-color: #005581 !important;}
+
+/*.clr1-bdr-med { border-color: #578fac !important;}
+*/.clr1-bdr-med { border-color: #4A7A93 !important;}
+
+
+.clr1-bdr-lite { border-color: #d9e5ec !important;}
+
+.clr2-bdr-dark { border-color: #6d6e71 !important;}
+
+.clr2-bdr-med { border-color: #d0d0d1 !important; }
+
+.clr2-bdr-lite { border-color: #e9e9ea !important;}
+
+td.clr1-bg-dark, .clr1-bg-dark p, td.clr1-bg-med, .clr1-bg-med p, td.clr2-bg-dark, .clr2-bg-dark p, td.clr2-bg-med, .clr2-bg-med p, 
+.clr1-bg-dark h1, .clr1-bg-dark h2, .clr1-bg-dark h3, .clr1-bg-dark h4, .clr1-bg-dark h5, .clr1-bg-dark h6,
+.clr2-bg-dark h1, .clr2-bg-dark h2, .clr2-bg-dark h3, .clr2-bg-dark h4, .clr2-bg-dark h5, .clr2-bg-dark h6,
+.clr1-bg-med h1, .clr1-bg-med h2, .clr1-bg-med h3, .clr1-bg-med h4, .clr1-bg-med h5, .clr1-bg-med h6,
+.clr2-bg-med h1, .clr2-bg-med h2, .clr2-bg-med h3, .clr2-bg-med h4, .clr2-bg-med h5, .clr2-bg-med h6 { /*color: #fff !important;*/color: #fff;}
+
+.bdr-bot {
+	border-left: none;
+	border-right: none;
+	border-top: none
+}
+
+.bdr-top {
+	border-left: none;
+	border-right: none;
+	border-bottom: none
+}
+
+.bdr-left {
+	border-right: none;
+	border-bottom: none;
+	border-top: none
+}
+
+.bdr-right {
+	border-left: none;
+	border-bottom: none;
+	border-top: none
+}
+
+/* ================ 3. Browser Element Customizations ================ */
+
+
+/*selected elements*/
+::selection {
+	background: #444;
+	color: #FFF
+}
+::-moz-selection {
+background:#444;
+color:#FFF
+}
+
+/* ================ 4. Custom Screen Interface Elements ================ */
+
+
+/* containing element */
+.header
+{
+	padding: 0 !important;
+	margin: 0 auto !important;
+	background-color: #fff !important;
+}
+
+/*
+
+these styles made the logo have the flag treatment applied...
+
+div.logo
+{
+	position: relative !important;
+	padding: 6px 20px 6px 70px !important;
+	margin: 0px 0px 0px -70px !important;
+	background-color: #0084a9 !important;
+	-webkit-box-shadow: 0px 2px 4px #6d6e71 !important;
+	-moz-box-shadow: 0px 2px 4px #6d6e71 !important;
+	box-shadow: 0px 2px 4px #6d6e71 !important;
+}*/
+
+/*div.logo:after
+{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0px;
+	top: 100%;
+	border-width: 10px 10px;
+	border-style: solid;
+	border-color: #6d6e71 #6d6e71 transparent transparent;
+}*/
+
+
+/*.personalwealthmanagement .header .logo {
+    height: 60px;
+    background-size: 175px 60px;
+    background-image: url(/img/cefcu-logo-wide-hires-wealthmngmnt.png);
+	margin: 20px 0 10px 0;
+}
+
+.personalinsurance .header .logo, .personalretirementplanning .header .logo, .personalinvestments .header .logo {
+    height: 60px;
+    background-size: 175px 60px;
+    background-image: url(/img/cefcu-logo-wide-hires-inv-serv.png);
+	margin: 20px 0 10px 0;
+}*/
+
+
+
+
+
+.homelink {position:absolute; z-index:1; width:68%; float:left;}
+
+
+
+
+
+#atstbx a.at-svc-facebook, #atstbx a.at-svc-twitter, #atstbx a.at-svc-pinterest_share, #atstbx a.at-svc-compact {
+
+    background: #015385;
+
+}
